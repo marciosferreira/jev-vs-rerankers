@@ -4,8 +4,12 @@
 
 > **Rascunho** (versão em português; a versão para o Medium está em `artigo_medium_en.md`). Números de uma execução no SQuAD 2.0 (300 perguntas de teste).
 
-**Autores:** _a definir_
+**Autor:** Marcio Ferreira
 **Data:** setembro de 2026
+
+> **Antes de começar.** Este artigo não pretende parecer um texto escrito por mim. O objetivo é divulgar um experimento que testou uma ideia minha e cujos resultados, dentro dos limites descritos adiante, a sustentam. Para publicar os resultados mais rápido, o texto foi rascunhado por IA (Claude Opus 5.5) e revisado e editado por mim. O código dos experimentos também foi escrito com ela, sob a minha direção. A ideia, a tese e as decisões são minhas, e todos os números vêm do código e dos resultados publicados no repositório. Mais detalhes em "Como este trabalho foi feito", no fim.
+>
+> **Conflito de interesse:** não tenho vínculo com a TypeSafe, a Cohere, a Anthropic, a OpenAI ou o OpenRouter, nem recebi financiamento ou créditos deles. Todo o uso de API foi pago por mim (a Cohere, pela chave de teste gratuita).
 
 ---
 
@@ -32,7 +36,7 @@ Um pipeline de RAG típico segue quatro passos: (1) transformar a base de docume
 
 Esse desenho tem duas fragilidades:
 
-1. **Similaridade não é o mesmo que resposta.** O embedding mede se o trecho "fala do mesmo assunto". Um trecho sobre quem projetou o Cristo Redentor é muito parecido com a pergunta "quando o Cristo foi inaugurado?", mas não a responde. No nosso teste, **15% das perguntas** tinham um trecho útil entre os candidatos, mas o 1º colocado pelo embedding não respondia.
+1. **Similaridade não é o mesmo que resposta.** O embedding mede se o trecho "fala do mesmo assunto". Um trecho sobre quem projetou o Cristo Redentor é muito parecido com a pergunta "quando o Cristo foi inaugurado?", mas não a responde. No nosso teste, em **15% das perguntas que tinham um trecho útil entre os candidatos**, o 1º colocado pelo embedding não respondia.
 2. **Ninguém decide que não há resposta.** O passo (4) sempre envia *k* trechos. Quando a resposta não existe na base, o LLM recebe *k* trechos plausíveis e irrelevantes e tende a "ajudar" com uma resposta inventada. Os rerankers corrigem a **ordem**, mas não mudam isso: são treinados para ordenar e usados para devolver os top-*k*.
 
 **Tese.** Um modelo de decisão, que responde "este trecho ajuda a responder a pergunta?" com uma probabilidade comparável entre perguntas, pode fazer o que o reranker não faz: **enviar ao LLM só os trechos que servem, e nenhum quando nenhum serve.** Isso ataca a alucinação na origem, reduz o contexto enviado ao LLM e, nas perguntas sem resposta, evita até a chamada ao LLM. Testamos essa tese com o JEV contra rerankers de ponta.
@@ -118,6 +122,9 @@ Mesmos candidatos e mesmas notas da etapa 1. Quatro **políticas de contexto** d
 - **Correta:** todas as partes da pergunta respondidas corretamente. Numa pergunta sem resposta, a única resposta correta é "não sei".
 - **Alucinação:** a resposta afirma algo que não está no contexto recebido pelo gerador, ou que contradiz a referência.
 - **Errada com confiança:** a resposta não é correta e não diz "não sei". Isso inclui as alucinações e também **responder uma pergunta sem resposta a partir de um trecho parecido**. O juiz não marca esse segundo caso como alucinação, porque a afirmação está no contexto, mas para o usuário ela é igualmente errada.
+- **"Não sei" incorreto:** a resposta diz que não sabe, mas não é correta. É uma abstenção indevida (a resposta existia) ou, em poucos casos, uma abstenção misturada com uma afirmação sem apoio (2 casos no cohere_top3 e 2 no cohere_cut, nas perguntas sem resposta).
+
+Toda resposta cai em exatamente um de três grupos: correta, errada com confiança ou "não sei" incorreto. As alucinações são um subconjunto das erradas com confiança.
 
 **Dois conjuntos de "sem resposta":**
 
@@ -328,6 +335,19 @@ Deixar o JEV decidir o contexto, com um corte fixo na probabilidade de relevânc
 - **teve latência equivalente.**
 
 A contrapartida é mais "não sei" nas perguntas que tinham resposta. Para aplicações em que evitar alucinação é prioridade, os resultados indicam que um modelo de decisão como o JEV é uma camada de controle mais adequada, e mais barata, que os rerankers de ponta.
+
+---
+
+## Como este trabalho foi feito
+
+Este estudo foi construído junto com um assistente de IA, e vale dizer com precisão quem fez o quê.
+
+- **A pergunta e a tese são do autor.** O ponto de partida foi uma dúvida prática: um modelo de decisão sim/não separa melhor que um reranker os trechos que respondem à pergunta dos que só parecem parecidos? As afirmações deste artigo são as que o autor decidiu fazer.
+- **O código foi escrito pelo Claude Opus 5.5** (Anthropic), no Claude Code, a partir das instruções do autor: o pipeline de RAG, os experimentos, a estatística e as figuras.
+- **O método foi construído em diálogo.** Várias escolhas de método foram propostas pela IA e aceitas, alteradas ou recusadas pelo autor. Entre elas: os controles de corte por similaridade e de top-*k*, a comparação com rerankers de ponta, o ajuste dos cortes num conjunto separado de perguntas e a medição do custo real. Outras escolhas partiram do autor, como colocar o portão na frente de um RAG top-1, o foco em alucinação e custo, e quais rerankers testar e em que ordem.
+- **O texto foi redigido com o Claude Opus 5.5** e revisado e editado pelo autor.
+- **Todos os números vêm do código e dos resultados publicados**, não do texto da IA. Qualquer pessoa pode refazer os experimentos a partir do repositório.
+- **Uma nota sobre fornecedores:** o código foi escrito, e as respostas avaliadas, por modelos da Anthropic (Claude Opus 5.5 e `claude-sonnet-5`). Nenhum produto da Anthropic estava entre os sistemas comparados.
 
 ---
 

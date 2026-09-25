@@ -20,7 +20,7 @@ ACCENT = "#2a78d6"  # highlighted column (JEV)
 ACCENT_TINT = "#e8f0fb"
 
 FONT = "DejaVu Sans"
-SIZE = 11
+SIZE = 12
 ROW_H = 0.42  # inches
 PAD_X = 0.14  # inches of horizontal padding per cell
 
@@ -132,14 +132,15 @@ def main() -> None:
     ]
     cols = [1, 2, 3, 4]
     b = set()
-    for r, lower in enumerate([True, True, True, False, False, True, False]):
+    for r, lower in enumerate([True, True, True, False, False, True]):  # last row (no LLM call) is cost, not quality
         b |= best(rows, r, cols, lower)
     table(
         "fig2_results",
         "Wrong answers and accuracy by context policy",
         head, rows, highlight=4, bold=b, first_col_min=3.9,
-        note="Bold: best value in each row. Judge: claude-sonnet-5. Generator: gpt-4.1-mini. One run.\n"
-             "Confidently wrong = not correct and not \"I don't know\" (includes hallucinations).",
+        note="Bold: best value in each quality row. Judge: claude-sonnet-5. Generator: gpt-4.1-mini. One run.\n"
+             "Every answer is exactly one of: correct, confidently wrong (includes hallucinations), or an\n"
+             "incorrect \"I don't know\" (a false abstention, or an abstention mixed with an unsupported claim).",
     )
 
     # 3. cost
@@ -154,26 +155,28 @@ def main() -> None:
         "fig3_cost",
         "Cost per 1,000 questions",
         head, rows, highlight=4, bold=b, first_col_min=2.4,
-        note="* Cohere list price (~$2.50 per 1,000 searches). JEV and LLM costs measured from OpenRouter usage.\n"
-             "JEV vs. Cohere top-3: ~7× cheaper overall. JEV vs. plain top-3: +14% cost, 8× fewer hallucinations.",
+        note="Bold: lowest cost in each row. * Cohere list price (~$2.50 per 1,000 searches).\n"
+             "JEV and LLM costs measured from OpenRouter usage. The JEV cost includes an 11th call\n"
+             "per question that jev_cut doesn't use, so it is conservative (~9% high).",
     )
 
     # 4. ordering vs deciding
-    head = ["10 candidates per question", "Embedding", "MiniLM", "BGE-base", "bge-v2-m3", "Cohere 4 Pro", "JEV"]
+    head = ["", "Embedding", "bge-reranker-v2-m3", "Cohere Rerank 4 Pro", "JEV"]
     rows = [
-        ["Ordering: top-1 passage answers", "85%", "93%", "89%", "97%", "97%", "95%"],
-        ["Deciding: detects \"no useful passage\" (AUC)", "0.69", "0.70", "0.72", "0.79", "0.85", "0.95"],
-        ["Deciding: sends nothing when nothing is useful", "75%", "57%", "44%", "51%", "59%", "87%"],
-        ["…the same, used as top-k (the usual way)", "0%", "0%", "0%", "0%", "0%", "–"],
+        ["Top-1 passage answers", "85%", "97%", "97%", "95%"],
+        ["Detects \"no useful passage\" (AUC)", "0.69", "0.79", "0.85", "0.95"],
+        ["Withholds useless context*", "31%", "52%", "61%", "87%"],
+        ["…used as top-k (the usual way)", "0%", "0%", "0%", "–"],
     ]
-    cols = [1, 2, 3, 4, 5, 6]
+    cols = [1, 2, 3, 4]
     b = best(rows, 0, cols, False) | best(rows, 1, cols, False) | best(rows, 2, cols, False)
     table(
         "fig4_ordering_vs_deciding",
         "Rerankers order better. JEV decides better.",
-        head, rows, highlight=6, bold=b, first_col_min=4.3,
-        note="Retrieval-level evaluation, no LLM involved. 239 questions with a useful candidate (ordering);\n"
-             "61 with none (deciding). Cut-offs tuned on 100 separate questions. Bold: best value in each row.",
+        head, rows, highlight=4, bold=b, first_col_min=3.6,
+        note="Retrieval only, no LLM: all 300 test questions, 10 candidates each. Ordering: the 239\n"
+             "with a useful candidate. Deciding: the 61 without one. * With each method's cut-off set so that\n"
+             "85% of questions get a useful passage. Bold: best in row. MiniLM and BGE-base in the repository.",
     )
 
 

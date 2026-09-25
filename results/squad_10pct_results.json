@@ -1,0 +1,4748 @@
+{
+  "meta": {
+    "date": "2026-09-24 21:01",
+    "data": "data/squad/corpus.jsonl",
+    "questions": "data/squad/questions_test.json",
+    "lang": "en",
+    "n_docs": 1204,
+    "judge_model": "anthropic/claude-sonnet-5",
+    "llm_model": "openai/gpt-4.1-mini",
+    "embed_model": "openai/text-embedding-3-small",
+    "neighbors": 5,
+    "min_relevance": 0.3,
+    "gate_early_stop": 3,
+    "gate_near_zero": 0.1,
+    "params": {
+      "source": "data/squad/questions_tune.json",
+      "n": 100,
+      "tau_fast": 0.5483391284942627,
+      "tau_fast_accuracy": 0.66,
+      "tau_keep": 0.595960259437561,
+      "tau_keep_f1": 0.41420118343195267,
+      "jev_threshold": 0.8,
+      "jev_grid": [
+        {
+          "threshold": 0.1,
+          "accuracy": 0.72,
+          "false_pos": 28,
+          "false_neg": 0
+        },
+        {
+          "threshold": 0.2,
+          "accuracy": 0.75,
+          "false_pos": 25,
+          "false_neg": 0
+        },
+        {
+          "threshold": 0.3,
+          "accuracy": 0.78,
+          "false_pos": 20,
+          "false_neg": 2
+        },
+        {
+          "threshold": 0.4,
+          "accuracy": 0.8,
+          "false_pos": 16,
+          "false_neg": 4
+        },
+        {
+          "threshold": 0.5,
+          "accuracy": 0.81,
+          "false_pos": 14,
+          "false_neg": 5
+        },
+        {
+          "threshold": 0.6,
+          "accuracy": 0.83,
+          "false_pos": 10,
+          "false_neg": 7
+        },
+        {
+          "threshold": 0.7,
+          "accuracy": 0.85,
+          "false_pos": 6,
+          "false_neg": 9
+        },
+        {
+          "threshold": 0.8,
+          "accuracy": 0.87,
+          "false_pos": 2,
+          "false_neg": 11
+        },
+        {
+          "threshold": 0.9,
+          "accuracy": 0.7,
+          "false_pos": 1,
+          "false_neg": 29
+        }
+      ],
+      "jev_mean_examined": 2.74,
+      "k_eq": 3
+    }
+  },
+  "results": [
+    {
+      "id": "572980f9af94a219006aa4d1",
+      "category": "answerable",
+      "question": "Of what form are Sophie Germain primes?",
+      "gold": [
+        "p0885"
+      ],
+      "reference": "Accepted answers (any one is correct): 2p + 1 | 2p + 1 with p prime",
+      "answers": [
+        "2p + 1",
+        "2p + 1 with p prime"
+      ],
+      "source_paragraph": "p0885",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "Sophie Germain primes are primes of the form 2p + 1 where p is prime [p0885].",
+          "latency_s": 2.61,
+          "context_ids": [
+            "p0885"
+          ],
+          "context_chars": 545,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corresponde exatamente à referência, indicando corretamente a forma 2p + 1 com p primo."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "p0885",
+              "relevance": 0.96,
+              "sufficiency": 0.85
+            }
+          ],
+          "answer": "Sophie Germain primes are primes of the form 2p + 1 where p is prime [p0885].",
+          "latency_s": 2.83,
+          "context_ids": [
+            "p0885"
+          ],
+          "context_chars": 545,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corresponde exatamente à referência, afirmando que Sophie Germain primes são da forma 2p + 1 com p primo, sem inventar informação além do contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "Sophie Germain primes are prime numbers of the form 2p + 1 where p is also prime [p0885].",
+          "latency_s": 2.28,
+          "context_ids": [
+            "p0885"
+          ],
+          "context_chars": 545,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corresponde exatamente à forma indicada na referência (2p + 1 com p primo), sem inventar informação além do contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "Sophie Germain primes are primes of the form 2p + 1, where p is prime [p0885].",
+          "latency_s": 2.66,
+          "context_ids": [
+            "p0885",
+            "p0881",
+            "p0891"
+          ],
+          "context_chars": 2188,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente que Sophie Germain primes são da forma 2p + 1 com p primo, correspondendo exatamente à referência e ao contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "Sophie Germain primes are primes of the form 2p + 1, where p is prime [p0885].",
+          "latency_s": 1.87,
+          "context_ids": [
+            "p0885"
+          ],
+          "context_chars": 545,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corresponde exatamente à resposta de referência, identificando corretamente a forma 2p + 1 com p primo, com suporte no contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "570d28bdb3d812140066d4a7",
+      "category": "answerable",
+      "question": "What party is favored in Bedigo and Geelong?",
+      "gold": [
+        "p0151"
+      ],
+      "reference": "Accepted answers (any one is correct): Labor | Australian Labor Party",
+      "answers": [
+        "Labor",
+        "Australian Labor Party"
+      ],
+      "source_paragraph": "p0151",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "The Australian Labor Party (ALP) is traditionally strongest in Bendigo and Geelong.",
+          "latency_s": 2.16,
+          "context_ids": [
+            "p0151"
+          ],
+          "context_chars": 698,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o Australian Labor Party como o partido favorecido em Bendigo e Geelong, alinhando-se à referência e ao contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "p0151",
+              "relevance": 0.93,
+              "sufficiency": 0.76
+            },
+            {
+              "id": "p0163",
+              "relevance": 0.16,
+              "sufficiency": 0.79
+            },
+            {
+              "id": "p0150",
+              "relevance": 0.04,
+              "sufficiency": 0.7
+            },
+            {
+              "id": "p0170",
+              "relevance": 0.08,
+              "sufficiency": 0.78
+            },
+            {
+              "id": "p0172",
+              "relevance": 0.04,
+              "sufficiency": 0.85
+            }
+          ],
+          "answer": "The Australian Labor Party (ALP) is traditionally strongest in the regional cities of Bendigo and Geelong. Therefore, the ALP is the favored party in Bendigo and Geelong [p0151].",
+          "latency_s": 5.38,
+          "context_ids": [
+            "p0151"
+          ],
+          "context_chars": 698,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o Australian Labor Party como o partido favorecido em Bendigo e Geelong, conforme suportado pelo contexto e alinhado com a referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "The Australian Labor Party (ALP) is traditionally strongest in the regional cities of Ballarat, Bendigo, and Geelong, so it is the favored party in Bendigo and Geelong [p0151].",
+          "latency_s": 2.37,
+          "context_ids": [
+            "p0151"
+          ],
+          "context_chars": 698,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o Australian Labor Party como partido favorecido em Bendigo e Geelong, alinhado com a referência e o contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "The Australian Labor Party (ALP) is traditionally strongest in the regional cities of Bendigo and Geelong, so it is the favored party in these areas. [p0151]",
+          "latency_s": 2.55,
+          "context_ids": [
+            "p0151",
+            "p0163",
+            "p0150"
+          ],
+          "context_chars": 2055,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o Australian Labor Party (ALP) como o partido favorecido em Bendigo e Geelong, alinhando-se com a referência e apoiada pelo contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "The Australian Labor Party (ALP) is favored in Bendigo and Geelong, as it is traditionally strongest in those regional cities [p0151].",
+          "latency_s": 1.43,
+          "context_ids": [
+            "p0151"
+          ],
+          "context_chars": 698,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o Australian Labor Party como o partido favorecido em Bendigo e Geelong, alinhando-se com a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "5ad243abd7d075001a428a10",
+      "category": "unanswerable",
+      "question": "In what year did the Protestant Reformation arrive in France?",
+      "gold": [],
+      "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+      "answers": [],
+      "source_paragraph": "p0175",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "The provided context does not specify the exact year the Protestant Reformation arrived in France. However, it mentions that Jacques Lefevre published his French translation of the New Testament in 1523, followed by the whole Bible in French in 1530, indicating that Reformation ideas and influences were present in France at least by the early 1520s to 1530s [p0208].",
+          "latency_s": 2.41,
+          "context_ids": [
+            "p0208"
+          ],
+          "context_chars": 1201,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": false,
+            "score": 2,
+            "justification": "Embora reconheça que o ano exato não está especificado, a resposta acaba inferindo uma data aproximada em vez de simplesmente afirmar que não sabe, como exigido pela referência."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "p0208",
+              "relevance": 0.78,
+              "sufficiency": 0.44
+            },
+            {
+              "id": "p0175",
+              "relevance": 0.19,
+              "sufficiency": 0.26
+            },
+            {
+              "id": "p0191",
+              "relevance": 0.12,
+              "sufficiency": 0.35
+            },
+            {
+              "id": "p0181",
+              "relevance": 0.08,
+              "sufficiency": 0.3
+            },
+            {
+              "id": "p0183",
+              "relevance": 0.11,
+              "sufficiency": 0.35
+            }
+          ],
+          "answer": "The provided context does not specify the exact year when the Protestant Reformation arrived in France. It mentions that Jacques Lefevre, a pro-reform Gallican Roman Catholic, published his French translation of the New Testament in 1523 and the whole Bible in French in 1530. It also notes that the French Confession of 1559 shows Calvinistic influence and that the Reformed church members in France became known as Huguenots sometime between 1550 and 1580. However, the exact year of the arrival of the Protestant Reformation in France is not given.[p0208]",
+          "latency_s": 5.82,
+          "context_ids": [
+            "p0208"
+          ],
+          "context_chars": 1201,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que a base não fornece o ano exato, alinhando-se com a referência, sem inventar informações fora do contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "The provided context does not specify the exact year when the Protestant Reformation arrived in France. It mentions that Jacques Lefevre published his French translation of the New Testament in 1523 and the whole Bible in 1530 during the Protestant Reformation, indicating that the Reformation was active in France during that period, but it does not state a specific year of arrival. Therefore, I don't know the exact year when the Protestant Reformation arrived in France based on the given context [p0208].",
+          "latency_s": 2.62,
+          "context_ids": [
+            "p0208"
+          ],
+          "context_chars": 1201,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que a base não especifica o ano exato de chegada da Reforma Protestante à França, alinhando-se com a referência, e não inventa informações além do que está no contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "The exact year when the Protestant Reformation arrived in France is not specified in the provided context. However, it is mentioned that Jacques Lefevre published his French translation of the New Testament in 1523, and the whole Bible in French in 1530, which were significant events related to the spread of Protestant ideas in France. This suggests that the Reformation movement in France was active by at least the early 1520s to 1530s [p0208].",
+          "latency_s": 2.78,
+          "context_ids": [
+            "p0208",
+            "p0175",
+            "p0191"
+          ],
+          "context_chars": 2409,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 2,
+            "justification": "Embora a resposta reconheça a falta de dado exato, ela especula uma data com base em eventos correlatos, o que não corresponde à referência que exige apenas admitir desconhecimento sem inferências."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 3,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 0,
+          "answer": "No relevant passage was found to answer the question.",
+          "latency_s": 0.0,
+          "context_ids": [],
+          "context_chars": 0,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "O sistema corretamente indica que não encontrou informação relevante, alinhado com a referência de que a base não contém esse dado."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "571155ae2419e31400955595",
+      "category": "answerable",
+      "question": "What is William Rankine's nationality?",
+      "gold": [
+        "p0240"
+      ],
+      "reference": "Accepted answers (any one is correct): Scottish",
+      "answers": [
+        "Scottish"
+      ],
+      "source_paragraph": "p0240",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "William John Macquorn Rankine was Scottish. This is indicated by the description of him as a \"Scottish polymath\" in the provided context [p0240].",
+          "latency_s": 4.7,
+          "context_ids": [
+            "p0240"
+          ],
+          "context_chars": 840,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corretamente identifica a nacionalidade escocesa de Rankine, corroborada pelo contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "p0240",
+              "relevance": 0.98,
+              "sufficiency": 0.93
+            }
+          ],
+          "answer": "William John Macquorn Rankine was Scottish. This is indicated in the context where it states he was a Scottish polymath [p0240].",
+          "latency_s": 3.25,
+          "context_ids": [
+            "p0240"
+          ],
+          "context_chars": 840,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente a nacionalidade escocesa de Rankine, conforme suportado pelo contexto e pela referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "No relevant passage was found to answer the question.",
+          "latency_s": 0.78,
+          "context_ids": [],
+          "context_chars": 0,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "A referência indica que a informação está disponível (Scottish), mas o sistema não a recuperou e respondeu que não encontrou, o que conta como falha de recuperação."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "William John Macquorn Rankine was Scottish. This is indicated by the description of him as a \"Scottish polymath\" in the context about the Rankine cycle [p0240].",
+          "latency_s": 2.27,
+          "context_ids": [
+            "p0240",
+            "p0020",
+            "p0019"
+          ],
+          "context_chars": 2499,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente a nacionalidade escocesa de Rankine, apoiada diretamente pelo contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "William John Macquorn Rankine was Scottish. This is indicated by the description of him as a \"Scottish polymath\" in the context provided [p0240].",
+          "latency_s": 1.44,
+          "context_ids": [
+            "p0240"
+          ],
+          "context_chars": 840,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente a nacionalidade escocesa de Rankine, citando o contexto fornecido, em total concordância com a referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "5710ed7bb654c5140001fa2c",
+      "category": "answerable",
+      "question": "Who did the Dutch fight in the Dutch Revolt?",
+      "gold": [
+        "p0202"
+      ],
+      "reference": "Accepted answers (any one is correct): Spain",
+      "answers": [
+        "Spain"
+      ],
+      "source_paragraph": "p0202",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "The Dutch fought against Spain during the Dutch Revolt (1568–1609) [p0202].",
+          "latency_s": 2.4,
+          "context_ids": [
+            "p0202"
+          ],
+          "context_chars": 1182,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente Espanha como o oponente dos holandeses na Revolta Holandesa, conforme suportado pelo contexto e pela referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "p0202",
+              "relevance": 0.98,
+              "sufficiency": 0.88
+            }
+          ],
+          "answer": "The Dutch fought against Spain during the Dutch Revolt (1568–1609). Some Huguenots fought alongside the Dutch against Spain in the early years of the revolt [p0202].",
+          "latency_s": 4.46,
+          "context_ids": [
+            "p0202"
+          ],
+          "context_chars": 1182,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente Espanha como o oponente dos holandeses na Revolta Holandesa, conforme suportado pelo contexto e pela referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "The Dutch fought against Spain during the Dutch Revolt (1568–1609) [[p0202]].",
+          "latency_s": 2.53,
+          "context_ids": [
+            "p0202"
+          ],
+          "context_chars": 1182,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente a Espanha como o oponente holandês na Revolta Holandesa, conforme suportado pelo contexto e pela referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "The Dutch fought against Spain during the Dutch Revolt (1568–1609). Some Huguenots even fought alongside the Dutch against Spain in the early years of the revolt [p0202].",
+          "latency_s": 2.21,
+          "context_ids": [
+            "p0202",
+            "p0180",
+            "p0186"
+          ],
+          "context_chars": 2450,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente Espanha como o oponente no Dutch Revolt, alinhando-se com a referência e apoiada pelo contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "The Dutch fought against Spain during the Dutch Revolt (1568–1609) [p0202].",
+          "latency_s": 1.55,
+          "context_ids": [
+            "p0202"
+          ],
+          "context_chars": 1182,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente Espanha como o adversário no Dutch Revolt, conforme suportado pelo contexto e pela referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "57097d63ed30961900e84200",
+      "category": "answerable",
+      "question": "What were high court proceedings being held about?",
+      "gold": [
+        "p0147"
+      ],
+      "reference": "Accepted answers (any one is correct): basic channels | the carriage of their respective basic channels | carriage of their respective basic channels",
+      "answers": [
+        "basic channels",
+        "the carriage of their respective basic channels",
+        "carriage of their respective basic channels"
+      ],
+      "source_paragraph": "p0147",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "The high court proceedings were about the freedom to provide services under European Union law, specifically how it applies to activities carried out for remuneration and the restrictions or justifications for such restrictions on providing services within the EU. Cases mentioned include challenges to national laws or regulations affecting the ability to provide services, such as legal advice across borders, reimbursement for healthcare received abroad, bans on certain activities like selling commodities futures or operating a business that simulates killing entertainment, and state monopolies on gambling. These cases explored the limits and justifications of restrictions under the freedom to provide services as established in TFEU article 56 and related case law [p0368].",
+          "latency_s": 3.04,
+          "context_ids": [
+            "p0368"
+          ],
+          "context_chars": 4083,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": true,
+            "abstained": false,
+            "score": 1,
+            "justification": "A resposta descreve casos de direito europeu sobre livre prestação de serviços, mas a referência indica que os procedimentos eram sobre 'basic channels'/carriage de canais básicos, um tema completamente diferente e não mencionado na resposta."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "p0368",
+              "relevance": 0.33,
+              "sufficiency": 0.18
+            },
+            {
+              "id": "p0369",
+              "relevance": 0.61,
+              "sufficiency": 0.31
+            },
+            {
+              "id": "p0341",
+              "relevance": 0.62,
+              "sufficiency": 0.31
+            },
+            {
+              "id": "p0340",
+              "relevance": 0.37,
+              "sufficiency": 0.15
+            },
+            {
+              "id": "p0343",
+              "relevance": 0.34,
+              "sufficiency": 0.14
+            }
+          ],
+          "answer": "The high court proceedings mentioned in the context appear to be about various issues concerning European Union law. Specifically, they involve questions of the interpretation and application of EU treaties and laws by national courts and the Court of Justice of the European Union (CJEU). For example:\n\n- In Costa v ENEL, the court dealt with a dispute about whether Italian nationalisation law conflicted with the Treaty of Rome.\n- In Van Binsbergen v Bestuur van de Bedrijfvereniging voor de Metaalnijverheid, the court held that the freedom to provide services applied and was directly effective.\n- The court has considered cases involving the freedom to provide services, the restriction on companies moving their seats of business, the primacy of EU law over conflicting national law, and the judiciary's role in ensuring treaties are respected.\n\nThus, the high court proceedings concern matters of EU law including freedoms under the Treaties (like freedom to provide services and establishment), conflicts between national law and EU law, and the enforcement and interpretation of EU treaties and regulations [p0341], [p0368], [p0369], [p0340], [p0343].",
+          "latency_s": 6.86,
+          "context_ids": [
+            "p0368",
+            "p0369",
+            "p0341",
+            "p0340",
+            "p0343"
+          ],
+          "context_chars": 12915,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": false,
+            "score": 1,
+            "justification": "A resposta de referência trata de 'basic channels' em processos de alta corte, completamente diferente do conteúdo sobre direito da UE apresentado pelo sistema, que não corresponde ao tema correto."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 5,
+            "context_size": 5
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "No relevant passage was found to answer the question.",
+          "latency_s": 0.83,
+          "context_ids": [],
+          "context_chars": 0,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "A resposta de referência indica que a informação está disponível na base (carriage of basic channels), mas o sistema não a recuperou e disse não saber, o que conta como incorreto."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "The high court proceedings involved a Milanese lawyer named Mr Costa, who refused to pay his electricity bill to Enel as a protest against the nationalisation of the Italian energy corporations. He claimed that the Italian nationalisation law conflicted with the Treaty of Rome and requested a reference be made to both the Italian Constitutional Court and the Court of Justice under TFEU article 267. The Italian Constitutional Court held that Costa had no claim, but the Court of Justice held that Mr Costa was entitled to plead that the Treaty conflicted with national law, and the court had a duty to consider his claim. This case was about the precedence and conflict between national law and EU law, particularly whether EU law could override conflicting national provisions [p0341].",
+          "latency_s": 4.79,
+          "context_ids": [
+            "p0368",
+            "p0369",
+            "p0341"
+          ],
+          "context_chars": 9701,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": true,
+            "abstained": false,
+            "score": 1,
+            "justification": "A resposta de referência indica que os processos eram sobre 'basic channels' (transmissão de canais básicos), tema completamente diferente do que o sistema descreveu (caso Costa v ENEL sobre primazia do direito da UE). O sistema usou contexto irrelevante e produziu uma resposta que não corresponde ao tema correto."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 3,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "The High Court proceedings were related to the carriage of the basic channels of BSkyB and Virgin Media. As part of the agreements, both BSkyB and Virgin Media agreed to terminate all such proceedings against each other regarding the carriage of their respective basic channels [p0147].",
+          "latency_s": 1.56,
+          "context_ids": [
+            "p0147"
+          ],
+          "context_chars": 580,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente que os processos judiciais tratavam da transmissão dos canais básicos de BSkyB e Virgin Media, alinhando-se totalmente com a referência e o contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "57379ed81c456719005744d8",
+      "category": "answerable",
+      "question": "What is the final effect of adding more and more idea strings to a load?",
+      "gold": [
+        "p1195"
+      ],
+      "reference": "Accepted answers (any one is correct): conservation of mechanical energy | the tension force on a load can be multiplied | tension force on a load can be multiplied",
+      "answers": [
+        "conservation of mechanical energy",
+        "the tension force on a load can be multiplied",
+        "tension force on a load can be multiplied"
+      ],
+      "source_paragraph": "p1195",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "The final effect of adding more and more ideal strings to a load is that the tension force on the load is multiplied for every string that acts on it. However, while the force on the load increases, the length of the string that must be displaced also increases correspondingly. Ultimately, these effects balance out, resulting in the conservation of mechanical energy — the work done on the load remains the same regardless of how complicated the machine is. In other words, increasing the number of ideal strings increases the force but requires a proportionally greater displacement, so the total mechanical energy is conserved [p1195].",
+          "latency_s": 4.44,
+          "context_ids": [
+            "p1195"
+          ],
+          "context_chars": 1120,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta cobre corretamente ambos os aspectos aceitos: multiplicação da força de tensão e conservação da energia mecânica, com informações consistentes com o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "p1195",
+              "relevance": 0.97,
+              "sufficiency": 0.86
+            }
+          ],
+          "answer": "The final effect of adding more and more ideal strings to a load, through the use of movable pulleys, is to multiply the tension force acting on the load, thereby increasing the force applied to it. However, this force increase comes with a corresponding increase in the length of string that must be displaced to move the load. Ultimately, these effects balance out to conserve mechanical energy, meaning that the total work done on the load remains the same regardless of how complicated the pulley system is [[p1195]].",
+          "latency_s": 3.26,
+          "context_ids": [
+            "p1195"
+          ],
+          "context_chars": 1120,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corretamente identifica tanto a multiplicação da força de tensão quanto a conservação de energia mecânica, cobrindo ambos os aspectos aceitos pela referência, sem alucinações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "No relevant passage was found to answer the question.",
+          "latency_s": 0.78,
+          "context_ids": [],
+          "context_chars": 0,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "O sistema não forneceu a informação de que a tensão sobre a carga pode ser multiplicada, apenas afirmou não encontrar contexto relevante, o que é considerado incorreto segundo as regras."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "The final effect of adding more and more ideal strings to a load is that the tension force on the load can be multiplied for every additional string acting on it. However, this increase in force comes with a corresponding increase in the length of string that must be displaced to move the load. These effects balance out so that the overall mechanical energy is conserved, meaning the work done on the load remains the same regardless of how complicated the machine is. In other words, while the force is increased, the distance moved must also increase proportionally, preserving the conservation of mechanical energy [p1195].",
+          "latency_s": 2.65,
+          "context_ids": [
+            "p1195",
+            "p0221",
+            "p0226"
+          ],
+          "context_chars": 3157,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corretamente identifica que a tensão pode ser multiplicada e que o efeito final é a conservação da energia mecânica, alinhando-se totalmente com a referência e o contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "The final effect of adding more and more ideal strings to a load is that the tension force on the load increases by a factor corresponding to the number of strings acting on it. This means the force exerted on the load is multiplied. However, this increase in force comes with a trade-off: there is a corresponding increase in the length of string that must be displaced to move the load. Ultimately, despite the increase in force, the total work done on the load remains the same due to the conservation of mechanical energy, regardless of how complicated the machine is [p1195].",
+          "latency_s": 1.79,
+          "context_ids": [
+            "p1195"
+          ],
+          "context_chars": 1120,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta cobre corretamente a multiplicação da tensão e a conservação de energia mecânica, ambos aceitos pela referência, sem inventar informações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "572fc8a904bcaa1900d76d1f",
+      "category": "answerable",
+      "question": "What is set up to scrutinize private bills submitted by party outsiders?",
+      "gold": [
+        "p0969"
+      ],
+      "reference": "Accepted answers (any one is correct): type of committee | committee",
+      "answers": [
+        "type of committee",
+        "committee"
+      ],
+      "source_paragraph": "p0969",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "A Private Bill Committee is set up to scrutinise private bills submitted to the Scottish Parliament by an outside party or promoter who is not a member of the Scottish Parliament or Scottish Government [p0969].",
+          "latency_s": 2.29,
+          "context_ids": [
+            "p0969"
+          ],
+          "context_chars": 619,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o 'Private Bill Committee' como o tipo de comitê, alinhando-se com a resposta de referência, e é fiel ao contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "p0969",
+              "relevance": 0.98,
+              "sufficiency": 0.9
+            }
+          ],
+          "answer": "Private Bill Committees are set up to scrutinise private bills submitted to the Scottish Parliament by an outside party or promoter who is not a member of the Scottish Parliament or Scottish Government [p0969].",
+          "latency_s": 4.46,
+          "context_ids": [
+            "p0969"
+          ],
+          "context_chars": 619,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente 'Private Bill Committees' (um tipo de comitê) como responsável por escrutinar projetos de lei privados submetidos por outsiders, consistente com a referência e o contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "A Private Bill Committee is set up to scrutinise private bills submitted to the Scottish Parliament by an outside party or promoter who is not a member of the Scottish Parliament or Scottish Government [p0969].",
+          "latency_s": 2.18,
+          "context_ids": [
+            "p0969"
+          ],
+          "context_chars": 619,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o 'Private Bill Committee' como o tipo de comitê responsável, alinhado com a referência e o contexto fornecido, sem inventar informações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "Private Bill Committees are set up to scrutinise private bills submitted to the Scottish Parliament by an outside party or promoter who is not a member of the Scottish Parliament or Scottish Government. These private bills normally relate to large-scale development projects such as infrastructure projects that require the use of land or property [p0969].",
+          "latency_s": 2.32,
+          "context_ids": [
+            "p0969",
+            "p0973",
+            "p0979"
+          ],
+          "context_chars": 1749,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente 'Private Bill Committees' como o tipo de comitê, alinhando-se com a referência (committee), e adiciona detalhes corretos e presentes no contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "A Private Bill Committee is set up to scrutinize private bills submitted to the Scottish Parliament by an outside party or promoter who is not a member of the Scottish Parliament or Scottish Government. These committees consider legislation related to large-scale development projects such as infrastructure projects requiring the use of land or property [p0969].",
+          "latency_s": 1.8,
+          "context_ids": [
+            "p0969"
+          ],
+          "context_chars": 619,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o 'Private Bill Committee' como o tipo de comitê responsável, alinhando-se com a referência e sendo fielmente sustentada pelo contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "57299d1c1d04691400779581",
+      "category": "answerable",
+      "question": "What theorem remains valid in unique factorization domains?",
+      "gold": [
+        "p0899"
+      ],
+      "reference": "Accepted answers (any one is correct): The fundamental theorem of arithmetic | theorem of arithmetic | fundamental theorem of arithmetic",
+      "answers": [
+        "The fundamental theorem of arithmetic",
+        "theorem of arithmetic",
+        "fundamental theorem of arithmetic"
+      ],
+      "source_paragraph": "p0899",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "The fundamental theorem of arithmetic remains valid in unique factorization domains [p0899].",
+          "latency_s": 2.21,
+          "context_ids": [
+            "p0899"
+          ],
+          "context_chars": 615,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o teorema fundamental da aritmética como aquele que permanece válido em domínios de fatoração única, correspondendo exatamente à resposta de referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "p0899",
+              "relevance": 0.98,
+              "sufficiency": 0.91
+            }
+          ],
+          "answer": "The fundamental theorem of arithmetic remains valid in unique factorization domains [p0899].",
+          "latency_s": 2.72,
+          "context_ids": [
+            "p0899"
+          ],
+          "context_chars": 615,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o teorema fundamental da aritmética como o que permanece válido em domínios de fatoração única, alinhado ao contexto e à referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "No relevant passage was found to answer the question.",
+          "latency_s": 0.8,
+          "context_ids": [],
+          "context_chars": 0,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "A resposta não identifica o teorema fundamental da aritmética, que a base deveria conter, resultando em falha de recuperação."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "The fundamental theorem of arithmetic remains valid in unique factorization domains.",
+          "latency_s": 2.35,
+          "context_ids": [
+            "p0899",
+            "p0076",
+            "p0891"
+          ],
+          "context_chars": 2604,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o teorema fundamental da aritmética, conforme suportado pelo contexto e pela referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "The fundamental theorem of arithmetic remains valid in unique factorization domains [p0899].",
+          "latency_s": 1.3,
+          "context_ids": [
+            "p0899"
+          ],
+          "context_chars": 615,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o teorema fundamental da aritmética, conforme a referência, sem informações inventadas."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "5a63730568151a001a9222dc",
+      "category": "unanswerable",
+      "question": "How many seats does Australia have in the House of Representatives?",
+      "gold": [],
+      "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+      "answers": [],
+      "source_paragraph": "p0163",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "The context only provides the number of seats Victoria has in the Australian House of Representatives, which is 37. It does not specify the total number of seats Australia has in the House of Representatives. Therefore, I don't know that part based on the given information [p0163].",
+          "latency_s": 2.22,
+          "context_ids": [
+            "p0163"
+          ],
+          "context_chars": 677,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "O sistema corretamente indica que não sabe o total de assentos da Austrália na Câmara, apenas o de Victoria, alinhando-se com a referência que afirma que essa informação não está na base."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 4,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "p0163",
+              "relevance": 0.2,
+              "sufficiency": 0.05
+            },
+            {
+              "id": "p0150",
+              "relevance": 0.02,
+              "sufficiency": 0.01
+            },
+            {
+              "id": "p0982",
+              "relevance": 0.01,
+              "sufficiency": 0.01
+            },
+            {
+              "id": "p0958",
+              "relevance": 0.01,
+              "sufficiency": 0.01
+            }
+          ],
+          "answer": "No relevant passage was found to answer the question.",
+          "latency_s": 3.09,
+          "context_ids": [],
+          "context_chars": 0,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que não há informação disponível na base para responder à pergunta, alinhando-se com a referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "The context only provides information on Victoria's representation, stating that Victoria has 37 seats in the Australian House of Representatives. It does not provide the total number of seats Australia has in the House of Representatives. Therefore, I don't know that part.",
+          "latency_s": 2.27,
+          "context_ids": [
+            "p0163"
+          ],
+          "context_chars": 677,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que não sabe o total de assentos da Austrália, alinhando-se com a referência, sem inventar informações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "The state of Victoria (Australia) has 37 seats in the Australian House of Representatives. However, the total number of seats Australia has in the House of Representatives is not specified in the provided context.[p0163]",
+          "latency_s": 2.41,
+          "context_ids": [
+            "p0163",
+            "p0150",
+            "p0982"
+          ],
+          "context_chars": 1980,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 4,
+            "justification": "O sistema corretamente afirma que não sabe o total nacional, mas inclui um dado irrelevante sobre Victoria que pode confundir, sem contradizer a referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 3,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 0,
+          "answer": "No relevant passage was found to answer the question.",
+          "latency_s": 0.0,
+          "context_ids": [],
+          "context_chars": 0,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que não há informação disponível na base, alinhando-se com a referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "57115ff82419e314009555c7",
+      "category": "answerable",
+      "question": "In the United States, what is a usual turbine speed with 60 Hertz of power?",
+      "gold": [
+        "p0251"
+      ],
+      "reference": "Accepted answers (any one is correct): 3600 revolutions per minute",
+      "answers": [
+        "3600 revolutions per minute"
+      ],
+      "source_paragraph": "p0251",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "In the United States, a usual turbine speed with 60 Hertz power is 3600 revolutions per minute (RPM) [p0251].",
+          "latency_s": 2.25,
+          "context_ids": [
+            "p0251"
+          ],
+          "context_chars": 1535,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente 3600 RPM, conforme a referência e o contexto fornecido, sem alucinação."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "p0251",
+              "relevance": 0.99,
+              "sufficiency": 0.95
+            }
+          ],
+          "answer": "In the United States, a typical turbine speed with 60 Hertz power is 3600 revolutions per minute (RPM) [p0251].",
+          "latency_s": 2.93,
+          "context_ids": [
+            "p0251"
+          ],
+          "context_chars": 1535,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corresponde exatamente à resposta de referência (3600 RPM) e está sustentada pelo contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "In the United States, the usual turbine speed with 60 Hertz power is 3600 revolutions per minute (RPM) [p0251].",
+          "latency_s": 2.63,
+          "context_ids": [
+            "p0251"
+          ],
+          "context_chars": 1535,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente 3600 RPM, conforme a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "In the United States, a typical steam turbine speed with 60 Hertz power is 3600 revolutions per minute (RPM) [p0251].",
+          "latency_s": 2.82,
+          "context_ids": [
+            "p0251",
+            "p0239",
+            "p0227"
+          ],
+          "context_chars": 3438,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente 3600 RPM, conforme a referência e o contexto fornecido, sem informações inventadas."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "In the United States, a usual turbine speed with 60 Hertz power is 3600 revolutions per minute (RPM) [p0251].",
+          "latency_s": 1.48,
+          "context_ids": [
+            "p0251"
+          ],
+          "context_chars": 1535,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente 3600 RPM, conforme a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "5727e8424b864d1900163fc1",
+      "category": "answerable",
+      "question": "What publication printed that the wealthiest 1% have more money than those in the bottom 90%?",
+      "gold": [
+        "p0673"
+      ],
+      "reference": "Accepted answers (any one is correct): New York Times",
+      "answers": [
+        "New York Times"
+      ],
+      "source_paragraph": "p0673",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "The provided context does not mention any publication stating that the wealthiest 1% have more money than those in the bottom 90%. It does mention that the wealthiest 1% own about 46%-50% of the world's wealth and that this surpasses the wealth of the bottom 50%, but not specifically the bottom 90%. Therefore, I don't know the answer to that part based on the given context.",
+          "latency_s": 2.44,
+          "context_ids": [
+            "p0672"
+          ],
+          "context_chars": 2098,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "A resposta correta era 'New York Times', mas o sistema afirmou não saber, o que é considerado errado já que a referência indica que a informação está na base."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 2,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "p0672",
+              "relevance": 0.83,
+              "sufficiency": 0.5
+            },
+            {
+              "id": "p0673",
+              "relevance": 0.98,
+              "sufficiency": 0.9
+            }
+          ],
+          "answer": "The New York Times printed that the wealthiest 1 percent in the United States now own more wealth than the bottom 90 percent, as reported on July 22, 2014 [p0673].",
+          "latency_s": 3.99,
+          "context_ids": [
+            "p0672",
+            "p0673"
+          ],
+          "context_chars": 2642,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o New York Times como a publicação, coincidindo com a referência e sustentada pelo contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 1,
+            "context_size": 2
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "The provided context does not mention any publication that specifically printed that the wealthiest 1% have more money than those in the bottom 90%. It does mention that the wealthiest 1% own nearly half of the world's wealth and compares wealth distributions involving other population splits, such as the bottom 50%, but there is no mention of a 90% comparison in the given context. Therefore, I don't know that part based on the provided context.",
+          "latency_s": 3.06,
+          "context_ids": [
+            "p0672"
+          ],
+          "context_chars": 2098,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "A referência indica que a base contém a resposta (New York Times), mas o sistema disse não saber, o que conta como erro segundo as regras."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "The New York Times printed that the \"richest 1 percent in the United States now own more wealth than the bottom 90 percent\" on July 22, 2014 [p0673].",
+          "latency_s": 2.52,
+          "context_ids": [
+            "p0672",
+            "p0673",
+            "p0681"
+          ],
+          "context_chars": 3232,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o New York Times como a publicação, coincidindo com a resposta de referência e citando o contexto de forma precisa."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "The New York Times printed that the wealthiest 1% in the United States own more wealth than the bottom 90 percent [p0673].",
+          "latency_s": 2.23,
+          "context_ids": [
+            "p0673"
+          ],
+          "context_chars": 544,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o New York Times como a publicação, conforme a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "5727ec062ca10214002d99b9",
+      "category": "answerable",
+      "question": "How do competing businesses attract workers?",
+      "gold": [
+        "p0676"
+      ],
+      "reference": "Accepted answers (any one is correct): offering a higher wage | by offering a higher wage | offering a higher wage the best of their labor",
+      "answers": [
+        "offering a higher wage",
+        "by offering a higher wage",
+        "offering a higher wage the best of their labor"
+      ],
+      "source_paragraph": "p0676",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "Competing businesses attract workers by offering higher wages. When there are few able or willing workers (low supply) but many positions needed (high demand), competition among employers drives up wages to attract employees. This is because employers compete for a relatively scarce supply of workers, especially in jobs that require highly developed skills, rare abilities, or involve high risk. Therefore, businesses increase wages to attract and retain workers in such situations [p0677].",
+          "latency_s": 2.51,
+          "context_ids": [
+            "p0677"
+          ],
+          "context_chars": 1228,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corretamente identifica que empresas concorrentes atraem trabalhadores oferecendo salários mais altos, alinhando-se com a resposta de referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "p0677",
+              "relevance": 0.91,
+              "sufficiency": 0.59
+            },
+            {
+              "id": "p0676",
+              "relevance": 0.94,
+              "sufficiency": 0.74
+            },
+            {
+              "id": "p0675",
+              "relevance": 0.27,
+              "sufficiency": 0.59
+            },
+            {
+              "id": "p0690",
+              "relevance": 0.44,
+              "sufficiency": 0.61
+            },
+            {
+              "id": "p0678",
+              "relevance": 0.14,
+              "sufficiency": 0.53
+            }
+          ],
+          "answer": "Competing businesses attract workers primarily by offering higher wages. When there is a shortage of workers for a particular job (low supply) but a high demand for those positions, employers compete by increasing wages to attract employees. Conversely, if an employer offers a wage below the market rate, their business will often be understaffed, allowing competitors who offer higher wages to attract the best labor. Therefore, employers motivated by profit tend to offer market or above-market wages to secure employees, while offering below-market wages is a losing proposition as it results in insufficient staffing. This mechanism is driven by the law of supply and demand, where wages function similarly to prices for goods in the market [p0676], [p0677].",
+          "latency_s": 5.76,
+          "context_ids": [
+            "p0677",
+            "p0676",
+            "p0690"
+          ],
+          "context_chars": 3365,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente que empresas concorrentes atraem trabalhadores oferecendo salários mais altos, coincidindo com a resposta de referência e sustentado pelo contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "No relevant passage was found to answer the question.",
+          "latency_s": 0.73,
+          "context_ids": [],
+          "context_chars": 0,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "A resposta de referência indica que a base contém a informação (oferecer salário maior), mas o sistema não a recuperou e respondeu que não sabe, o que conta como erro segundo as regras."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "Competing businesses attract workers primarily by offering higher wages. According to the context, if an employer offers wages below the market rate, their business will be understaffed as workers prefer jobs with better pay. Competitors can take advantage by offering higher wages to attract the best labor. Thus, businesses compete by adjusting wages based on the market price of skill, influenced by supply and demand dynamics for labor. In summary, competition among employers tends to drive up wages to attract workers when there is a relative shortage of workers for a particular position [p0676], [p0677].",
+          "latency_s": 2.93,
+          "context_ids": [
+            "p0677",
+            "p0676",
+            "p0675"
+          ],
+          "context_chars": 3147,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corretamente identifica que empresas concorrentes atraem trabalhadores oferecendo salários mais altos, conforme a referência, e está bem fundamentada no contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "Competing businesses attract workers by offering higher wages than their competitors. Employers who offer wages below the market rate will have difficulty staffing their businesses, as workers will prefer to work for competitors who pay more. Therefore, to attract the best labor, businesses must offer wages at or above the market price for the relevant skills [p0676].",
+          "latency_s": 1.61,
+          "context_ids": [
+            "p0676"
+          ],
+          "context_chars": 1211,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente que empresas concorrentes atraem trabalhadores oferecendo salários mais altos, alinhando-se à resposta de referência e ao contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "572987e46aef051400154fa3",
+      "category": "answerable",
+      "question": "If a and q are coprime, which theorem holds that an arithmetic progression has an infinite number of primes?",
+      "gold": [
+        "p0888"
+      ],
+      "reference": "Accepted answers (any one is correct): Dirichlet's theorem | Dirichlet's",
+      "answers": [
+        "Dirichlet's theorem",
+        "Dirichlet's"
+      ],
+      "source_paragraph": "p0888",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "If a and q are coprime, Dirichlet's theorem on arithmetic progressions holds that the arithmetic progression contains infinitely many primes [p0888].",
+          "latency_s": 2.06,
+          "context_ids": [
+            "p0888"
+          ],
+          "context_chars": 731,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o teorema de Dirichlet, alinhando-se totalmente com a resposta de referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "p0888",
+              "relevance": 0.99,
+              "sufficiency": 0.93
+            }
+          ],
+          "answer": "If a and q are coprime, Dirichlet's theorem on arithmetic progressions holds that the arithmetic progression contains infinitely many primes [p0888].",
+          "latency_s": 2.89,
+          "context_ids": [
+            "p0888"
+          ],
+          "context_chars": 731,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o Teorema de Dirichlet sobre progressões aritméticas, condizente com a referência e apoiado pelo contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "If a and q are coprime, Dirichlet's theorem on arithmetic progressions asserts that the arithmetic progression contains infinitely many primes [p0888].",
+          "latency_s": 2.29,
+          "context_ids": [
+            "p0888"
+          ],
+          "context_chars": 731,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o teorema de Dirichlet, coincidindo com a resposta de referência e sustentada pelo contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "If a and q are coprime, Dirichlet's theorem on arithmetic progressions holds that the arithmetic progression contains infinitely many primes [p0888].",
+          "latency_s": 2.1,
+          "context_ids": [
+            "p0888",
+            "p0894",
+            "p0891"
+          ],
+          "context_chars": 2323,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o teorema de Dirichlet, consistente com a referência e apoiada pelo contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "If a and q are coprime, Dirichlet's theorem on arithmetic progressions holds that the arithmetic progression contains infinitely many primes [p0888].",
+          "latency_s": 1.36,
+          "context_ids": [
+            "p0888"
+          ],
+          "context_chars": 731,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o Teorema de Dirichlet sobre progressões aritméticas, conforme a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "57293f353f37b3190047819e",
+      "category": "answerable",
+      "question": "What was Houghton's role?",
+      "gold": [
+        "p0857"
+      ],
+      "reference": "Accepted answers (any one is correct): a co-chair of TAR WGI | co-chair of TAR WGI",
+      "answers": [
+        "a co-chair of TAR WGI",
+        "co-chair of TAR WGI"
+      ],
+      "source_paragraph": "p0857",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "The provided context does not mention anyone named Houghton or describe their role. Therefore, I don't know Houghton's role based on the given information.",
+          "latency_s": 2.09,
+          "context_ids": [
+            "p0626"
+          ],
+          "context_chars": 774,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "A referência indica que a base contém a informação sobre o papel de Houghton (co-chair do TAR WGI), mas o sistema respondeu que não sabe, o que é incorreto conforme as regras dadas."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "p0626",
+              "relevance": 0.04,
+              "sufficiency": 0.03
+            },
+            {
+              "id": "p0518",
+              "relevance": 0.34,
+              "sufficiency": 0.25
+            },
+            {
+              "id": "p1133",
+              "relevance": 0.05,
+              "sufficiency": 0.07
+            },
+            {
+              "id": "p0174",
+              "relevance": 0.4,
+              "sufficiency": 0.2
+            },
+            {
+              "id": "p0629",
+              "relevance": 0.04,
+              "sufficiency": 0.06
+            }
+          ],
+          "answer": "The provided context does not contain any information about someone named \"Houghton\" or their role. Therefore, I don't know what Houghton's role was based on the given information.",
+          "latency_s": 5.36,
+          "context_ids": [
+            "p0518",
+            "p0174"
+          ],
+          "context_chars": 1883,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "A referência indica que a base contém a informação (Houghton foi co-presidente do TAR WGI), mas o sistema afirmou não saber devido a falha de recuperação, o que conta como incorreto."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 2,
+            "context_size": 2
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "No relevant passage was found to answer the question.",
+          "latency_s": 0.83,
+          "context_ids": [],
+          "context_chars": 0,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "A resposta afirma não haver informação disponível, mas a referência indica que a base contém essa informação (co-chair of TAR WGI), configurando falha de recuperação."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "The provided context does not mention anyone named Houghton or their role. Therefore, I don't know what Houghton's role was based on the available information.",
+          "latency_s": 2.51,
+          "context_ids": [
+            "p0626",
+            "p0518",
+            "p1133"
+          ],
+          "context_chars": 2236,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "A base contém a informação (Houghton foi co-chair do TAR WGI), mas o sistema falhou em recuperá-la e respondeu que não sabe, o que é considerado incorreto."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 3,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "John Houghton was a co-chair of the TAR Working Group I (WGI). He responded to Richard Lindzen's criticisms of the Summary for Policymakers (SPM) and emphasized that the SPM is agreed upon by delegates from many governments and that changes to it must be supported by scientific evidence [p0857].",
+          "latency_s": 2.07,
+          "context_ids": [
+            "p0857"
+          ],
+          "context_chars": 622,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente que Houghton foi co-chair do TAR WGI, conforme a referência, e adiciona detalhes consistentes com o contexto sem contradizer a informação."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "57286c8cff5b5019007da21a",
+      "category": "answerable",
+      "question": "When did the Jin dynasty end?",
+      "gold": [
+        "p0764"
+      ],
+      "reference": "Accepted answers (any one is correct): 1234",
+      "answers": [
+        "1234"
+      ],
+      "source_paragraph": "p0764",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "The context provided does not mention when the Jin dynasty ended. Therefore, I don't know that part.",
+          "latency_s": 2.2,
+          "context_ids": [
+            "p0765"
+          ],
+          "context_chars": 839,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "A referência indica que a base contém a informação (1234), mas o sistema não a recuperou e respondeu que não sabia, o que conta como incorreto segundo as regras."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 3,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "p0765",
+              "relevance": 0.04,
+              "sufficiency": 0.02
+            },
+            {
+              "id": "p0773",
+              "relevance": 0.02,
+              "sufficiency": 0.02
+            },
+            {
+              "id": "p0774",
+              "relevance": 0.06,
+              "sufficiency": 0.05
+            }
+          ],
+          "answer": "No relevant passage was found to answer the question.",
+          "latency_s": 2.55,
+          "context_ids": [],
+          "context_chars": 0,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "A base continha a informação (1234), mas o sistema falhou em recuperá-la e respondeu que não sabe, o que conta como erro segundo as regras."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "No relevant passage was found to answer the question.",
+          "latency_s": 0.83,
+          "context_ids": [],
+          "context_chars": 0,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "A resposta de referência indica que a base contém a informação (1234), então dizer que não sabe é incorreto, mesmo que o contexto recebido esteja vazio devido a falha de recuperação."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "The provided context does not contain information about when the Jin dynasty ended. Therefore, I don't know that part.",
+          "latency_s": 2.15,
+          "context_ids": [
+            "p0765",
+            "p0773",
+            "p0774"
+          ],
+          "context_chars": 2634,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "A referência indica que a base contém a informação (1234), mas o sistema respondeu que não sabe, o que é considerado falha de recuperação e resposta incorreta."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 3,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "The Jin dynasty ended in 1234. This is indicated by the text stating the Jin dynasty lasted from 1115 to 1234 [p0764].",
+          "latency_s": 1.44,
+          "context_ids": [
+            "p0764"
+          ],
+          "context_chars": 966,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente que a dinastia Jin terminou em 1234, conforme suportado pelo contexto e pela referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "5a89128d3b2508001a72a495",
+      "category": "unanswerable",
+      "question": "What is the name of the process which confirms the primality of a decimal digits?",
+      "gold": [],
+      "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+      "answers": [],
+      "source_paragraph": "p0874",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "The process of confirming the primality of a number is called primality testing. One simple method is trial division, which tests whether the number is a multiple of any integer between 2 and its square root. More efficient algorithms include the Miller–Rabin primality test, which is fast but probabilistic, and the AKS primality test, which is deterministic and runs in polynomial time but is often too slow for practical use. For numbers of special forms, particularly fast methods exist, such as those used for Mersenne numbers [p0874].",
+          "latency_s": 2.74,
+          "context_ids": [
+            "p0874"
+          ],
+          "context_chars": 764,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": false,
+            "score": 1,
+            "justification": "A resposta de referência indica que a base não contém essa informação e a resposta correta seria abster-se, mas o sistema forneceu uma resposta detalhada (mesmo que baseada no contexto), o que contraria a referência."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "p0874",
+              "relevance": 0.79,
+              "sufficiency": 0.58
+            },
+            {
+              "id": "p0884",
+              "relevance": 0.83,
+              "sufficiency": 0.72
+            },
+            {
+              "id": "p0882",
+              "relevance": 0.63,
+              "sufficiency": 0.55
+            },
+            {
+              "id": "p0886",
+              "relevance": 0.08,
+              "sufficiency": 0.49
+            },
+            {
+              "id": "p0883",
+              "relevance": 0.67,
+              "sufficiency": 0.59
+            }
+          ],
+          "answer": "The name of the process which confirms the primality of a number (including those with many decimal digits) is called \"primality testing.\" Various methods are used for this purpose, ranging from simple and slow methods like trial division to more efficient probabilistic and deterministic algorithms such as the Miller–Rabin primality test and the AKS primality test. These tests confirm the primality of numbers, even those with many digits, like the largest known prime number with 22,338,618 decimal digits as of January 2016 [p0874].",
+          "latency_s": 5.79,
+          "context_ids": [
+            "p0874",
+            "p0884",
+            "p0882",
+            "p0883"
+          ],
+          "context_chars": 3595,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": false,
+            "score": 1,
+            "justification": "A referência indica que a base não contém informação sobre esse processo específico, mas o sistema respondeu com conteúdo genérico sobre testes de primalidade em vez de admitir que não sabe."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 4,
+            "context_size": 4
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "The process that confirms the primality of a number (which can have many decimal digits) is called primality testing. One simple but slow method is trial division. More efficient algorithms include the Miller–Rabin primality test, which is fast but probabilistic, and the AKS primality test, which is always correct but slower. There are also particularly fast methods for numbers of special forms, such as Mersenne numbers. These tests confirm whether a number (with any number of decimal digits) is prime or not [p0874].",
+          "latency_s": 2.89,
+          "context_ids": [
+            "p0874"
+          ],
+          "context_chars": 764,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": false,
+            "score": 1,
+            "justification": "A referência indica que a base não contém informação específica sobre o nome do processo pedido, exigindo abstenção; o sistema, em vez disso, respondeu com detalhes do contexto (trial division, Miller-Rabin, AKS), que embora estejam no contexto e não sejam inventados, não correspondem ao comportamento esperado segundo a referência."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "The process that confirms the primality of a number, including large numbers that have many decimal digits, is called primality testing. Specifically, one simple method of verifying the primality of a given number n is called trial division. More efficient algorithms than trial division also exist, such as the Miller–Rabin primality test (which is fast but probabilistic) and the AKS primality test (which always produces the correct answer in polynomial time but is slower) [p0874].\n\nTherefore, the general name of the process is primality testing, with trial division being the simplest example of such a process.",
+          "latency_s": 2.91,
+          "context_ids": [
+            "p0874",
+            "p0884",
+            "p0882"
+          ],
+          "context_chars": 2509,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": false,
+            "score": 1,
+            "justification": "A referência indica que a base não contém essa informação e a resposta correta seria admitir desconhecimento, mas o sistema forneceu uma resposta detalhada baseada no contexto, contradizendo a referência."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 3,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 0,
+          "answer": "No relevant passage was found to answer the question.",
+          "latency_s": 0.0,
+          "context_ids": [],
+          "context_chars": 0,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que não há informação disponível para responder, alinhando-se com a referência que afirma que a base não contém essa informação."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "572faec7b2c2fd1400568334",
+      "category": "answerable",
+      "question": "Who designed the Scottish Parliament building?",
+      "gold": [
+        "p0953"
+      ],
+      "reference": "Accepted answers (any one is correct): Enric Miralles",
+      "answers": [
+        "Enric Miralles"
+      ],
+      "source_paragraph": "p0953",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "The Scottish Parliament building was designed by Spanish architect Enric Miralles in partnership with the local Edinburgh architecture firm RMJM, which was led by Design Principal Tony Kettle [p0953].",
+          "latency_s": 2.39,
+          "context_ids": [
+            "p0953"
+          ],
+          "context_chars": 825,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente Enric Miralles como designer, conforme a referência, e adiciona informações contextuais corretas e não contraditórias presentes no contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "p0953",
+              "relevance": 0.99,
+              "sufficiency": 0.91
+            }
+          ],
+          "answer": "The Scottish Parliament building was designed by Spanish architect Enric Miralles in partnership with the local Edinburgh architecture firm RMJM, which was led by Design Principal Tony Kettle [p0953].",
+          "latency_s": 3.21,
+          "context_ids": [
+            "p0953"
+          ],
+          "context_chars": 825,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente Enric Miralles como o designer, conforme a referência, e adiciona detalhes contextuais corretos presentes na base."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "The Scottish Parliament building was designed by Spanish architect Enric Miralles in partnership with the local Edinburgh architecture firm RMJM, which was led by Design Principal Tony Kettle [p0953].",
+          "latency_s": 2.56,
+          "context_ids": [
+            "p0953"
+          ],
+          "context_chars": 825,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente Enric Miralles como o designer, conforme a referência, e adiciona detalhes suportados pelo contexto sem contradizê-lo."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "The Scottish Parliament building was designed by Spanish architect Enric Miralles in partnership with the local Edinburgh architecture firm RMJM, which was led by Design Principal Tony Kettle [p0953].",
+          "latency_s": 2.4,
+          "context_ids": [
+            "p0953",
+            "p0955",
+            "p0954"
+          ],
+          "context_chars": 2112,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente Enric Miralles como o designer, conforme a referência, e adiciona detalhes corretos e presentes no contexto sem inventar informações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "The Scottish Parliament building was designed by Spanish architect Enric Miralles in partnership with local Edinburgh Architecture firm RMJM, which was led by Design Principal Tony Kettle [p0953].",
+          "latency_s": 1.54,
+          "context_ids": [
+            "p0953"
+          ],
+          "context_chars": 825,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente Enric Miralles como o projetista, conforme a referência, e adiciona detalhes verídicos do contexto sem contradizê-la."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "573005b9947a6a140053cf6c",
+      "category": "answerable",
+      "question": "Secular Arab nationalism was blamed for both the defeat of Arab troops as well as what type of stagnation?",
+      "gold": [
+        "p1003"
+      ],
+      "reference": "Accepted answers (any one is correct): economic | economic stagnation",
+      "answers": [
+        "economic",
+        "economic stagnation"
+      ],
+      "source_paragraph": "p1003",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "Secular Arab nationalism was blamed for both the defeat of Arab troops and economic stagnation. [p1003]",
+          "latency_s": 2.2,
+          "context_ids": [
+            "p1003"
+          ],
+          "context_chars": 577,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente 'economic stagnation' conforme a referência, sem alucinações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "p1003",
+              "relevance": 0.98,
+              "sufficiency": 0.93
+            }
+          ],
+          "answer": "Secular Arab nationalism was blamed for both the defeat of Arab troops and economic stagnation in the defeated countries [p1003].",
+          "latency_s": 2.79,
+          "context_ids": [
+            "p1003"
+          ],
+          "context_chars": 577,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente 'economic stagnation' como a informação solicitada, alinhando-se à referência e ao contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "Secular Arab nationalism was blamed for both the defeat of Arab troops and economic stagnation in the defeated countries [p1003].",
+          "latency_s": 2.39,
+          "context_ids": [
+            "p1003"
+          ],
+          "context_chars": 577,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente 'economic stagnation' como a resposta pedida, alinhando-se totalmente com a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "Secular Arab nationalism was blamed for both the defeat of Arab troops and economic stagnation in the defeated countries [p1003].",
+          "latency_s": 2.41,
+          "context_ids": [
+            "p1003",
+            "p1008",
+            "p1007"
+          ],
+          "context_chars": 2020,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente 'economic stagnation' como o tipo de estagnação, alinhando-se com a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "Secular Arab nationalism was blamed for both the defeat of Arab troops and economic stagnation in the defeated countries [p1003].",
+          "latency_s": 1.3,
+          "context_ids": [
+            "p1003"
+          ],
+          "context_chars": 577,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente 'economic stagnation' como o tipo de estagnação, alinhando-se totalmente com a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "5726ed6cf1498d1400e8f010",
+      "category": "answerable",
+      "question": "What do most online pharmacies do?",
+      "gold": [
+        "p0536"
+      ],
+      "reference": "Accepted answers (any one is correct): sell prescription drugs and require a valid prescription | sell prescription drugs",
+      "answers": [
+        "sell prescription drugs and require a valid prescription",
+        "sell prescription drugs"
+      ],
+      "source_paragraph": "p0536",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "Most online pharmacies operate similarly to community pharmacies, with many being run by brick-and-mortar community pharmacies that serve both online customers and those who walk into their physical stores. The primary difference lies in how medications are requested and received, offering a more convenient and private method for customers [p0535].",
+          "latency_s": 2.67,
+          "context_ids": [
+            "p0535"
+          ],
+          "context_chars": 735,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": false,
+            "score": 1,
+            "justification": "A resposta descreve o funcionamento geral das farmácias online, mas não menciona que vendem medicamentos prescritos e exigem receita válida, que é o ponto central da resposta de referência."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "p0535",
+              "relevance": 0.9,
+              "sufficiency": 0.64
+            },
+            {
+              "id": "p0536",
+              "relevance": 0.95,
+              "sufficiency": 0.75
+            },
+            {
+              "id": "p0537",
+              "relevance": 0.75,
+              "sufficiency": 0.62
+            },
+            {
+              "id": "p0541",
+              "relevance": 0.18,
+              "sufficiency": 0.57
+            },
+            {
+              "id": "p0540",
+              "relevance": 0.23,
+              "sufficiency": 0.48
+            }
+          ],
+          "answer": "Most online pharmacies sell prescription drugs and require a valid prescription. They operate similarly to community pharmacies but provide medications through online requests and deliveries. This method is sometimes recommended for patients who are homebound and offers a more convenient and private way to obtain medications compared to visiting a physical pharmacy [p0535, p0536].",
+          "latency_s": 5.5,
+          "context_ids": [
+            "p0535",
+            "p0536",
+            "p0537"
+          ],
+          "context_chars": 2322,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta afirma corretamente que a maioria das farmácias online vende medicamentos prescritos e exige receita válida, correspondendo à resposta de referência, sem inventar informações não presentes no contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "Most online pharmacies operate similarly to community pharmacies and are often run by brick-and-mortar community pharmacies. They provide medications to consumers through an online platform, allowing customers to request and receive medications without having to visit a physical store. This method is often seen as more convenient and private, especially for patients who are homebound or wish to keep their medication use discreet. Some physicians even recommend online pharmacies for their patients in such cases [p0535].",
+          "latency_s": 2.66,
+          "context_ids": [
+            "p0535"
+          ],
+          "context_chars": 735,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": false,
+            "score": 1,
+            "justification": "A resposta descreve conveniência e operação online, mas não menciona que a maioria vende medicamentos prescritos e exige receita válida, que é o conteúdo esperado pela referência."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "Most online pharmacies sell prescription drugs and require a valid prescription. However, some online pharmacies sell prescription drugs without requiring a prescription, but this practice has been criticized as potentially dangerous [p0536].",
+          "latency_s": 2.53,
+          "context_ids": [
+            "p0535",
+            "p0536",
+            "p0537"
+          ],
+          "context_chars": 2322,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente que a maioria das farmácias online vende medicamentos prescritos e exige receita válida, alinhando-se à resposta de referência e ao contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "Most online pharmacies sell prescription drugs and require a valid prescription.",
+          "latency_s": 1.21,
+          "context_ids": [
+            "p0536"
+          ],
+          "context_chars": 675,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corresponde exatamente à resposta de referência, indicando corretamente que a maioria das farmácias online vende medicamentos prescritos e exige receita válida."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "5726462b708984140094c118",
+      "category": "answerable",
+      "question": "What was the purpose of CSNET",
+      "gold": [
+        "p0469"
+      ],
+      "reference": "Accepted answers (any one is correct): to extend networking benefits, for computer science departments at academic and research institutions that could not be directly connected to ARPANET | to extend networking benefits | extend networking benefits",
+      "answers": [
+        "to extend networking benefits, for computer science departments at academic and research institutions that could not be directly connected to ARPANET",
+        "to extend networking benefits",
+        "extend networking benefits"
+      ],
+      "source_paragraph": "p0469",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "The purpose of CSNET was to extend networking benefits to computer science departments at academic and research institutions that could not be directly connected to ARPANET due to funding or authorization limitations. It aimed to spread awareness of, and access to, national networking and was a key milestone in the development of the global Internet [p0469].",
+          "latency_s": 2.45,
+          "context_ids": [
+            "p0469"
+          ],
+          "context_chars": 540,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta reproduz corretamente e de forma completa a informação do contexto, alinhada com a resposta de referência, sem inventar dados."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "p0469",
+              "relevance": 0.99,
+              "sufficiency": 0.92
+            }
+          ],
+          "answer": "The purpose of CSNET was to extend networking benefits to computer science departments at academic and research institutions that could not be directly connected to ARPANET due to funding or authorization limitations. It aimed to spread awareness of, and access to, national networking and was an important step toward the development of the global Internet [p0469].",
+          "latency_s": 3.14,
+          "context_ids": [
+            "p0469"
+          ],
+          "context_chars": 540,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta reproduz corretamente e de forma completa o propósito do CSNET conforme a referência e o contexto fornecido, sem informações inventadas."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "The purpose of CSNET was to extend networking benefits to computer science departments at academic and research institutions that could not be directly connected to ARPANET due to funding or authorization limitations. It helped spread awareness of, and access to, national networking and was a significant milestone in the development of the global Internet [p0469].",
+          "latency_s": 2.5,
+          "context_ids": [
+            "p0469"
+          ],
+          "context_chars": 540,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta reflete corretamente e de forma completa a informação da referência, sem inventar dados adicionais além do contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "The purpose of CSNET was to extend networking benefits to computer science departments at academic and research institutions that could not be directly connected to ARPANET due to funding or authorization limitations. It played a significant role in spreading awareness of, and access to, national networking and was a major milestone on the path to development of the global Internet [p0469].",
+          "latency_s": 2.41,
+          "context_ids": [
+            "p0469",
+            "p0471",
+            "p0464"
+          ],
+          "context_chars": 1920,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta reproduz corretamente e de forma completa a informação da base sobre o propósito da CSNET, alinhando-se com a resposta de referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "The purpose of the Computer Science Network (CSNET) was to extend networking benefits to computer science departments at academic and research institutions that could not be directly connected to ARPANET due to funding or authorization limitations. It helped spread awareness of and access to national networking, serving as a major milestone toward the development of the global Internet [p0469].",
+          "latency_s": 1.58,
+          "context_ids": [
+            "p0469"
+          ],
+          "context_chars": 540,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta reflete corretamente e de forma completa a informação da referência, sem adicionar dados não presentes no contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "5726e08e5951b619008f8113",
+      "category": "answerable",
+      "question": "What does pharmacy legislation mandate?",
+      "gold": [
+        "p0528"
+      ],
+      "reference": "Accepted answers (any one is correct): storage conditions, compulsory texts, equipment, etc. | storage conditions, compulsory texts, equipment",
+      "answers": [
+        "storage conditions, compulsory texts, equipment, etc.",
+        "storage conditions, compulsory texts, equipment"
+      ],
+      "source_paragraph": "p0528",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "Pharmacy legislation mandates requirements for storage conditions, compulsory texts, equipment, and other specifications related to the dispensary. These requirements ensure proper handling and management within the pharmacy setting [p0528].",
+          "latency_s": 2.78,
+          "context_ids": [
+            "p0528"
+          ],
+          "context_chars": 598,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta cita corretamente as exigências de storage conditions, compulsory texts e equipment, alinhando-se com a resposta de referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "p0528",
+              "relevance": 0.94,
+              "sufficiency": 0.74
+            },
+            {
+              "id": "p0545",
+              "relevance": 0.24,
+              "sufficiency": 0.42
+            },
+            {
+              "id": "p0541",
+              "relevance": 0.91,
+              "sufficiency": 0.63
+            },
+            {
+              "id": "p0542",
+              "relevance": 0.89,
+              "sufficiency": 0.57
+            },
+            {
+              "id": "p0537",
+              "relevance": 0.9,
+              "sufficiency": 0.6
+            }
+          ],
+          "answer": "Pharmacy legislation mandates requirements for storage conditions, compulsory texts, equipment, and other specified criteria within the dispensary. These regulations ensure proper management and safety in the handling of medications within pharmacies. Additionally, legislation influences the roles within the pharmacy, such as increasing reliance on trained pharmacy technicians and automation to assist in dealing with prescriptions and patient safety issues [p0528].",
+          "latency_s": 5.41,
+          "context_ids": [
+            "p0528",
+            "p0541",
+            "p0542",
+            "p0537"
+          ],
+          "context_chars": 2770,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta cobre corretamente os itens mencionados na referência (storage conditions, compulsory texts, equipment) e adiciona contexto adicional presente na fonte, sem contradizer a referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 3,
+            "context_size": 4
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "Pharmacy legislation mandates requirements for storage conditions, compulsory texts, equipment, and other specifications related to the dispensary. These regulations ensure proper handling and management within the pharmacy setting [p0528].",
+          "latency_s": 2.39,
+          "context_ids": [
+            "p0528"
+          ],
+          "context_chars": 598,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta menciona corretamente storage conditions, compulsory texts e equipment, conforme a referência, sem inventar informações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "Pharmacy legislation mandates requirements for storage conditions, compulsory texts, equipment, and other regulations related to the dispensary. These requirements ensure proper handling and dispensing of medications within the pharmacy setting. Additionally, such legislation typically governs the role of pharmacists and pharmacy technicians, including their responsibilities and the use of automation in managing patients' prescriptions and safety issues [p0528].",
+          "latency_s": 2.58,
+          "context_ids": [
+            "p0528",
+            "p0545",
+            "p0541"
+          ],
+          "context_chars": 2755,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta cita corretamente storage conditions, compulsory texts e equipment, conforme a referência, e o contexto suporta as informações adicionais mencionadas."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "Pharmacy legislation mandates requirements for storage conditions, compulsory texts, and equipment in the dispensary. These requirements are specified in the legislation in most countries [p0528].",
+          "latency_s": 1.42,
+          "context_ids": [
+            "p0528"
+          ],
+          "context_chars": 598,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta cobre corretamente storage conditions, compulsory texts e equipment, conforme a referência, sem inventar informações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "5a6696d0f038b7001ab0c021",
+      "category": "unanswerable",
+      "question": "The Australian Tax Office used AUSTPAC to access what remotely?",
+      "gold": [],
+      "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+      "answers": [],
+      "source_paragraph": "p0467",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "The Australian Tax Office used AUSTPAC to access remote terminal access to academic institutions. However, the exact details of what was accessed remotely are not specified in the context provided. The context only mentions that the Australian Tax Office made use of AUSTPAC and that academic institutions maintained their connections to AUSTPAC for remote terminal access up until the mid-late 1990s [p0467].",
+          "latency_s": 2.72,
+          "context_ids": [
+            "p0467"
+          ],
+          "context_chars": 579,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": true,
+            "abstained": false,
+            "score": 1,
+            "justification": "A referência indica que a base não contém essa informação, mas o sistema inventou uma associação incorreta entre o uso do AUSTPAC pela Receita Federal australiana e o acesso remoto a instituições acadêmicas, que no contexto são mencionados como usuários distintos, não como algo acessado pela Tax Office."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "p0467",
+              "relevance": 0.95,
+              "sufficiency": 0.87
+            }
+          ],
+          "answer": "The Australian Tax Office used AUSTPAC for financial applications remotely. The context mentions that AUSTPAC supported applications such as on-line betting, financial applications—including use by the Australian Tax Office—and remote terminal access to academic institutions. However, it does not specify what exactly the Australian Tax Office accessed remotely via AUSTPAC, only that they used the network for financial applications [p0467].",
+          "latency_s": 3.38,
+          "context_ids": [
+            "p0467"
+          ],
+          "context_chars": 579,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": true,
+            "abstained": false,
+            "score": 1,
+            "justification": "A referência indica que a base não contém essa informação específica, mas o sistema inventou uma resposta afirmando que era 'financial applications remotely', o que não está claramente sustentado nem na referência nem precisamente no contexto."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "The Australian Tax Office used AUSTPAC for financial applications remotely. The context mentions that AUSTPAC supported applications such as online betting, financial applications—including those used by the Australian Tax Office—and remote terminal access to academic institutions, which indicates the Australian Tax Office utilized AUSTPAC for their financial application needs remotely [p0467].",
+          "latency_s": 2.72,
+          "context_ids": [
+            "p0467"
+          ],
+          "context_chars": 579,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": true,
+            "abstained": false,
+            "score": 1,
+            "justification": "A referência indica que a base não contém essa informação, mas o sistema inventou uma resposta especulativa (associando 'financial applications' com 'remotely'), o que não está explicitamente afirmado no contexto e não corresponde à informação correta."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "The Australian Tax Office used AUSTPAC to access remote terminal connections to academic institutions. These institutions maintained their connections to AUSTPAC up until the mid-late 1990s in some cases [p0467].",
+          "latency_s": 2.21,
+          "context_ids": [
+            "p0467",
+            "p0466",
+            "p0465"
+          ],
+          "context_chars": 2332,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": true,
+            "abstained": false,
+            "score": 1,
+            "justification": "A referência indica que a base não contém essa informação, mas o sistema respondeu afirmativamente, atribuindo incorretamente ao Australian Tax Office o uso de acesso remoto a instituições acadêmicas, quando o contexto trata esses como usos distintos (aplicações financeiras vs. acesso remoto acadêmico)."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 3,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 0,
+          "answer": "No relevant passage was found to answer the question.",
+          "latency_s": 0.0,
+          "context_ids": [],
+          "context_chars": 0,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que não encontrou informação relevante, alinhando-se com a referência de que a base não contém esse dado."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "572871bd3acd2414000dfa05",
+      "category": "answerable",
+      "question": "How old was Toghun Temur when he became emperor?",
+      "gold": [
+        "p0772"
+      ],
+      "reference": "Accepted answers (any one is correct): 13",
+      "answers": [
+        "13"
+      ],
+      "source_paragraph": "p0772",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "Toghun Temür was 13 years old when he became emperor in 1332 [p0772].",
+          "latency_s": 2.16,
+          "context_ids": [
+            "p0772"
+          ],
+          "context_chars": 1111,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente que Toghun Temür tinha 13 anos, conforme a referência, e a informação está sustentada pelo contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "p0772",
+              "relevance": 0.99,
+              "sufficiency": 0.94
+            }
+          ],
+          "answer": "Toghun Temür was 13 years old when he became emperor. This occurred after the death of Tugh Temür and Rinchinbal in 1332, when the 13-year-old Toghun Temür was summoned back from Guangxi and succeeded to the throne [p0772].",
+          "latency_s": 3.13,
+          "context_ids": [
+            "p0772"
+          ],
+          "context_chars": 1111,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente que Toghun Temür tinha 13 anos ao se tornar imperador, conforme a referência e o contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "Toghun Temür was 13 years old when he became emperor in 1332. This is indicated by the passage stating that after the deaths of Tugh Temür and Rinchinbal in 1332, the 13-year-old Toghun Temür was summoned back from Guangxi and succeeded to the throne [p0772].",
+          "latency_s": 2.39,
+          "context_ids": [
+            "p0772"
+          ],
+          "context_chars": 1111,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente que Toghun Temür tinha 13 anos ao se tornar imperador, conforme suportado pelo contexto e pela referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "Toghun Temür was 13 years old when he became emperor after the deaths of Tugh Temür and Rinchinbal in 1332. He was summoned back from Guangxi to succeed to the throne at that age [p0772].",
+          "latency_s": 2.41,
+          "context_ids": [
+            "p0772",
+            "p0770",
+            "p0774"
+          ],
+          "context_chars": 3529,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corretamente identifica que Toghun Temür tinha 13 anos ao se tornar imperador, coincidindo com a referência e apoiado pelo contexto [p0772]."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "Toghun Temür was 13 years old when he became emperor. This is stated in the passage: \"the 13-year-old Toghun Temür (Emperor Huizong), the last of the nine successors of Kublai Khan, was summoned back from Guangxi and succeeded to the throne\" after the death of Rinchinbal in 1332 [p0772].",
+          "latency_s": 1.83,
+          "context_ids": [
+            "p0772"
+          ],
+          "context_chars": 1111,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente que Toghun Temür tinha 13 anos ao se tornar imperador, com citação apropriada do contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "572647d0708984140094c14d",
+      "category": "answerable",
+      "question": "Which group has two layers of cells with a middle layer of mesoglea?",
+      "gold": [
+        "p0397"
+      ],
+      "reference": "Accepted answers (any one is correct): sponges and cnidarians, ctenophores | ctenophores | cnidarians and ctenophores",
+      "answers": [
+        "sponges and cnidarians, ctenophores",
+        "ctenophores",
+        "cnidarians and ctenophores"
+      ],
+      "source_paragraph": "p0397",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "The groups that have two main layers of cells with a middle layer of jelly-like material called mesoglea are ctenophores and cnidarians. Sponges also have two layers but the text specifically mentions mesoglea in ctenophores and cnidarians. More complex animals have three main cell layers and no mesoglea. Therefore, ctenophores and cnidarians have two layers of cells with a middle layer of mesoglea [p0397].",
+          "latency_s": 2.52,
+          "context_ids": [
+            "p0397"
+          ],
+          "context_chars": 628,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente ctenophores and cnidarians como o grupo com mesoglea, alinhado com a referência, e não contradiz o contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "p0397",
+              "relevance": 0.97,
+              "sufficiency": 0.86
+            }
+          ],
+          "answer": "The groups that have two layers of cells with a middle layer of mesoglea are ctenophores and cnidarians. Sponges also have two main layers of cells but traditionally they, along with ctenophores and cnidarians, have been labeled diploblastic. The mesoglea is specifically mentioned as the jelly-like middle layer in cnidarians and ctenophores [p0397].",
+          "latency_s": 3.22,
+          "context_ids": [
+            "p0397"
+          ],
+          "context_chars": 628,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente cnidários e ctenóforos como o grupo com mesoglea, alinhando-se com a referência, e o detalhe adicional sobre esponjas está fundamentado no contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "The groups that have two main layers of cells with a middle layer of mesoglea are ctenophores and cnidarians. Sponges also have two main layers but the text specifically mentions mesoglea in relation to ctenophores and cnidarians. These groups are traditionally labeled diploblastic because of this structure [p0397].",
+          "latency_s": 2.56,
+          "context_ids": [
+            "p0397"
+          ],
+          "context_chars": 628,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente ctenophores e cnidarians como o grupo com mesoglea, alinhando-se com a resposta de referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "Both ctenophores and cnidarians have two main layers of cells with a middle layer of jelly-like material called the mesoglea. This is stated in passage [p0397].",
+          "latency_s": 2.36,
+          "context_ids": [
+            "p0397",
+            "p0400",
+            "p0391"
+          ],
+          "context_chars": 2808,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente cnidarians e ctenophores como o grupo com duas camadas de células e mesoglea intermediária, alinhando-se com a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "The groups that have two main layers of cells with a middle layer of mesoglea are ctenophores and cnidarians. Sponges also have two main layers but the text specifies mesoglea particularly in ctenophores and cnidarians. More complex animals have three main cell layers and no intermediate jelly-like layer. Thus, ctenophores and cnidarians are traditionally labeled diploblastic due to this structure [p0397].",
+          "latency_s": 1.93,
+          "context_ids": [
+            "p0397"
+          ],
+          "context_chars": 628,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente cnidários e ctenóforos como o grupo com mesoglea, alinhado com a referência, sem inventar informação."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "57274beff1498d1400e8f5e6",
+      "category": "answerable",
+      "question": "How many Examination Boards exist in India?",
+      "gold": [
+        "p0604"
+      ],
+      "reference": "Accepted answers (any one is correct): 30",
+      "answers": [
+        "30"
+      ],
+      "source_paragraph": "p0604",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "There are 30 different Examination Boards or academic authorities that conduct examinations for school leaving certificates in India [p0604].",
+          "latency_s": 2.23,
+          "context_ids": [
+            "p0604"
+          ],
+          "context_chars": 1033,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente 30 Examination Boards, correspondendo à resposta de referência e ao contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "p0604",
+              "relevance": 0.98,
+              "sufficiency": 0.85
+            }
+          ],
+          "answer": "There are 30 different Examination Boards or academic authorities that conduct examinations for school leaving certificates in India [p0604].",
+          "latency_s": 2.9,
+          "context_ids": [
+            "p0604"
+          ],
+          "context_chars": 1033,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente que existem 30 Examination Boards na Índia, conforme a referência e o contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "No relevant passage was found to answer the question.",
+          "latency_s": 0.79,
+          "context_ids": [],
+          "context_chars": 0,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "A referência indica que a base contém a informação (30 conselhos de exame), mas o sistema não a recuperou e respondeu que não encontrou nada relevante."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "There are 30 different Examination Boards or academic authorities that conduct examinations for school leaving certificates in India [p0604].",
+          "latency_s": 2.3,
+          "context_ids": [
+            "p0604",
+            "p0605",
+            "p0533"
+          ],
+          "context_chars": 2695,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente que há 30 Examination Boards na Índia, correspondendo à referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "There are 30 different Examination Boards or academic authorities that conduct examinations for school leaving certificates in India [p0604].",
+          "latency_s": 1.45,
+          "context_ids": [
+            "p0604"
+          ],
+          "context_chars": 1033,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente que existem 30 Examination Boards, coincidindo com a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "5a8371dfe60761001a2eb727",
+      "category": "unanswerable",
+      "question": "What is the nervous system made up of?",
+      "gold": [],
+      "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+      "answers": [],
+      "source_paragraph": "p0403",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "The provided context does not contain information about what the nervous system is made up of. Therefore, I don't know that part based on the given information.",
+          "latency_s": 2.6,
+          "context_ids": [
+            "p0800"
+          ],
+          "context_chars": 714,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que não sabe, alinhando-se com a referência que diz que a base não contém essa informação."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "p0800",
+              "relevance": 0.12,
+              "sufficiency": 0.02
+            },
+            {
+              "id": "p0813",
+              "relevance": 0.1,
+              "sufficiency": 0.03
+            },
+            {
+              "id": "p0803",
+              "relevance": 0.02,
+              "sufficiency": 0.01
+            },
+            {
+              "id": "p0812",
+              "relevance": 0.01,
+              "sufficiency": 0.01
+            },
+            {
+              "id": "p0805",
+              "relevance": 0.01,
+              "sufficiency": 0.01
+            }
+          ],
+          "answer": "No relevant passage was found to answer the question.",
+          "latency_s": 3.69,
+          "context_ids": [],
+          "context_chars": 0,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que não há informação disponível, alinhando-se com a referência que afirma que a base não contém essa informação."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "No relevant passage was found to answer the question.",
+          "latency_s": 0.75,
+          "context_ids": [],
+          "context_chars": 0,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que não sabe, alinhando-se com a referência de que a base não contém essa informação."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "The provided context does not contain information about what the nervous system is made up of.",
+          "latency_s": 3.84,
+          "context_ids": [
+            "p0800",
+            "p0813",
+            "p0803"
+          ],
+          "context_chars": 2193,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente afirma que a base não contém informação sobre a composição do sistema nervoso, alinhando-se à referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 3,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 0,
+          "answer": "No relevant passage was found to answer the question.",
+          "latency_s": 0.0,
+          "context_ids": [],
+          "context_chars": 0,
+          "answer_in_context": null,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que não há informação disponível, alinhando-se com a referência que afirma que a base não contém essa informação."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "5737a9afc3c5551400e51f61",
+      "category": "answerable",
+      "question": "In what treatment are nonconservative and conservative forces described?",
+      "gold": [
+        "p1202"
+      ],
+      "reference": "Accepted answers (any one is correct): statistical mechanics | detailed | detailed treatment with statistical mechanics",
+      "answers": [
+        "statistical mechanics",
+        "detailed",
+        "detailed treatment with statistical mechanics"
+      ],
+      "source_paragraph": "p1202",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "Nonconservative and conservative forces are described by detailed treatment with statistical mechanics [p1202].",
+          "latency_s": 2.19,
+          "context_ids": [
+            "p1202"
+          ],
+          "context_chars": 518,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corresponde exatamente à resposta de referência, citando 'detailed treatment with statistical mechanics' conforme o contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "p1202",
+              "relevance": 0.94,
+              "sufficiency": 0.8
+            }
+          ],
+          "answer": "Nonconservative and conservative forces are described by a detailed treatment with statistical mechanics [p1202].",
+          "latency_s": 2.63,
+          "context_ids": [
+            "p1202"
+          ],
+          "context_chars": 518,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corresponde exatamente à resposta de referência, citando corretamente a fonte do contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "Nonconservative and conservative forces are described by detailed treatment with statistical mechanics [p1202].",
+          "latency_s": 2.26,
+          "context_ids": [
+            "p1202"
+          ],
+          "context_chars": 518,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corresponde exatamente à resposta de referência, citando corretamente 'detailed treatment with statistical mechanics' com base no contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "Nonconservative and conservative forces are described by detailed treatment with statistical mechanics [p1202].",
+          "latency_s": 2.11,
+          "context_ids": [
+            "p1202",
+            "p1201",
+            "p1200"
+          ],
+          "context_chars": 1889,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corresponde exatamente à resposta de referência, citando corretamente o tratamento detalhado com mecânica estatística."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "Nonconservative and conservative forces are described by detailed treatment with statistical mechanics. [p1202]",
+          "latency_s": 1.36,
+          "context_ids": [
+            "p1202"
+          ],
+          "context_chars": 518,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corresponde exatamente à resposta de referência, citando corretamente o tratamento detalhado com mecânica estatística conforme o contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "5728804b4b864d1900164a4a",
+      "category": "answerable",
+      "question": "When did Zhu publish 'Jade Mirror of the Four Unknowns'?",
+      "gold": [
+        "p0786"
+      ],
+      "reference": "Accepted answers (any one is correct): 1303",
+      "answers": [
+        "1303"
+      ],
+      "source_paragraph": "p0786",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "Zhu Shijie published the \"Jade Mirror of the Four Unknowns\" in 1303 [p0786].",
+          "latency_s": 2.39,
+          "context_ids": [
+            "p0786"
+          ],
+          "context_chars": 590,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente o ano 1303, conforme a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "p0786",
+              "relevance": 0.99,
+              "sufficiency": 0.94
+            }
+          ],
+          "answer": "Zhu Shijie published the \"Jade Mirror of the Four Unknowns\" in 1303 [p0786].",
+          "latency_s": 2.68,
+          "context_ids": [
+            "p0786"
+          ],
+          "context_chars": 590,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente o ano 1303, conforme a resposta de referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "No relevant passage was found to answer the question.",
+          "latency_s": 0.78,
+          "context_ids": [],
+          "context_chars": 0,
+          "answer_in_context": false,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "A resposta de referência indica que a informação (1303) está disponível na base, mas o sistema não a recuperou e respondeu que não sabe, o que conta como erro."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "Zhu Shijie published the \"Jade Mirror of the Four Unknowns\" in 1303. This is mentioned in the context about advances in polynomial algebra during the Yuan dynasty, where Zhu's method of solving simultaneous equations is described in that book, written in 1303 [p0786].",
+          "latency_s": 2.81,
+          "context_ids": [
+            "p0786",
+            "p0771",
+            "p0768"
+          ],
+          "context_chars": 2163,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente o ano 1303, conforme a referência, sem informações inventadas."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "Zhu Shijie published \"Jade Mirror of the Four Unknowns\" in 1303 [p0786].",
+          "latency_s": 1.3,
+          "context_ids": [
+            "p0786"
+          ],
+          "context_chars": 590,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente o ano 1303, conforme a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "57378e311c456719005744b3",
+      "category": "answerable",
+      "question": "Who discovered that magnetic and electric could self-generate?",
+      "gold": [
+        "p1189"
+      ],
+      "reference": "Accepted answers (any one is correct): Maxwell | James Clerk Maxwell",
+      "answers": [
+        "Maxwell",
+        "James Clerk Maxwell"
+      ],
+      "source_paragraph": "p1189",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "James Clerk Maxwell discovered that electric and magnetic fields could be \"self-generating\" through a wave that traveled at the speed of light [p1189].",
+          "latency_s": 2.37,
+          "context_ids": [
+            "p1189"
+          ],
+          "context_chars": 769,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente James Clerk Maxwell como o descobridor, alinhando-se com a referência e o contexto fornecido, sem alucinações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "p1189",
+              "relevance": 0.98,
+              "sufficiency": 0.89
+            }
+          ],
+          "answer": "James Clerk Maxwell discovered that electric and magnetic fields could be \"self-generating\" through a wave that traveled at the speed of light [p1189].",
+          "latency_s": 3.55,
+          "context_ids": [
+            "p1189"
+          ],
+          "context_chars": 769,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente James Clerk Maxwell e é fiel ao contexto, sem alucinações, correspondendo à resposta de referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "James Clerk Maxwell discovered that electric and magnetic fields could be \"self-generating\" through a wave that traveled at the speed of light [p1189].",
+          "latency_s": 2.43,
+          "context_ids": [
+            "p1189"
+          ],
+          "context_chars": 769,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente James Clerk Maxwell e está de acordo com o contexto e a referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 3,
+          "answer": "James Clerk Maxwell discovered that electric and magnetic fields could be \"self-generating\" through a wave that traveled at the speed of light, uniting electromagnetic theory with optics and leading to a complete description of the electromagnetic spectrum [p1189].",
+          "latency_s": 2.25,
+          "context_ids": [
+            "p1189",
+            "p1188",
+            "p1190"
+          ],
+          "context_chars": 1973,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente James Clerk Maxwell e está bem fundamentada no contexto fornecido, sem inventar informações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 2,
+            "context_size": 3
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "James Clerk Maxwell discovered that electric and magnetic fields could be \"self-generating\" through a wave that traveled at the speed of light [p1189].",
+          "latency_s": 1.37,
+          "context_ids": [
+            "p1189"
+          ],
+          "context_chars": 769,
+          "answer_in_context": true,
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente James Clerk Maxwell como responsável pela descoberta, alinhando-se totalmente com a resposta de referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    }
+  ]
+}

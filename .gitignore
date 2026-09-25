@@ -1,0 +1,15 @@
+# secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# large or re-downloadable data
+data/squad/dev-v2.0.json
+*.npy
+
+# run logs and intermediate files
+results/*.log
+results/*_partial.jsonl
+results/*.backup.json

@@ -1,0 +1,7 @@
+faiss-cpu
+numpy
+matplotlib
+# rerankers used in rerank_experiment.py
+fastembed
+sentence-transformers
+torch

@@ -1,0 +1,18 @@
+[
+  {"id": "q01", "category": "simples", "question": "Quando o Cristo Redentor foi inaugurado?", "gold": ["cristo-1"], "reference": "Em 12 de outubro de 1931."},
+  {"id": "q02", "category": "simples", "question": "Quem projetou os prédios de Brasília?", "gold": ["brasilia-2"], "reference": "Oscar Niemeyer (Congresso Nacional, Palácio da Alvorada, Catedral Metropolitana)."},
+  {"id": "q03", "category": "simples", "question": "Qual a altura do morro do Pão de Açúcar?", "gold": ["pao-2"], "reference": "396 metros."},
+  {"id": "q04", "category": "simples", "question": "Qual estado brasileiro mais produz café?", "gold": ["cafe-2"], "reference": "Minas Gerais."},
+  {"id": "q05", "category": "simples", "question": "Quem esculpiu o rosto do Cristo Redentor?", "gold": ["cristo-3"], "reference": "O escultor romeno Gheorghe Leonida."},
+  {"id": "q06", "category": "simples", "question": "Quais sistemas o INPE usa para monitorar o desmatamento da Amazônia?", "gold": ["amazonia-3"], "reference": "PRODES e DETER, por satélite."},
+  {"id": "q07", "category": "composta", "question": "Quando o Cristo Redentor foi inaugurado e qual a sua altura?", "gold": ["cristo-1", "cristo-2"], "reference": "Inaugurado em 12 de outubro de 1931; tem 30 metros de altura (sem o pedestal de 8 metros)."},
+  {"id": "q08", "category": "composta", "question": "Quando foi inaugurado o bondinho do Pão de Açúcar e qual a altura do morro?", "gold": ["pao-1", "pao-2"], "reference": "O bondinho foi inaugurado em 1912; o morro tem 396 metros."},
+  {"id": "q09", "category": "multi-tema", "question": "Qual a altura do Cristo Redentor, quem trouxe o café ao Brasil e qual a vazão do rio Amazonas?", "gold": ["cristo-2", "cafe-3", "amazonia-2"], "reference": "O Cristo tem 30 metros (sem o pedestal de 8 m); o café foi trazido por Francisco de Melo Palheta, em 1727, da Guiana Francesa; o Amazonas despeja cerca de 209 mil metros cúbicos por segundo no Atlântico."},
+  {"id": "q10", "category": "multi-tema", "question": "Em que ano o Maracanã foi inaugurado e em que ano Brasília foi inaugurada?", "gold": ["maracana-1", "brasilia-1"], "reference": "O Maracanã em 1950; Brasília em 1960 (21 de abril)."},
+  {"id": "q11", "category": "multi-tema", "question": "Que outra estrutura famosa Gustave Eiffel projetou e qual a altura da Torre Eiffel?", "gold": ["eiffel-2", "eiffel-1"], "reference": "A estrutura interna da Estátua da Liberdade; a Torre Eiffel tem cerca de 330 metros."},
+  {"id": "q12", "category": "multi-tema", "question": "Qual a participação do Brasil na produção mundial de café e em quantos países está distribuída a Floresta Amazônica?", "gold": ["cafe-1", "amazonia-1"], "reference": "Cerca de um terço da produção global de café; a Floresta Amazônica está distribuída entre nove países."},
+  {"id": "q13", "category": "sem resposta", "question": "Qual a população de Manaus?", "gold": [], "reference": "A base não contém essa informação. A resposta correta é dizer que não sabe."},
+  {"id": "q14", "category": "sem resposta", "question": "Quanto custa o ingresso para visitar o Cristo Redentor?", "gold": [], "reference": "A base não contém essa informação. A resposta correta é dizer que não sabe."},
+  {"id": "q15", "category": "sem resposta", "question": "Quem foi o arquiteto do Teatro Amazonas?", "gold": [], "reference": "A base não contém essa informação (ela só diz que o teatro foi inaugurado em 1896, no ciclo da borracha). A resposta correta é dizer que não sabe."},
+  {"id": "q16", "category": "parcial", "question": "Quando o Teatro Amazonas foi inaugurado e quantos lugares ele tem?", "gold": ["amazonia-4"], "reference": "Foi inaugurado em 1896. A base não informa a capacidade; a resposta correta diz que não sabe essa parte."}
+]

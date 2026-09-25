@@ -1,0 +1,3860 @@
+[
+ {
+  "id": "572980f9af94a219006aa4d1",
+  "category": "answerable",
+  "question": "Of what form are Sophie Germain primes?",
+  "gold": [
+   "p0885"
+  ],
+  "reference": "Accepted answers (any one is correct): 2p + 1 | 2p + 1 with p prime",
+  "answers": [
+   "2p + 1",
+   "2p + 1 with p prime"
+  ],
+  "source_paragraph": "p0885"
+ },
+ {
+  "id": "570d28bdb3d812140066d4a7",
+  "category": "answerable",
+  "question": "What party is favored in Bedigo and Geelong?",
+  "gold": [
+   "p0151"
+  ],
+  "reference": "Accepted answers (any one is correct): Labor | Australian Labor Party",
+  "answers": [
+   "Labor",
+   "Australian Labor Party"
+  ],
+  "source_paragraph": "p0151"
+ },
+ {
+  "id": "5ad243abd7d075001a428a10",
+  "category": "unanswerable",
+  "question": "In what year did the Protestant Reformation arrive in France?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0175"
+ },
+ {
+  "id": "571155ae2419e31400955595",
+  "category": "answerable",
+  "question": "What is William Rankine's nationality?",
+  "gold": [
+   "p0240"
+  ],
+  "reference": "Accepted answers (any one is correct): Scottish",
+  "answers": [
+   "Scottish"
+  ],
+  "source_paragraph": "p0240"
+ },
+ {
+  "id": "5710ed7bb654c5140001fa2c",
+  "category": "answerable",
+  "question": "Who did the Dutch fight in the Dutch Revolt?",
+  "gold": [
+   "p0202"
+  ],
+  "reference": "Accepted answers (any one is correct): Spain",
+  "answers": [
+   "Spain"
+  ],
+  "source_paragraph": "p0202"
+ },
+ {
+  "id": "57097d63ed30961900e84200",
+  "category": "answerable",
+  "question": "What were high court proceedings being held about?",
+  "gold": [
+   "p0147"
+  ],
+  "reference": "Accepted answers (any one is correct): basic channels | the carriage of their respective basic channels | carriage of their respective basic channels",
+  "answers": [
+   "basic channels",
+   "the carriage of their respective basic channels",
+   "carriage of their respective basic channels"
+  ],
+  "source_paragraph": "p0147"
+ },
+ {
+  "id": "57379ed81c456719005744d8",
+  "category": "answerable",
+  "question": "What is the final effect of adding more and more idea strings to a load?",
+  "gold": [
+   "p1195"
+  ],
+  "reference": "Accepted answers (any one is correct): conservation of mechanical energy | the tension force on a load can be multiplied | tension force on a load can be multiplied",
+  "answers": [
+   "conservation of mechanical energy",
+   "the tension force on a load can be multiplied",
+   "tension force on a load can be multiplied"
+  ],
+  "source_paragraph": "p1195"
+ },
+ {
+  "id": "572fc8a904bcaa1900d76d1f",
+  "category": "answerable",
+  "question": "What is set up to scrutinize private bills submitted by party outsiders?",
+  "gold": [
+   "p0969"
+  ],
+  "reference": "Accepted answers (any one is correct): type of committee | committee",
+  "answers": [
+   "type of committee",
+   "committee"
+  ],
+  "source_paragraph": "p0969"
+ },
+ {
+  "id": "57299d1c1d04691400779581",
+  "category": "answerable",
+  "question": "What theorem remains valid in unique factorization domains?",
+  "gold": [
+   "p0899"
+  ],
+  "reference": "Accepted answers (any one is correct): The fundamental theorem of arithmetic | theorem of arithmetic | fundamental theorem of arithmetic",
+  "answers": [
+   "The fundamental theorem of arithmetic",
+   "theorem of arithmetic",
+   "fundamental theorem of arithmetic"
+  ],
+  "source_paragraph": "p0899"
+ },
+ {
+  "id": "5a63730568151a001a9222dc",
+  "category": "unanswerable",
+  "question": "How many seats does Australia have in the House of Representatives?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0163"
+ },
+ {
+  "id": "57115ff82419e314009555c7",
+  "category": "answerable",
+  "question": "In the United States, what is a usual turbine speed with 60 Hertz of power?",
+  "gold": [
+   "p0251"
+  ],
+  "reference": "Accepted answers (any one is correct): 3600 revolutions per minute",
+  "answers": [
+   "3600 revolutions per minute"
+  ],
+  "source_paragraph": "p0251"
+ },
+ {
+  "id": "5727e8424b864d1900163fc1",
+  "category": "answerable",
+  "question": "What publication printed that the wealthiest 1% have more money than those in the bottom 90%?",
+  "gold": [
+   "p0673"
+  ],
+  "reference": "Accepted answers (any one is correct): New York Times",
+  "answers": [
+   "New York Times"
+  ],
+  "source_paragraph": "p0673"
+ },
+ {
+  "id": "5727ec062ca10214002d99b9",
+  "category": "answerable",
+  "question": "How do competing businesses attract workers?",
+  "gold": [
+   "p0676"
+  ],
+  "reference": "Accepted answers (any one is correct): offering a higher wage | by offering a higher wage | offering a higher wage the best of their labor",
+  "answers": [
+   "offering a higher wage",
+   "by offering a higher wage",
+   "offering a higher wage the best of their labor"
+  ],
+  "source_paragraph": "p0676"
+ },
+ {
+  "id": "572987e46aef051400154fa3",
+  "category": "answerable",
+  "question": "If a and q are coprime, which theorem holds that an arithmetic progression has an infinite number of primes?",
+  "gold": [
+   "p0888"
+  ],
+  "reference": "Accepted answers (any one is correct): Dirichlet's theorem | Dirichlet's",
+  "answers": [
+   "Dirichlet's theorem",
+   "Dirichlet's"
+  ],
+  "source_paragraph": "p0888"
+ },
+ {
+  "id": "57293f353f37b3190047819e",
+  "category": "answerable",
+  "question": "What was Houghton's role?",
+  "gold": [
+   "p0857"
+  ],
+  "reference": "Accepted answers (any one is correct): a co-chair of TAR WGI | co-chair of TAR WGI",
+  "answers": [
+   "a co-chair of TAR WGI",
+   "co-chair of TAR WGI"
+  ],
+  "source_paragraph": "p0857"
+ },
+ {
+  "id": "57286c8cff5b5019007da21a",
+  "category": "answerable",
+  "question": "When did the Jin dynasty end?",
+  "gold": [
+   "p0764"
+  ],
+  "reference": "Accepted answers (any one is correct): 1234",
+  "answers": [
+   "1234"
+  ],
+  "source_paragraph": "p0764"
+ },
+ {
+  "id": "5a89128d3b2508001a72a495",
+  "category": "unanswerable",
+  "question": "What is the name of the process which confirms the primality of a decimal digits?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0874"
+ },
+ {
+  "id": "572faec7b2c2fd1400568334",
+  "category": "answerable",
+  "question": "Who designed the Scottish Parliament building?",
+  "gold": [
+   "p0953"
+  ],
+  "reference": "Accepted answers (any one is correct): Enric Miralles",
+  "answers": [
+   "Enric Miralles"
+  ],
+  "source_paragraph": "p0953"
+ },
+ {
+  "id": "573005b9947a6a140053cf6c",
+  "category": "answerable",
+  "question": "Secular Arab nationalism was blamed for both the defeat of Arab troops as well as what type of stagnation?",
+  "gold": [
+   "p1003"
+  ],
+  "reference": "Accepted answers (any one is correct): economic | economic stagnation",
+  "answers": [
+   "economic",
+   "economic stagnation"
+  ],
+  "source_paragraph": "p1003"
+ },
+ {
+  "id": "5726ed6cf1498d1400e8f010",
+  "category": "answerable",
+  "question": "What do most online pharmacies do?",
+  "gold": [
+   "p0536"
+  ],
+  "reference": "Accepted answers (any one is correct): sell prescription drugs and require a valid prescription | sell prescription drugs",
+  "answers": [
+   "sell prescription drugs and require a valid prescription",
+   "sell prescription drugs"
+  ],
+  "source_paragraph": "p0536"
+ },
+ {
+  "id": "5726462b708984140094c118",
+  "category": "answerable",
+  "question": "What was the purpose of CSNET",
+  "gold": [
+   "p0469"
+  ],
+  "reference": "Accepted answers (any one is correct): to extend networking benefits, for computer science departments at academic and research institutions that could not be directly connected to ARPANET | to extend networking benefits | extend networking benefits",
+  "answers": [
+   "to extend networking benefits, for computer science departments at academic and research institutions that could not be directly connected to ARPANET",
+   "to extend networking benefits",
+   "extend networking benefits"
+  ],
+  "source_paragraph": "p0469"
+ },
+ {
+  "id": "5726e08e5951b619008f8113",
+  "category": "answerable",
+  "question": "What does pharmacy legislation mandate?",
+  "gold": [
+   "p0528"
+  ],
+  "reference": "Accepted answers (any one is correct): storage conditions, compulsory texts, equipment, etc. | storage conditions, compulsory texts, equipment",
+  "answers": [
+   "storage conditions, compulsory texts, equipment, etc.",
+   "storage conditions, compulsory texts, equipment"
+  ],
+  "source_paragraph": "p0528"
+ },
+ {
+  "id": "5a6696d0f038b7001ab0c021",
+  "category": "unanswerable",
+  "question": "The Australian Tax Office used AUSTPAC to access what remotely?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0467"
+ },
+ {
+  "id": "572871bd3acd2414000dfa05",
+  "category": "answerable",
+  "question": "How old was Toghun Temur when he became emperor?",
+  "gold": [
+   "p0772"
+  ],
+  "reference": "Accepted answers (any one is correct): 13",
+  "answers": [
+   "13"
+  ],
+  "source_paragraph": "p0772"
+ },
+ {
+  "id": "572647d0708984140094c14d",
+  "category": "answerable",
+  "question": "Which group has two layers of cells with a middle layer of mesoglea?",
+  "gold": [
+   "p0397"
+  ],
+  "reference": "Accepted answers (any one is correct): sponges and cnidarians, ctenophores | ctenophores | cnidarians and ctenophores",
+  "answers": [
+   "sponges and cnidarians, ctenophores",
+   "ctenophores",
+   "cnidarians and ctenophores"
+  ],
+  "source_paragraph": "p0397"
+ },
+ {
+  "id": "57274beff1498d1400e8f5e6",
+  "category": "answerable",
+  "question": "How many Examination Boards exist in India?",
+  "gold": [
+   "p0604"
+  ],
+  "reference": "Accepted answers (any one is correct): 30",
+  "answers": [
+   "30"
+  ],
+  "source_paragraph": "p0604"
+ },
+ {
+  "id": "5a8371dfe60761001a2eb727",
+  "category": "unanswerable",
+  "question": "What is the nervous system made up of?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0403"
+ },
+ {
+  "id": "5737a9afc3c5551400e51f61",
+  "category": "answerable",
+  "question": "In what treatment are nonconservative and conservative forces described?",
+  "gold": [
+   "p1202"
+  ],
+  "reference": "Accepted answers (any one is correct): statistical mechanics | detailed | detailed treatment with statistical mechanics",
+  "answers": [
+   "statistical mechanics",
+   "detailed",
+   "detailed treatment with statistical mechanics"
+  ],
+  "source_paragraph": "p1202"
+ },
+ {
+  "id": "5728804b4b864d1900164a4a",
+  "category": "answerable",
+  "question": "When did Zhu publish 'Jade Mirror of the Four Unknowns'?",
+  "gold": [
+   "p0786"
+  ],
+  "reference": "Accepted answers (any one is correct): 1303",
+  "answers": [
+   "1303"
+  ],
+  "source_paragraph": "p0786"
+ },
+ {
+  "id": "57378e311c456719005744b3",
+  "category": "answerable",
+  "question": "Who discovered that magnetic and electric could self-generate?",
+  "gold": [
+   "p1189"
+  ],
+  "reference": "Accepted answers (any one is correct): Maxwell | James Clerk Maxwell",
+  "answers": [
+   "Maxwell",
+   "James Clerk Maxwell"
+  ],
+  "source_paragraph": "p1189"
+ },
+ {
+  "id": "571c96095efbb31900334dbf",
+  "category": "answerable",
+  "question": "In what type of water does oxygen dissolve more slowly?",
+  "gold": [
+   "p0280"
+  ],
+  "reference": "Accepted answers (any one is correct): seawater | sea water",
+  "answers": [
+   "seawater",
+   "sea water"
+  ],
+  "source_paragraph": "p0280"
+ },
+ {
+  "id": "5730bd00069b5314008322d9",
+  "category": "answerable",
+  "question": "Who did the Ottoman empire ally with in WW I?",
+  "gold": [
+   "p1064"
+  ],
+  "reference": "Accepted answers (any one is correct): Germany",
+  "answers": [
+   "Germany"
+  ],
+  "source_paragraph": "p1064"
+ },
+ {
+  "id": "5726415bec44d21400f3dcd5",
+  "category": "answerable",
+  "question": "Which group has young that are born with no tentacles and a large mouth?",
+  "gold": [
+   "p0393"
+  ],
+  "reference": "Accepted answers (any one is correct): beroids",
+  "answers": [
+   "beroids"
+  ],
+  "source_paragraph": "p0393"
+ },
+ {
+  "id": "5728f7774b864d190016512f",
+  "category": "answerable",
+  "question": "What molecules are parts of the body of an organism in immunology?",
+  "gold": [
+   "p0804"
+  ],
+  "reference": "Accepted answers (any one is correct): self molecules | self",
+  "answers": [
+   "self molecules",
+   "self"
+  ],
+  "source_paragraph": "p0804"
+ },
+ {
+  "id": "572ff5fcb2c2fd1400568659",
+  "category": "answerable",
+  "question": "What is the name of the old north branch of the Rhine?",
+  "gold": [
+   "p0922"
+  ],
+  "reference": "Accepted answers (any one is correct): Kromme Rijn",
+  "answers": [
+   "Kromme Rijn"
+  ],
+  "source_paragraph": "p0922"
+ },
+ {
+  "id": "56e181d9e3433e1400422fa4",
+  "category": "answerable",
+  "question": "What is one way in which graphs can be encoded?",
+  "gold": [
+   "p0044"
+  ],
+  "reference": "Accepted answers (any one is correct): adjacency matrices | directly via their adjacency matrices",
+  "answers": [
+   "adjacency matrices",
+   "directly via their adjacency matrices"
+  ],
+  "source_paragraph": "p0044"
+ },
+ {
+  "id": "5a83878de60761001a2eb777",
+  "category": "unanswerable",
+  "question": "How many lobes do cilia have?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0408"
+ },
+ {
+  "id": "5733ef47d058e614000b662d",
+  "category": "answerable",
+  "question": "Who was added to party as Washington went on the way?",
+  "gold": [
+   "p1134"
+  ],
+  "reference": "Accepted answers (any one is correct): Jacob Van Braam as an interpreter; Christopher Gist, a company surveyor working in the area; and a few Mingo led by Tanaghrisson | Jacob Van Braam",
+  "answers": [
+   "Jacob Van Braam as an interpreter; Christopher Gist, a company surveyor working in the area; and a few Mingo led by Tanaghrisson",
+   "Jacob Van Braam"
+  ],
+  "source_paragraph": "p1134"
+ },
+ {
+  "id": "572855973acd2414000df925",
+  "category": "answerable",
+  "question": "What is the name of the private day school for K-12 students the university runs?",
+  "gold": [
+   "p0732"
+  ],
+  "reference": "Accepted answers (any one is correct): University of Chicago Laboratory Schools",
+  "answers": [
+   "University of Chicago Laboratory Schools"
+  ],
+  "source_paragraph": "p0732"
+ },
+ {
+  "id": "57302bd0b2c2fd14005689db",
+  "category": "answerable",
+  "question": "What type of group is The Islamic State?",
+  "gold": [
+   "p1020"
+  ],
+  "reference": "Accepted answers (any one is correct): Wahhabi/Salafi jihadist extremist militant | Wahhabi/Salafi jihadist extremist militant group | extremist militant",
+  "answers": [
+   "Wahhabi/Salafi jihadist extremist militant",
+   "Wahhabi/Salafi jihadist extremist militant group",
+   "extremist militant"
+  ],
+  "source_paragraph": "p1020"
+ },
+ {
+  "id": "5ad268cbd7d075001a429295",
+  "category": "unanswerable",
+  "question": "How many clergymen were there in the Dutch Republic before the influx of Huguenots?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0186"
+ },
+ {
+  "id": "57338160d058e614000b5bfb",
+  "category": "answerable",
+  "question": "How often are elections for the counsel held?",
+  "gold": [
+   "p1094"
+  ],
+  "reference": "Accepted answers (any one is correct): every four years | four years | every four years.",
+  "answers": [
+   "every four years",
+   "four years",
+   "every four years."
+  ],
+  "source_paragraph": "p1094"
+ },
+ {
+  "id": "5725f7cd38643c19005acf25",
+  "category": "answerable",
+  "question": "How many Native American people resided in Fresno in 2010?",
+  "gold": [
+   "p0443"
+  ],
+  "reference": "Accepted answers (any one is correct): 8,525 | 62,528",
+  "answers": [
+   "8,525",
+   "62,528"
+  ],
+  "source_paragraph": "p0443"
+ },
+ {
+  "id": "571ce3745efbb31900334e20",
+  "category": "answerable",
+  "question": "What health condition can deep sea diving cause?",
+  "gold": [
+   "p0303"
+  ],
+  "reference": "Accepted answers (any one is correct): Oxygen toxicity | Oxygen toxicity to the lungs and central nervous system",
+  "answers": [
+   "Oxygen toxicity",
+   "Oxygen toxicity to the lungs and central nervous system"
+  ],
+  "source_paragraph": "p0303"
+ },
+ {
+  "id": "573314e3d058e614000b56f3",
+  "category": "answerable",
+  "question": "King Sigimund's Column is an example of what kind of attraction in Warsaw?",
+  "gold": [
+   "p1068"
+  ],
+  "reference": "Accepted answers (any one is correct): architectural",
+  "answers": [
+   "architectural"
+  ],
+  "source_paragraph": "p1068"
+ },
+ {
+  "id": "56de3efccffd8e1900b4b6fe",
+  "category": "answerable",
+  "question": "How long did Western Europe control Cyprus?",
+  "gold": [
+   "p0025"
+  ],
+  "reference": "Accepted answers (any one is correct): 380 years",
+  "answers": [
+   "380 years"
+  ],
+  "source_paragraph": "p0025"
+ },
+ {
+  "id": "571112ada58dae1900cd6bd0",
+  "category": "answerable",
+  "question": "Other theories of the word's origin can be generally classed as what?",
+  "gold": [
+   "p0207"
+  ],
+  "reference": "Accepted answers (any one is correct): double or triple non-French linguistic origins | non-French linguistic origins",
+  "answers": [
+   "double or triple non-French linguistic origins",
+   "non-French linguistic origins"
+  ],
+  "source_paragraph": "p0207"
+ },
+ {
+  "id": "5a836273e60761001a2eb642",
+  "category": "unanswerable",
+  "question": "What does the mesoglea terminate into?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0400"
+ },
+ {
+  "id": "572658daf1498d1400e8dcae",
+  "category": "answerable",
+  "question": "What makes the tentilla of euplokamis different from other cysippids?",
+  "gold": [
+   "p0405"
+  ],
+  "reference": "Accepted answers (any one is correct): they contain striated muscle, | they contain striated muscle",
+  "answers": [
+   "they contain striated muscle,",
+   "they contain striated muscle"
+  ],
+  "source_paragraph": "p0405"
+ },
+ {
+  "id": "5a8352ebe60761001a2eb57d",
+  "category": "unanswerable",
+  "question": "In what time period were lagerstatten first found?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0395"
+ },
+ {
+  "id": "5725cc38ec44d21400f3d5bc",
+  "category": "answerable",
+  "question": "Which two treaties provided more formal institutions of the European Union?",
+  "gold": [
+   "p0334"
+  ],
+  "reference": "Accepted answers (any one is correct): Treaty of Rome 1957 and the Maastricht Treaty 1992 | the Treaty of Rome 1957 and the Maastricht Treaty 1992 | the Treaty of Rome 1957 and the Maastricht Treaty 1992 (now: TFEU)",
+  "answers": [
+   "Treaty of Rome 1957 and the Maastricht Treaty 1992",
+   "the Treaty of Rome 1957 and the Maastricht Treaty 1992",
+   "the Treaty of Rome 1957 and the Maastricht Treaty 1992 (now: TFEU)"
+  ],
+  "source_paragraph": "p0334"
+ },
+ {
+  "id": "5725c91e38643c19005accec",
+  "category": "answerable",
+  "question": "Evidence indicates that Cydippids are not what?",
+  "gold": [
+   "p0395"
+  ],
+  "reference": "Accepted answers (any one is correct): monophyletic | \"cydippids\" are not monophyletic",
+  "answers": [
+   "monophyletic",
+   "\"cydippids\" are not monophyletic"
+  ],
+  "source_paragraph": "p0395"
+ },
+ {
+  "id": "572863c72ca10214002da2d5",
+  "category": "answerable",
+  "question": "When did Genghis Khan become Great Khan?",
+  "gold": [
+   "p0756"
+  ],
+  "reference": "Accepted answers (any one is correct): 1206",
+  "answers": [
+   "1206"
+  ],
+  "source_paragraph": "p0756"
+ },
+ {
+  "id": "57268bf9dd62a815002e890a",
+  "category": "answerable",
+  "question": "By whom is European Law applied by?",
+  "gold": [
+   "p0331"
+  ],
+  "reference": "Accepted answers (any one is correct): the courts of member states and the Court of Justice of the European Union",
+  "answers": [
+   "the courts of member states and the Court of Justice of the European Union"
+  ],
+  "source_paragraph": "p0331"
+ },
+ {
+  "id": "572ffb02b2c2fd14005686ba",
+  "category": "answerable",
+  "question": "The Rhine and what other river drained the northern flanks of the alps?",
+  "gold": [
+   "p0929"
+  ],
+  "reference": "Accepted answers (any one is correct): Danube",
+  "answers": [
+   "Danube"
+  ],
+  "source_paragraph": "p0929"
+ },
+ {
+  "id": "573088da069b53140083216f",
+  "category": "answerable",
+  "question": "How would the geographical societies in Europe support certain travelers?",
+  "gold": [
+   "p1033"
+  ],
+  "reference": "Accepted answers (any one is correct): fund | fund travelers who would come back with tales of their discoveries | fund travelers | able to fund travelers",
+  "answers": [
+   "fund",
+   "fund travelers who would come back with tales of their discoveries",
+   "fund travelers",
+   "able to fund travelers"
+  ],
+  "source_paragraph": "p1033"
+ },
+ {
+  "id": "5705eb3375f01819005e7767",
+  "category": "answerable",
+  "question": "Other than the motion picture and television industry, what other major industry is centered in Los Angeles?",
+  "gold": [
+   "p0093"
+  ],
+  "reference": "Accepted answers (any one is correct): music | major record companies",
+  "answers": [
+   "music",
+   "major record companies"
+  ],
+  "source_paragraph": "p0093"
+ },
+ {
+  "id": "57094b4f9928a814004714f6",
+  "category": "answerable",
+  "question": "What consortium was BSkyB excluded from?",
+  "gold": [
+   "p0128"
+  ],
+  "reference": "Accepted answers (any one is correct): ONdigital",
+  "answers": [
+   "ONdigital"
+  ],
+  "source_paragraph": "p0128"
+ },
+ {
+  "id": "5a7b05cd21c2de001afe9cdc",
+  "category": "unanswerable",
+  "question": "Where did Fresno residents move to during the flooding?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0423"
+ },
+ {
+  "id": "56de3dbacffd8e1900b4b6d2",
+  "category": "answerable",
+  "question": "What country was under the control of Norman barons?",
+  "gold": [
+   "p0022"
+  ],
+  "reference": "Accepted answers (any one is correct): Wales",
+  "answers": [
+   "Wales"
+  ],
+  "source_paragraph": "p0022"
+ },
+ {
+  "id": "5acf99b577cf76001a6853ee",
+  "category": "unanswerable",
+  "question": "Which University's library system consists of 12 libraries?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0733"
+ },
+ {
+  "id": "57094a79efce8f15003a7dc6",
+  "category": "answerable",
+  "question": "Who purhcased the remaining 4 pacakages available to broadcasters?",
+  "gold": [
+   "p0127"
+  ],
+  "reference": "Accepted answers (any one is correct): Sky",
+  "answers": [
+   "Sky"
+  ],
+  "source_paragraph": "p0127"
+ },
+ {
+  "id": "5729e500af94a219006aa6b7",
+  "category": "answerable",
+  "question": "After the Oligocene period, under what period did the amazon rainforest begin to expand?",
+  "gold": [
+   "p0371"
+  ],
+  "reference": "Accepted answers (any one is correct): Middle Miocene",
+  "answers": [
+   "Middle Miocene"
+  ],
+  "source_paragraph": "p0371"
+ },
+ {
+  "id": "572646655951b619008f6ec0",
+  "category": "answerable",
+  "question": "What do ctenophores have that no other animals have?",
+  "gold": [
+   "p0396"
+  ],
+  "reference": "Accepted answers (any one is correct): colloblasts",
+  "answers": [
+   "colloblasts"
+  ],
+  "source_paragraph": "p0396"
+ },
+ {
+  "id": "5ad14d8e645df0001a2d16ba",
+  "category": "unanswerable",
+  "question": "What title was the Social Charter not set to be included into the Masstricht treaty under?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0355"
+ },
+ {
+  "id": "571a49de4faf5e1900b8a94c",
+  "category": "answerable",
+  "question": "_____ Helps the biospher from UV.",
+  "gold": [
+   "p0264"
+  ],
+  "reference": "Accepted answers (any one is correct): high-altitude ozone layer | ozone | ozone layer",
+  "answers": [
+   "high-altitude ozone layer",
+   "ozone",
+   "ozone layer"
+  ],
+  "source_paragraph": "p0264"
+ },
+ {
+  "id": "5725f46289a1e219009ac0fa",
+  "category": "answerable",
+  "question": "When was the Sierra Sky Park Airport formed?",
+  "gold": [
+   "p0440"
+  ],
+  "reference": "Accepted answers (any one is correct): 1946",
+  "answers": [
+   "1946"
+  ],
+  "source_paragraph": "p0440"
+ },
+ {
+  "id": "572815d9ff5b5019007d9cbf",
+  "category": "answerable",
+  "question": "What drew would-be Jacksonville tourists to other Florida destinations?",
+  "gold": [
+   "p0658"
+  ],
+  "reference": "Accepted answers (any one is correct): extension of the Florida East Coast Railway further south | Florida East Coast Railway | the Florida East Coast Railway",
+  "answers": [
+   "extension of the Florida East Coast Railway further south",
+   "Florida East Coast Railway",
+   "the Florida East Coast Railway"
+  ],
+  "source_paragraph": "p0658"
+ },
+ {
+  "id": "5ad25aa1d7d075001a428e43",
+  "category": "unanswerable",
+  "question": "From where had the Norman Huguenots sailed in order to arrive at Fort Caroline?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0199"
+ },
+ {
+  "id": "571cc6f85efbb31900334de5",
+  "category": "answerable",
+  "question": "What is the clarity of liquid oxygen?",
+  "gold": [
+   "p0289"
+  ],
+  "reference": "Accepted answers (any one is correct): clear | clear substances with a light sky-blue color",
+  "answers": [
+   "clear",
+   "clear substances with a light sky-blue color"
+  ],
+  "source_paragraph": "p0289"
+ },
+ {
+  "id": "57092322efce8f15003a7db1",
+  "category": "answerable",
+  "question": "Who is the UK's largest digital subscription television company?",
+  "gold": [
+   "p0126"
+  ],
+  "reference": "Accepted answers (any one is correct): BSkyB",
+  "answers": [
+   "BSkyB"
+  ],
+  "source_paragraph": "p0126"
+ },
+ {
+  "id": "572a0e4b6aef051400155214",
+  "category": "answerable",
+  "question": "What is the process by which the adaptive immune system is evaded by the chainging of non-essential epitopes called?",
+  "gold": [
+   "p0843"
+  ],
+  "reference": "Accepted answers (any one is correct): antigenic variation",
+  "answers": [
+   "antigenic variation"
+  ],
+  "source_paragraph": "p0843"
+ },
+ {
+  "id": "57282358ff5b5019007d9ddf",
+  "category": "answerable",
+  "question": "What is a common occurrence during summer days?",
+  "gold": [
+   "p0668"
+  ],
+  "reference": "Accepted answers (any one is correct): thunderstorms",
+  "answers": [
+   "thunderstorms"
+  ],
+  "source_paragraph": "p0668"
+ },
+ {
+  "id": "5727cff1ff5b5019007d95c6",
+  "category": "answerable",
+  "question": "What project did Harvard halt due to the financial crisis?",
+  "gold": [
+   "p0635"
+  ],
+  "reference": "Accepted answers (any one is correct): Allston Science Complex | construction of the $1.2 billion Allston Science Complex",
+  "answers": [
+   "Allston Science Complex",
+   "construction of the $1.2 billion Allston Science Complex"
+  ],
+  "source_paragraph": "p0635"
+ },
+ {
+  "id": "5a6cee244eec6b001a80a6e9",
+  "category": "unanswerable",
+  "question": "Why might a physician never diagnose a large number of conditions?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0543"
+ },
+ {
+  "id": "572faec7b2c2fd1400568336",
+  "category": "answerable",
+  "question": "What shape are some of the buildings in the Parliament complex?",
+  "gold": [
+   "p0953"
+  ],
+  "reference": "Accepted answers (any one is correct): leaf-shaped | leaf-shaped buildings",
+  "answers": [
+   "leaf-shaped",
+   "leaf-shaped buildings"
+  ],
+  "source_paragraph": "p0953"
+ },
+ {
+  "id": "5733db8dd058e614000b6428",
+  "category": "answerable",
+  "question": "What was extent of Celeron's expedition?",
+  "gold": [
+   "p1126"
+  ],
+  "reference": "Accepted answers (any one is correct): about 3,000 miles (4,800 km) between June and November 1749. | about 3,000 miles | 3,000 miles",
+  "answers": [
+   "about 3,000 miles (4,800 km) between June and November 1749.",
+   "about 3,000 miles",
+   "3,000 miles"
+  ],
+  "source_paragraph": "p1126"
+ },
+ {
+  "id": "572fff45947a6a140053cf28",
+  "category": "answerable",
+  "question": "When was the Last Glacial Maximum?",
+  "gold": [
+   "p0933"
+  ],
+  "reference": "Accepted answers (any one is correct): 22,000–14,000 yr BP | ca. 22,000–14,000 yr BP",
+  "answers": [
+   "22,000–14,000 yr BP",
+   "ca. 22,000–14,000 yr BP"
+  ],
+  "source_paragraph": "p0933"
+ },
+ {
+  "id": "57274a8ff1498d1400e8f5bd",
+  "category": "answerable",
+  "question": "What do Germans call private schools?",
+  "gold": [
+   "p0602"
+  ],
+  "reference": "Accepted answers (any one is correct): Ersatzschulen",
+  "answers": [
+   "Ersatzschulen"
+  ],
+  "source_paragraph": "p0602"
+ },
+ {
+  "id": "5711488ab654c5140001fc41",
+  "category": "answerable",
+  "question": "Along with admission, exhaust and compression, what is an event in the engine cycle?",
+  "gold": [
+   "p0231"
+  ],
+  "reference": "Accepted answers (any one is correct): expansion",
+  "answers": [
+   "expansion"
+  ],
+  "source_paragraph": "p0231"
+ },
+ {
+  "id": "5727f05b4b864d1900164069",
+  "category": "answerable",
+  "question": "What do people with lower income have less access to?",
+  "gold": [
+   "p0680"
+  ],
+  "reference": "Accepted answers (any one is correct): optional education | education",
+  "answers": [
+   "optional education",
+   "education"
+  ],
+  "source_paragraph": "p0680"
+ },
+ {
+  "id": "570614ff52bb89140068988a",
+  "category": "answerable",
+  "question": "What other kind of sport is popular in southern California?",
+  "gold": [
+   "p0124"
+  ],
+  "reference": "Accepted answers (any one is correct): College",
+  "answers": [
+   "College"
+  ],
+  "source_paragraph": "p0124"
+ },
+ {
+  "id": "5733dab4d058e614000b640a",
+  "category": "answerable",
+  "question": "How much British military was in North America at start of War?",
+  "gold": [
+   "p1125"
+  ],
+  "reference": "Accepted answers (any one is correct): few British troops | few | not have any standing forces",
+  "answers": [
+   "few British troops",
+   "few",
+   "not have any standing forces"
+  ],
+  "source_paragraph": "p1125"
+ },
+ {
+  "id": "57096505ed30961900e84086",
+  "category": "answerable",
+  "question": "When are the new Sky Q products going to be available?",
+  "gold": [
+   "p0135"
+  ],
+  "reference": "Accepted answers (any one is correct): 2016 | in 2016",
+  "answers": [
+   "2016",
+   "in 2016"
+  ],
+  "source_paragraph": "p0135"
+ },
+ {
+  "id": "571cda1bdd7acb1400e4c197",
+  "category": "answerable",
+  "question": "In what state is oxygen shipped in bulk?",
+  "gold": [
+   "p0300"
+  ],
+  "reference": "Accepted answers (any one is correct): liquid | as a liquid | as a liquid in specially insulated tankers",
+  "answers": [
+   "liquid",
+   "as a liquid",
+   "as a liquid in specially insulated tankers"
+  ],
+  "source_paragraph": "p0300"
+ },
+ {
+  "id": "57097141200fba1400367ff9",
+  "category": "answerable",
+  "question": "When was virgin media rebranded from NTL Telewest?",
+  "gold": [
+   "p0144"
+  ],
+  "reference": "Accepted answers (any one is correct): 2007",
+  "answers": [
+   "2007"
+  ],
+  "source_paragraph": "p0144"
+ },
+ {
+  "id": "570d35b7b3d812140066d551",
+  "category": "answerable",
+  "question": "What is the Victoria state bird?",
+  "gold": [
+   "p0160"
+  ],
+  "reference": "Accepted answers (any one is correct): helmeted honeyeater | the helmeted honeyeater",
+  "answers": [
+   "helmeted honeyeater",
+   "the helmeted honeyeater"
+  ],
+  "source_paragraph": "p0160"
+ },
+ {
+  "id": "5ad3bb12604f3c001a3feeb9",
+  "category": "unanswerable",
+  "question": "In 1785 what was duc de Choiseul's plan for focused military efforts?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p1153"
+ },
+ {
+  "id": "57267d52708984140094c7da",
+  "category": "answerable",
+  "question": "How do structural geologists observe the fabric within the rocks?",
+  "gold": [
+   "p0513"
+  ],
+  "reference": "Accepted answers (any one is correct): microscopic analysis of oriented thin sections | microscopic analysis | use microscopic analysis of oriented thin sections of geologic samples",
+  "answers": [
+   "microscopic analysis of oriented thin sections",
+   "microscopic analysis",
+   "use microscopic analysis of oriented thin sections of geologic samples"
+  ],
+  "source_paragraph": "p0513"
+ },
+ {
+  "id": "5a55242b134fea001a0e1981",
+  "category": "unanswerable",
+  "question": "Abilene referred to what?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0470"
+ },
+ {
+  "id": "572867543acd2414000df9a3",
+  "category": "answerable",
+  "question": "What is the name of the co-ed community service fraternity?",
+  "gold": [
+   "p0741"
+  ],
+  "reference": "Accepted answers (any one is correct): Alpha Phi Omega",
+  "answers": [
+   "Alpha Phi Omega"
+  ],
+  "source_paragraph": "p0741"
+ },
+ {
+  "id": "5737a5931c456719005744eb",
+  "category": "answerable",
+  "question": "What is resposible for speeding up or slowing down an object?",
+  "gold": [
+   "p1199"
+  ],
+  "reference": "Accepted answers (any one is correct): tangential force",
+  "answers": [
+   "tangential force"
+  ],
+  "source_paragraph": "p1199"
+ },
+ {
+  "id": "570d4606b3d812140066d619",
+  "category": "answerable",
+  "question": "What state in Australia is the center of dairy farming?",
+  "gold": [
+   "p0166"
+  ],
+  "reference": "Accepted answers (any one is correct): Victoria",
+  "answers": [
+   "Victoria"
+  ],
+  "source_paragraph": "p0166"
+ },
+ {
+  "id": "571c4132dd7acb1400e4c0b3",
+  "category": "answerable",
+  "question": "Why is Priestley usually given credit for being first to discover oxygen?",
+  "gold": [
+   "p0266"
+  ],
+  "reference": "Accepted answers (any one is correct): published his findings first | he published his findings first | Because he published his findings first",
+  "answers": [
+   "published his findings first",
+   "he published his findings first",
+   "Because he published his findings first"
+  ],
+  "source_paragraph": "p0266"
+ },
+ {
+  "id": "57293b843f37b31900478137",
+  "category": "answerable",
+  "question": "What UN resolution endorsed the IPCC?",
+  "gold": [
+   "p0849"
+  ],
+  "reference": "Accepted answers (any one is correct): Resolution 43/53",
+  "answers": [
+   "Resolution 43/53"
+  ],
+  "source_paragraph": "p0849"
+ },
+ {
+  "id": "5733cf61d058e614000b62e9",
+  "category": "answerable",
+  "question": "When was the French and Indian War?",
+  "gold": [
+   "p1114"
+  ],
+  "reference": "Accepted answers (any one is correct): 1754–1763",
+  "answers": [
+   "1754–1763"
+  ],
+  "source_paragraph": "p1114"
+ },
+ {
+  "id": "5a25ade0ef59cd001a623c46",
+  "category": "unanswerable",
+  "question": "What is one thing that market segments publish?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0576"
+ },
+ {
+  "id": "5a2ed354a83784001a7d24ef",
+  "category": "unanswerable",
+  "question": "What percentage of Venice residents died of the plague in 1361?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0493"
+ },
+ {
+  "id": "5729e2316aef0514001550c8",
+  "category": "answerable",
+  "question": "What is the estimate for the amount of tree species in the amazon tropical rain forest?",
+  "gold": [
+   "p0370"
+  ],
+  "reference": "Accepted answers (any one is correct): 16,000 species | 16,000",
+  "answers": [
+   "16,000 species",
+   "16,000"
+  ],
+  "source_paragraph": "p0370"
+ },
+ {
+  "id": "57115bf350c2381900b54a94",
+  "category": "answerable",
+  "question": "Where is Energiprojekt AB based?",
+  "gold": [
+   "p0245"
+  ],
+  "reference": "Accepted answers (any one is correct): Sweden",
+  "answers": [
+   "Sweden"
+  ],
+  "source_paragraph": "p0245"
+ },
+ {
+  "id": "5ad2461ad7d075001a428ad5",
+  "category": "unanswerable",
+  "question": "How do competing businesses repel workers?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0676"
+ },
+ {
+  "id": "57108c95b654c5140001f979",
+  "category": "answerable",
+  "question": "What city north of New York was settled by Huguenots?",
+  "gold": [
+   "p0185"
+  ],
+  "reference": "Accepted answers (any one is correct): New Rochelle",
+  "answers": [
+   "New Rochelle"
+  ],
+  "source_paragraph": "p0185"
+ },
+ {
+  "id": "570d2417fed7b91900d45c3d",
+  "category": "answerable",
+  "question": "What kind of economy does Victoria have?",
+  "gold": [
+   "p0148"
+  ],
+  "reference": "Accepted answers (any one is correct): diversified | highly diversified",
+  "answers": [
+   "diversified",
+   "highly diversified"
+  ],
+  "source_paragraph": "p0148"
+ },
+ {
+  "id": "57273f27dd62a815002e9a0b",
+  "category": "answerable",
+  "question": "There are other categories for what?",
+  "gold": [
+   "p0577"
+  ],
+  "reference": "Accepted answers (any one is correct): construction service firms (e.g., engineering, architecture) and construction managers | service firms",
+  "answers": [
+   "construction service firms (e.g., engineering, architecture) and construction managers",
+   "service firms"
+  ],
+  "source_paragraph": "p0577"
+ },
+ {
+  "id": "572885023acd2414000dfa85",
+  "category": "answerable",
+  "question": "Why were Southern Chinese ranked lower?",
+  "gold": [
+   "p0797"
+  ],
+  "reference": "Accepted answers (any one is correct): southern China withstood and fought to the last | because southern China withstood and fought to the last before caving in | withstood and fought to the last",
+  "answers": [
+   "southern China withstood and fought to the last",
+   "because southern China withstood and fought to the last before caving in",
+   "withstood and fought to the last"
+  ],
+  "source_paragraph": "p0797"
+ },
+ {
+  "id": "5711163bb654c5140001fb16",
+  "category": "answerable",
+  "question": "What French City was New Rochelle named after?",
+  "gold": [
+   "p0211"
+  ],
+  "reference": "Accepted answers (any one is correct): La Rochelle",
+  "answers": [
+   "La Rochelle"
+  ],
+  "source_paragraph": "p0211"
+ },
+ {
+  "id": "5726926a5951b619008f770d",
+  "category": "answerable",
+  "question": "When did the European Anti-Fraud Office investigate John Dalli?",
+  "gold": [
+   "p0337"
+  ],
+  "reference": "Accepted answers (any one is correct): 2012",
+  "answers": [
+   "2012"
+  ],
+  "source_paragraph": "p0337"
+ },
+ {
+  "id": "572f6a0ba23a5019007fc5eb",
+  "category": "answerable",
+  "question": "What flows between the Bingen and Bonn?",
+  "gold": [
+   "p0916"
+  ],
+  "reference": "Accepted answers (any one is correct): Middle Rhine",
+  "answers": [
+   "Middle Rhine"
+  ],
+  "source_paragraph": "p0916"
+ },
+ {
+  "id": "5706094b52bb8914006897df",
+  "category": "answerable",
+  "question": "Southern California is most famous for tourism and what notably named district?",
+  "gold": [
+   "p0111"
+  ],
+  "reference": "Accepted answers (any one is correct): Hollywood",
+  "answers": [
+   "Hollywood"
+  ],
+  "source_paragraph": "p0111"
+ },
+ {
+  "id": "572a18a4af94a219006aa7e3",
+  "category": "answerable",
+  "question": "What are longer growth spells associated with?",
+  "gold": [
+   "p0706"
+  ],
+  "reference": "Accepted answers (any one is correct): more equality in the income distribution | more equality | equality in the income distribution",
+  "answers": [
+   "more equality in the income distribution",
+   "more equality",
+   "equality in the income distribution"
+  ],
+  "source_paragraph": "p0706"
+ },
+ {
+  "id": "571095a8a58dae1900cd6a78",
+  "category": "answerable",
+  "question": "What was the Brazilian French colony called?",
+  "gold": [
+   "p0193"
+  ],
+  "reference": "Accepted answers (any one is correct): France Antarctique",
+  "answers": [
+   "France Antarctique"
+  ],
+  "source_paragraph": "p0193"
+ },
+ {
+  "id": "571ccfbadd7acb1400e4c168",
+  "category": "answerable",
+  "question": "What other catalysts can be used to produce oxygen?",
+  "gold": [
+   "p0294"
+  ],
+  "reference": "Accepted answers (any one is correct): Chemical | chemical oxygen generators or oxygen candles",
+  "answers": [
+   "Chemical",
+   "chemical oxygen generators or oxygen candles"
+  ],
+  "source_paragraph": "p0294"
+ },
+ {
+  "id": "572fc043a23a5019007fc95e",
+  "category": "answerable",
+  "question": "How long might a speaker address the members during the Time of Reflection?",
+  "gold": [
+   "p0961"
+  ],
+  "reference": "Accepted answers (any one is correct): up to four minutes",
+  "answers": [
+   "up to four minutes"
+  ],
+  "source_paragraph": "p0961"
+ },
+ {
+  "id": "5ad0206677cf76001a686afc",
+  "category": "unanswerable",
+  "question": "Where is Los Angeles a district of?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0093"
+ },
+ {
+  "id": "57287338ff5b5019007da233",
+  "category": "answerable",
+  "question": "What uprising began in 1351?",
+  "gold": [
+   "p0774"
+  ],
+  "reference": "Accepted answers (any one is correct): the Red Turban Rebellion | Red Turban Rebellion",
+  "answers": [
+   "the Red Turban Rebellion",
+   "Red Turban Rebellion"
+  ],
+  "source_paragraph": "p0774"
+ },
+ {
+  "id": "572657d9dd62a815002e8234",
+  "category": "answerable",
+  "question": "What changes the mineral content of a rock?",
+  "gold": [
+   "p0496"
+  ],
+  "reference": "Accepted answers (any one is correct): heat and pressure",
+  "answers": [
+   "heat and pressure"
+  ],
+  "source_paragraph": "p0496"
+ },
+ {
+  "id": "5725fe63ec44d21400f3d7df",
+  "category": "answerable",
+  "question": "Which State Route has been in discussion to upgrade to interstate standards?",
+  "gold": [
+   "p0448"
+  ],
+  "reference": "Accepted answers (any one is correct): 99 | State Route 99",
+  "answers": [
+   "99",
+   "State Route 99"
+  ],
+  "source_paragraph": "p0448"
+ },
+ {
+  "id": "572fe288a23a5019007fcada",
+  "category": "answerable",
+  "question": "What is the Rhine called in Dutch?",
+  "gold": [
+   "p0905"
+  ],
+  "reference": "Accepted answers (any one is correct): Rijn",
+  "answers": [
+   "Rijn"
+  ],
+  "source_paragraph": "p0905"
+ },
+ {
+  "id": "57282358ff5b5019007d9de0",
+  "category": "answerable",
+  "question": "What else contributes to Jacksonville's summer storms other than land heating beside the water?",
+  "gold": [
+   "p0668"
+  ],
+  "reference": "Accepted answers (any one is correct): high humidity | extremely high humidity",
+  "answers": [
+   "high humidity",
+   "extremely high humidity"
+  ],
+  "source_paragraph": "p0668"
+ },
+ {
+  "id": "57097b50200fba140036804d",
+  "category": "answerable",
+  "question": "How many homes had BSkyB's direct-to-home satellite service available to them in 2010?",
+  "gold": [
+   "p0145"
+  ],
+  "reference": "Accepted answers (any one is correct): 10 million",
+  "answers": [
+   "10 million"
+  ],
+  "source_paragraph": "p0145"
+ },
+ {
+  "id": "5727aec03acd2414000de991",
+  "category": "answerable",
+  "question": "What is the major US city that the is the university located?",
+  "gold": [
+   "p0623"
+  ],
+  "reference": "Accepted answers (any one is correct): Boston metropolitan area | Boston",
+  "answers": [
+   "Boston metropolitan area",
+   "Boston"
+  ],
+  "source_paragraph": "p0623"
+ },
+ {
+  "id": "570953a7efce8f15003a7e00",
+  "category": "answerable",
+  "question": "What did Virgin Media claim BSkyB did that resulted Virgin not carrying the channels anymore?",
+  "gold": [
+   "p0131"
+  ],
+  "reference": "Accepted answers (any one is correct): substantially increased the asking price | that BSkyB had substantially increased the asking price for the channels | increased the asking price",
+  "answers": [
+   "substantially increased the asking price",
+   "that BSkyB had substantially increased the asking price for the channels",
+   "increased the asking price"
+  ],
+  "source_paragraph": "p0131"
+ },
+ {
+  "id": "57376c50c3c5551400e51ecd",
+  "category": "answerable",
+  "question": "Whwn forces are at right ngles to each other what can they be broken down to?",
+  "gold": [
+   "p1173"
+  ],
+  "reference": "Accepted answers (any one is correct): independent components",
+  "answers": [
+   "independent components"
+  ],
+  "source_paragraph": "p1173"
+ },
+ {
+  "id": "5ad261a4d7d075001a429048",
+  "category": "unanswerable",
+  "question": "Newton's Second Law of Motion states what?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p1164"
+ },
+ {
+  "id": "5ad0392577cf76001a686e51",
+  "category": "unanswerable",
+  "question": "Mandatory Committees exists in the fifth session of what?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0967"
+ },
+ {
+  "id": "5ad21e1ad7d075001a428470",
+  "category": "unanswerable",
+  "question": "What absorbs UBV rays?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0264"
+ },
+ {
+  "id": "5a55242b134fea001a0e197f",
+  "category": "unanswerable",
+  "question": "Level 3 communications launched what?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0470"
+ },
+ {
+  "id": "5acfa23577cf76001a68562e",
+  "category": "unanswerable",
+  "question": "Who is the founder of Microsoft and the third richest man in America?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0743"
+ },
+ {
+  "id": "57282dfb4b864d190016466a",
+  "category": "answerable",
+  "question": "Name the other way that the Plowshares organization temporarily closed?",
+  "gold": [
+   "p0561"
+  ],
+  "reference": "Accepted answers (any one is correct): using sickles to deflate one of the large domes covering two satellite dishes | using sickles to deflate one of the large domes",
+  "answers": [
+   "using sickles to deflate one of the large domes covering two satellite dishes",
+   "using sickles to deflate one of the large domes"
+  ],
+  "source_paragraph": "p0561"
+ },
+ {
+  "id": "5726ed6cf1498d1400e8f00f",
+  "category": "answerable",
+  "question": "What practice do some internet pharmacies engage in?",
+  "gold": [
+   "p0536"
+  ],
+  "reference": "Accepted answers (any one is correct): sell prescription drugs without requiring a prescription | some Internet pharmacies sell prescription drugs without requiring a prescription",
+  "answers": [
+   "sell prescription drugs without requiring a prescription",
+   "some Internet pharmacies sell prescription drugs without requiring a prescription"
+  ],
+  "source_paragraph": "p0536"
+ },
+ {
+  "id": "57300580b2c2fd1400568750",
+  "category": "answerable",
+  "question": "How many avulsions have occurred in the past 6000 yeas?",
+  "gold": [
+   "p0937"
+  ],
+  "reference": "Accepted answers (any one is correct): 80",
+  "answers": [
+   "80"
+  ],
+  "source_paragraph": "p0937"
+ },
+ {
+  "id": "57287e512ca10214002da3fb",
+  "category": "answerable",
+  "question": "The mother of which emperor was a concubine?",
+  "gold": [
+   "p0782"
+  ],
+  "reference": "Accepted answers (any one is correct): Tugh Temur",
+  "answers": [
+   "Tugh Temur"
+  ],
+  "source_paragraph": "p0782"
+ },
+ {
+  "id": "5ad2b72fd7d075001a42a026",
+  "category": "unanswerable",
+  "question": "What was the name of the war that the Archduke Sigismund of Austria started?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0943"
+ },
+ {
+  "id": "572fff45947a6a140053cf29",
+  "category": "answerable",
+  "question": "What covered Scandinavia, the Baltics, Scotland, and the Alps in the last Ice Age?",
+  "gold": [
+   "p0933"
+  ],
+  "reference": "Accepted answers (any one is correct): ice-sheets",
+  "answers": [
+   "ice-sheets"
+  ],
+  "source_paragraph": "p0933"
+ },
+ {
+  "id": "5726887e708984140094c91a",
+  "category": "answerable",
+  "question": "What does the bolinopsis generally eat?",
+  "gold": [
+   "p0415"
+  ],
+  "reference": "Accepted answers (any one is correct): smaller, weaker swimmers such as rotifers and mollusc and crustacean larvae. | smaller, weaker swimmers such as rotifers and mollusc and crustacean larvae | rotifers and mollusc and crustacean larvae",
+  "answers": [
+   "smaller, weaker swimmers such as rotifers and mollusc and crustacean larvae.",
+   "smaller, weaker swimmers such as rotifers and mollusc and crustacean larvae",
+   "rotifers and mollusc and crustacean larvae"
+  ],
+  "source_paragraph": "p0415"
+ },
+ {
+  "id": "5ad28035d7d075001a4297a9",
+  "category": "unanswerable",
+  "question": "What describes objects not moving freely?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p1187"
+ },
+ {
+  "id": "570d2417fed7b91900d45c40",
+  "category": "answerable",
+  "question": "What city in Victoria is called the sporting capital of Australia?",
+  "gold": [
+   "p0148"
+  ],
+  "reference": "Accepted answers (any one is correct): Melbourne",
+  "answers": [
+   "Melbourne"
+  ],
+  "source_paragraph": "p0148"
+ },
+ {
+  "id": "572a0c541d046914007796f3",
+  "category": "answerable",
+  "question": "What do conservative researchers fell should be a measure of inequality?",
+  "gold": [
+   "p0698"
+  ],
+  "reference": "Accepted answers (any one is correct): consumption",
+  "answers": [
+   "consumption"
+  ],
+  "source_paragraph": "p0698"
+ },
+ {
+  "id": "57283db6ff5b5019007d9fbe",
+  "category": "answerable",
+  "question": "Where is the first man-made self-sustaining nuclear reaction located?",
+  "gold": [
+   "p0717"
+  ],
+  "reference": "Accepted answers (any one is correct): beneath the university's Stagg Field | Stagg Field",
+  "answers": [
+   "beneath the university's Stagg Field",
+   "Stagg Field"
+  ],
+  "source_paragraph": "p0717"
+ },
+ {
+  "id": "57302efe04bcaa1900d772f5",
+  "category": "answerable",
+  "question": "What type of jihad does HT avoid engaging in?",
+  "gold": [
+   "p1023"
+  ],
+  "reference": "Accepted answers (any one is correct): armed | armed jihad",
+  "answers": [
+   "armed",
+   "armed jihad"
+  ],
+  "source_paragraph": "p1023"
+ },
+ {
+  "id": "5711669550c2381900b54ae1",
+  "category": "answerable",
+  "question": "What does isobaric mean?",
+  "gold": [
+   "p0262"
+  ],
+  "reference": "Accepted answers (any one is correct): constant pressure",
+  "answers": [
+   "constant pressure"
+  ],
+  "source_paragraph": "p0262"
+ },
+ {
+  "id": "5a55242b134fea001a0e1980",
+  "category": "unanswerable",
+  "question": "Internet2 became what in 2007?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0470"
+ },
+ {
+  "id": "572673f5708984140094c69b",
+  "category": "answerable",
+  "question": "What is another word for long, planar igneous intrusions?",
+  "gold": [
+   "p0508"
+  ],
+  "reference": "Accepted answers (any one is correct): Dikes",
+  "answers": [
+   "Dikes"
+  ],
+  "source_paragraph": "p0508"
+ },
+ {
+  "id": "5726926a5951b619008f7709",
+  "category": "answerable",
+  "question": "When was the Santer Commission censured by Parliament?",
+  "gold": [
+   "p0337"
+  ],
+  "reference": "Accepted answers (any one is correct): 1999",
+  "answers": [
+   "1999"
+  ],
+  "source_paragraph": "p0337"
+ },
+ {
+  "id": "5a67a2c7f038b7001ab0c3a6",
+  "category": "unanswerable",
+  "question": "Why have private schools been in decline since 2014?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0609"
+ },
+ {
+  "id": "5726d9935951b619008f7fed",
+  "category": "answerable",
+  "question": "What type of professionals are pharmacists?",
+  "gold": [
+   "p0522"
+  ],
+  "reference": "Accepted answers (any one is correct): healthcare professionals | healthcare | healthcare professionals with specialised education",
+  "answers": [
+   "healthcare professionals",
+   "healthcare",
+   "healthcare professionals with specialised education"
+  ],
+  "source_paragraph": "p0522"
+ },
+ {
+  "id": "573007fab2c2fd140056876b",
+  "category": "answerable",
+  "question": "When did Augustus die?",
+  "gold": [
+   "p0940"
+  ],
+  "reference": "Accepted answers (any one is correct): AD 14",
+  "answers": [
+   "AD 14"
+  ],
+  "source_paragraph": "p0940"
+ },
+ {
+  "id": "57339ad74776f41900660e8a",
+  "category": "answerable",
+  "question": "Warsaw Summer Jazz Days is one of the many what hosted by Warsaw?",
+  "gold": [
+   "p1103"
+  ],
+  "reference": "Accepted answers (any one is correct): festivals | events",
+  "answers": [
+   "festivals",
+   "events"
+  ],
+  "source_paragraph": "p1103"
+ },
+ {
+  "id": "572fc8a904bcaa1900d76d20",
+  "category": "answerable",
+  "question": "What topic do private bills typically have?",
+  "gold": [
+   "p0969"
+  ],
+  "reference": "Accepted answers (any one is correct): large-scale development projects",
+  "answers": [
+   "large-scale development projects"
+  ],
+  "source_paragraph": "p0969"
+ },
+ {
+  "id": "571cdcb85efbb31900334e0c",
+  "category": "answerable",
+  "question": "What type of compounds such as acetone,contain oxygen?",
+  "gold": [
+   "p0301"
+  ],
+  "reference": "Accepted answers (any one is correct): organic solvents | solvents",
+  "answers": [
+   "organic solvents",
+   "solvents"
+  ],
+  "source_paragraph": "p0301"
+ },
+ {
+  "id": "57114667a58dae1900cd6d83",
+  "category": "answerable",
+  "question": "Who developed a successful steam engine indicator for Charles Porter?",
+  "gold": [
+   "p0229"
+  ],
+  "reference": "Accepted answers (any one is correct): Charles Richard",
+  "answers": [
+   "Charles Richard"
+  ],
+  "source_paragraph": "p0229"
+ },
+ {
+  "id": "572f5533a23a5019007fc55d",
+  "category": "answerable",
+  "question": "What is the largest city the Rhine runs through?",
+  "gold": [
+   "p0904"
+  ],
+  "reference": "Accepted answers (any one is correct): Cologne, Germany | Cologne",
+  "answers": [
+   "Cologne, Germany",
+   "Cologne"
+  ],
+  "source_paragraph": "p0904"
+ },
+ {
+  "id": "5a63969068151a001a9223ac",
+  "category": "unanswerable",
+  "question": "In what direction does the river system extend?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0161"
+ },
+ {
+  "id": "573083dc2461fd1900a9ce6e",
+  "category": "answerable",
+  "question": "What does colonialism lack that imperialism has?",
+  "gold": [
+   "p1030"
+  ],
+  "reference": "Accepted answers (any one is correct): political focus | ideological",
+  "answers": [
+   "political focus",
+   "ideological"
+  ],
+  "source_paragraph": "p1030"
+ },
+ {
+  "id": "57264cc6dd62a815002e80e6",
+  "category": "answerable",
+  "question": "When did the second edition of Gasquet's book come out?",
+  "gold": [
+   "p0481"
+  ],
+  "reference": "Accepted answers (any one is correct): 1908",
+  "answers": [
+   "1908"
+  ],
+  "source_paragraph": "p0481"
+ },
+ {
+  "id": "571098f8a58dae1900cd6ab3",
+  "category": "answerable",
+  "question": "What style of lace is erroneously believed by some to have Huguenot influence?",
+  "gold": [
+   "p0196"
+  ],
+  "reference": "Accepted answers (any one is correct): 'Bucks Point' | Bucks Point",
+  "answers": [
+   "'Bucks Point'",
+   "Bucks Point"
+  ],
+  "source_paragraph": "p0196"
+ },
+ {
+  "id": "57096f37200fba1400367fe6",
+  "category": "answerable",
+  "question": "what is the fee range for accessing BSkyB's EPG?",
+  "gold": [
+   "p0142"
+  ],
+  "reference": "Accepted answers (any one is correct): £15–100,000",
+  "answers": [
+   "£15–100,000"
+  ],
+  "source_paragraph": "p0142"
+ },
+ {
+  "id": "572872dd2ca10214002da37f",
+  "category": "answerable",
+  "question": "Who discovered the Compton Effect?",
+  "gold": [
+   "p0750"
+  ],
+  "reference": "Accepted answers (any one is correct): Arthur H. Compton | Robert A. Millikan",
+  "answers": [
+   "Arthur H. Compton",
+   "Robert A. Millikan"
+  ],
+  "source_paragraph": "p0750"
+ },
+ {
+  "id": "57286d4f2ca10214002da328",
+  "category": "answerable",
+  "question": "Where did Kublai build his administration's strength?",
+  "gold": [
+   "p0765"
+  ],
+  "reference": "Accepted answers (any one is correct): northern China",
+  "answers": [
+   "northern China"
+  ],
+  "source_paragraph": "p0765"
+ },
+ {
+  "id": "5733638fd058e614000b59e9",
+  "category": "answerable",
+  "question": "Why aren't the examples of bouregois architecture visible today?",
+  "gold": [
+   "p1084"
+  ],
+  "reference": "Accepted answers (any one is correct): not restored by the communist authorities | were not restored | not restored by the communist authorities after the war",
+  "answers": [
+   "not restored by the communist authorities",
+   "were not restored",
+   "not restored by the communist authorities after the war"
+  ],
+  "source_paragraph": "p1084"
+ },
+ {
+  "id": "572fda6fb2c2fd140056850b",
+  "category": "answerable",
+  "question": "How are the total numbers of seats allocated to parties?",
+  "gold": [
+   "p0982"
+  ],
+  "reference": "Accepted answers (any one is correct): proportionally to the number of votes received | proportionally to the number of votes received in the second vote of the ballot using the d'Hondt method",
+  "answers": [
+   "proportionally to the number of votes received",
+   "proportionally to the number of votes received in the second vote of the ballot using the d'Hondt method"
+  ],
+  "source_paragraph": "p0982"
+ },
+ {
+  "id": "5733e5a14776f4190066145b",
+  "category": "answerable",
+  "question": "When did British government give land for development of Ohio Country?",
+  "gold": [
+   "p1129"
+  ],
+  "reference": "Accepted answers (any one is correct): 1749",
+  "answers": [
+   "1749"
+  ],
+  "source_paragraph": "p1129"
+ },
+ {
+  "id": "572fd73e947a6a140053cd35",
+  "category": "answerable",
+  "question": "What do the leaders of the opposition parties and other MSPs question the First Minister about?",
+  "gold": [
+   "p0979"
+  ],
+  "reference": "Accepted answers (any one is correct): issues related to the substance of the statement | issues",
+  "answers": [
+   "issues related to the substance of the statement",
+   "issues"
+  ],
+  "source_paragraph": "p0979"
+ },
+ {
+  "id": "572a0c541d046914007796f4",
+  "category": "answerable",
+  "question": "What political leaning does the Cato Institute have?",
+  "gold": [
+   "p0698"
+  ],
+  "reference": "Accepted answers (any one is correct): libertarian",
+  "answers": [
+   "libertarian"
+  ],
+  "source_paragraph": "p0698"
+ },
+ {
+  "id": "571135b8a58dae1900cd6d0f",
+  "category": "answerable",
+  "question": "What types of pumps are typically used in industrial boilers?",
+  "gold": [
+   "p0220"
+  ],
+  "reference": "Accepted answers (any one is correct): multi-stage centrifugal | multi-stage centrifugal pumps",
+  "answers": [
+   "multi-stage centrifugal",
+   "multi-stage centrifugal pumps"
+  ],
+  "source_paragraph": "p0220"
+ },
+ {
+  "id": "57299326af94a219006aa516",
+  "category": "answerable",
+  "question": "What British mathematician took pride in doing work that he felt had no military benefit?",
+  "gold": [
+   "p0893"
+  ],
+  "reference": "Accepted answers (any one is correct): G. H. Hardy",
+  "answers": [
+   "G. H. Hardy"
+  ],
+  "source_paragraph": "p0893"
+ },
+ {
+  "id": "570d529fb3d812140066d6bc",
+  "category": "answerable",
+  "question": "Besides cultural events, what other tourist attraction does Victoria have?",
+  "gold": [
+   "p0172"
+  ],
+  "reference": "Accepted answers (any one is correct): sports | sports tourism",
+  "answers": [
+   "sports",
+   "sports tourism"
+  ],
+  "source_paragraph": "p0172"
+ },
+ {
+  "id": "5733a2a9d058e614000b5f29",
+  "category": "answerable",
+  "question": "How many projects does the Centre currently realize a year?",
+  "gold": [
+   "p1108"
+  ],
+  "reference": "Accepted answers (any one is correct): about 500 | 500",
+  "answers": [
+   "about 500",
+   "500"
+  ],
+  "source_paragraph": "p1108"
+ },
+ {
+  "id": "5729ea263f37b319004785bd",
+  "category": "answerable",
+  "question": "A satellite that measured the amount of dust going to the Amazon was named what?",
+  "gold": [
+   "p0374"
+  ],
+  "reference": "Accepted answers (any one is correct): CALIPSO",
+  "answers": [
+   "CALIPSO"
+  ],
+  "source_paragraph": "p0374"
+ },
+ {
+  "id": "5726b929f1498d1400e8e8e8",
+  "category": "answerable",
+  "question": "What is the minimum percent of alcohol content a German law requires all spirits and liqueurs to have?",
+  "gold": [
+   "p0361"
+  ],
+  "reference": "Accepted answers (any one is correct): 25 | 25 per cent",
+  "answers": [
+   "25",
+   "25 per cent"
+  ],
+  "source_paragraph": "p0361"
+ },
+ {
+  "id": "56de52614396321400ee27fd",
+  "category": "answerable",
+  "question": "Who patronized the monks in Italy?",
+  "gold": [
+   "p0038"
+  ],
+  "reference": "Accepted answers (any one is correct): Robert Guiscard",
+  "answers": [
+   "Robert Guiscard"
+  ],
+  "source_paragraph": "p0038"
+ },
+ {
+  "id": "57300200b2c2fd140056872a",
+  "category": "answerable",
+  "question": "Maududi believed that Islam needed what to be established?",
+  "gold": [
+   "p0999"
+  ],
+  "reference": "Accepted answers (any one is correct): an Islamic state",
+  "answers": [
+   "an Islamic state"
+  ],
+  "source_paragraph": "p0999"
+ },
+ {
+  "id": "5725f5b1271a42140099d371",
+  "category": "answerable",
+  "question": "How would one describe the summers in Fresno?",
+  "gold": [
+   "p0441"
+  ],
+  "reference": "Accepted answers (any one is correct): hot and dry",
+  "answers": [
+   "hot and dry"
+  ],
+  "source_paragraph": "p0441"
+ },
+ {
+  "id": "5729a03f1d04691400779596",
+  "category": "answerable",
+  "question": "What does quadratic reciprocity seek to achieve?",
+  "gold": [
+   "p0901"
+  ],
+  "reference": "Accepted answers (any one is correct): the solvability of quadratic equations | solvability of quadratic equations",
+  "answers": [
+   "the solvability of quadratic equations",
+   "solvability of quadratic equations"
+  ],
+  "source_paragraph": "p0901"
+ },
+ {
+  "id": "5730b255396df919000962b2",
+  "category": "answerable",
+  "question": "Who asserted Russia's right to \"self-determination?\"",
+  "gold": [
+   "p1056"
+  ],
+  "reference": "Accepted answers (any one is correct): Lenin",
+  "answers": [
+   "Lenin"
+  ],
+  "source_paragraph": "p1056"
+ },
+ {
+  "id": "572a1f086aef0514001552c1",
+  "category": "answerable",
+  "question": "What would be lower if there were fewer people?",
+  "gold": [
+   "p0711"
+  ],
+  "reference": "Accepted answers (any one is correct): emissions per person | this multiplier | environmental degradation",
+  "answers": [
+   "emissions per person",
+   "this multiplier",
+   "environmental degradation"
+  ],
+  "source_paragraph": "p0711"
+ },
+ {
+  "id": "5737aafd1c456719005744ff",
+  "category": "answerable",
+  "question": "What is the seldom used force unit equal to one thousand newtons?",
+  "gold": [
+   "p1203"
+  ],
+  "reference": "Accepted answers (any one is correct): sthène",
+  "answers": [
+   "sthène"
+  ],
+  "source_paragraph": "p1203"
+ },
+ {
+  "id": "5a2c1397bfd06b001a5ae9c9",
+  "category": "unanswerable",
+  "question": "What did Alec Shelbrooke propose payments of benefits never be made on?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0146"
+ },
+ {
+  "id": "5728f7774b864d1900165131",
+  "category": "answerable",
+  "question": "What term is shorthand for antibody generators?",
+  "gold": [
+   "p0804"
+  ],
+  "reference": "Accepted answers (any one is correct): antigens",
+  "answers": [
+   "antigens"
+  ],
+  "source_paragraph": "p0804"
+ },
+ {
+  "id": "57264cc6dd62a815002e80e8",
+  "category": "answerable",
+  "question": "What is another plague thought to have spread the same way?",
+  "gold": [
+   "p0481"
+  ],
+  "reference": "Accepted answers (any one is correct): the Justinian plague that was prevalent in the Eastern Roman Empire from 541 to 700 CE. | Justinian plague",
+  "answers": [
+   "the Justinian plague that was prevalent in the Eastern Roman Empire from 541 to 700 CE.",
+   "Justinian plague"
+  ],
+  "source_paragraph": "p0481"
+ },
+ {
+  "id": "5728fb002ca10214002dab6c",
+  "category": "answerable",
+  "question": "What responses protect the lungs by mechanically ejecting pathogens from the respiratory system?",
+  "gold": [
+   "p0806"
+  ],
+  "reference": "Accepted answers (any one is correct): coughing and sneezing",
+  "answers": [
+   "coughing and sneezing"
+  ],
+  "source_paragraph": "p0806"
+ },
+ {
+  "id": "57339dd94776f41900660ecc",
+  "category": "answerable",
+  "question": "What is the polish word for wreaths?",
+  "gold": [
+   "p1105"
+  ],
+  "reference": "Accepted answers (any one is correct): Wianki",
+  "answers": [
+   "Wianki"
+  ],
+  "source_paragraph": "p1105"
+ },
+ {
+  "id": "57297ed93f37b31900478463",
+  "category": "answerable",
+  "question": "What is the name of another compelling continuation of the Fermat primality test?",
+  "gold": [
+   "p0884"
+  ],
+  "reference": "Accepted answers (any one is correct): Solovay-Strassen tests | Miller-Rabin",
+  "answers": [
+   "Solovay-Strassen tests",
+   "Miller-Rabin"
+  ],
+  "source_paragraph": "p0884"
+ },
+ {
+  "id": "57271f125951b619008f8639",
+  "category": "answerable",
+  "question": "What is Creon trying to stop Antigone from doing in the play?",
+  "gold": [
+   "p0548"
+  ],
+  "reference": "Accepted answers (any one is correct): giving her brother Polynices a proper burial | trying to stop her from giving her brother Polynices a proper burial | giving her brother Polynices a proper burial. | from giving her brother Polynices a proper burial",
+  "answers": [
+   "giving her brother Polynices a proper burial",
+   "trying to stop her from giving her brother Polynices a proper burial",
+   "giving her brother Polynices a proper burial.",
+   "from giving her brother Polynices a proper burial"
+  ],
+  "source_paragraph": "p0548"
+ },
+ {
+  "id": "5726926a5951b619008f770c",
+  "category": "answerable",
+  "question": "The corruption found by the Committee of Independent Experts resulted to the creation of what office?",
+  "gold": [
+   "p0337"
+  ],
+  "reference": "Accepted answers (any one is correct): the European Anti-fraud Office",
+  "answers": [
+   "the European Anti-fraud Office"
+  ],
+  "source_paragraph": "p0337"
+ },
+ {
+  "id": "573330444776f4190066075c",
+  "category": "answerable",
+  "question": "What did the Polish citizens understand the subtext of John Paul II's words to be?",
+  "gold": [
+   "p1077"
+  ],
+  "reference": "Accepted answers (any one is correct): incentive for the democratic changes | democratic changes",
+  "answers": [
+   "incentive for the democratic changes",
+   "democratic changes"
+  ],
+  "source_paragraph": "p1077"
+ },
+ {
+  "id": "5ad035bd77cf76001a686e29",
+  "category": "unanswerable",
+  "question": "What wasn't Germany's central interest?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p1053"
+ },
+ {
+  "id": "5729e02f1d04691400779639",
+  "category": "answerable",
+  "question": "In a progressive tax, what increases as the taxable base amount increases?",
+  "gold": [
+   "p0679"
+  ],
+  "reference": "Accepted answers (any one is correct): the tax rate | tax rate",
+  "answers": [
+   "the tax rate",
+   "tax rate"
+  ],
+  "source_paragraph": "p0679"
+ },
+ {
+  "id": "57097141200fba1400367ffb",
+  "category": "answerable",
+  "question": "What did Virgin Media concentrate on instead of offering linear channels?",
+  "gold": [
+   "p0144"
+  ],
+  "reference": "Accepted answers (any one is correct): Video On Demand | Video On Demand service | (HDTV)",
+  "answers": [
+   "Video On Demand",
+   "Video On Demand service",
+   "(HDTV)"
+  ],
+  "source_paragraph": "p0144"
+ },
+ {
+  "id": "572847dd4b864d19001648bf",
+  "category": "answerable",
+  "question": "In what book did Betty Meggers describe the idea of the Amazon being sparsely populated?",
+  "gold": [
+   "p0375"
+  ],
+  "reference": "Accepted answers (any one is correct): Amazonia: Man and Culture in a Counterfeit Paradise",
+  "answers": [
+   "Amazonia: Man and Culture in a Counterfeit Paradise"
+  ],
+  "source_paragraph": "p0375"
+ },
+ {
+  "id": "572f6ec7a23a5019007fc622",
+  "category": "answerable",
+  "question": "There's a UNESCO World Heritage site in the Rhine Gorge between the Koblenz and what?",
+  "gold": [
+   "p0918"
+  ],
+  "reference": "Accepted answers (any one is correct): Rüdesheim am Rhein",
+  "answers": [
+   "Rüdesheim am Rhein"
+  ],
+  "source_paragraph": "p0918"
+ },
+ {
+  "id": "57298ef11d04691400779531",
+  "category": "answerable",
+  "question": "What type of prime distribution is characterized about x/log x of numbers less than x?",
+  "gold": [
+   "p0890"
+  ],
+  "reference": "Accepted answers (any one is correct): asymptotic distribution | asymptotic",
+  "answers": [
+   "asymptotic distribution",
+   "asymptotic"
+  ],
+  "source_paragraph": "p0890"
+ },
+ {
+  "id": "5725f8f5ec44d21400f3d7b1",
+  "category": "answerable",
+  "question": "How many households has kids under the age of 18 living in them?",
+  "gold": [
+   "p0444"
+  ],
+  "reference": "Accepted answers (any one is correct): 68,511",
+  "answers": [
+   "68,511"
+  ],
+  "source_paragraph": "p0444"
+ },
+ {
+  "id": "572a0c541d046914007796f7",
+  "category": "answerable",
+  "question": "What is Thomas B. Edsall's profession?",
+  "gold": [
+   "p0698"
+  ],
+  "reference": "Accepted answers (any one is correct): journalist",
+  "answers": [
+   "journalist"
+  ],
+  "source_paragraph": "p0698"
+ },
+ {
+  "id": "5729f2646aef051400155133",
+  "category": "answerable",
+  "question": "What is the average weight of the biomass per hectare in the Amazon?",
+  "gold": [
+   "p0379"
+  ],
+  "reference": "Accepted answers (any one is correct): 356 ± 47 tonnes",
+  "answers": [
+   "356 ± 47 tonnes"
+  ],
+  "source_paragraph": "p0379"
+ },
+ {
+  "id": "57111ab8a58dae1900cd6c3d",
+  "category": "answerable",
+  "question": "Which areas of Northern Europe practiced those religions?",
+  "gold": [
+   "p0215"
+  ],
+  "reference": "Accepted answers (any one is correct): Germany and Scandinavia",
+  "answers": [
+   "Germany and Scandinavia"
+  ],
+  "source_paragraph": "p0215"
+ },
+ {
+  "id": "5726a1e5dd62a815002e8b86",
+  "category": "answerable",
+  "question": "Where is the European Court of justice likely to get inspiration from?",
+  "gold": [
+   "p0351"
+  ],
+  "reference": "Accepted answers (any one is correct): from the constitutional traditions common to the member states | the constitutional traditions common to the member states",
+  "answers": [
+   "from the constitutional traditions common to the member states",
+   "the constitutional traditions common to the member states"
+  ],
+  "source_paragraph": "p0351"
+ },
+ {
+  "id": "572686fc708984140094c8e6",
+  "category": "answerable",
+  "question": "When do bathyctena chuni, euplokamis stationis and eurhamphaea vexilligera  excrete secretions?",
+  "gold": [
+   "p0414"
+  ],
+  "reference": "Accepted answers (any one is correct): are disturbed, | disturbed | are disturbed",
+  "answers": [
+   "are disturbed,",
+   "disturbed",
+   "are disturbed"
+  ],
+  "source_paragraph": "p0414"
+ },
+ {
+  "id": "571cc5c45efbb31900334dda",
+  "category": "answerable",
+  "question": "What do the reactive forms of oxygen produce in organisms?",
+  "gold": [
+   "p0288"
+  ],
+  "reference": "Accepted answers (any one is correct): dangerous by-products | the immune system | hypersensitive response of plants against pathogen attack | dangerous by-products of oxygen use in organisms",
+  "answers": [
+   "dangerous by-products",
+   "the immune system",
+   "hypersensitive response of plants against pathogen attack",
+   "dangerous by-products of oxygen use in organisms"
+  ],
+  "source_paragraph": "p0288"
+ },
+ {
+  "id": "5725c071271a42140099d129",
+  "category": "answerable",
+  "question": "What is the name of the basin that was created from a enclosed lake?",
+  "gold": [
+   "p0372"
+  ],
+  "reference": "Accepted answers (any one is correct): Solimões Basin",
+  "answers": [
+   "Solimões Basin"
+  ],
+  "source_paragraph": "p0372"
+ },
+ {
+  "id": "57300f8504bcaa1900d770d3",
+  "category": "answerable",
+  "question": "Up until 1990, Saudi Arabia played an important role in restraining what groups?",
+  "gold": [
+   "p1007"
+  ],
+  "reference": "Accepted answers (any one is correct): Islamist",
+  "answers": [
+   "Islamist"
+  ],
+  "source_paragraph": "p1007"
+ },
+ {
+  "id": "57283d173acd2414000df791",
+  "category": "answerable",
+  "question": "Where did water to the west of the Amazon drainage basin flow towards?",
+  "gold": [
+   "p0372"
+  ],
+  "reference": "Accepted answers (any one is correct): the Pacific | Pacific",
+  "answers": [
+   "the Pacific",
+   "Pacific"
+  ],
+  "source_paragraph": "p0372"
+ },
+ {
+  "id": "572fd7b8947a6a140053cd3d",
+  "category": "answerable",
+  "question": "What may members question the First Minister about directly during First Minister's Question Time?",
+  "gold": [
+   "p0980"
+  ],
+  "reference": "Accepted answers (any one is correct): issues under their jurisdiction | the First Minister",
+  "answers": [
+   "issues under their jurisdiction",
+   "the First Minister"
+  ],
+  "source_paragraph": "p0980"
+ },
+ {
+  "id": "5729f4b41d0469140077968f",
+  "category": "answerable",
+  "question": "What is a ligand on the cell surface that is upregulated after helper T cell activation?",
+  "gold": [
+   "p0818"
+  ],
+  "reference": "Accepted answers (any one is correct): CD40 ligand | CD40",
+  "answers": [
+   "CD40 ligand",
+   "CD40"
+  ],
+  "source_paragraph": "p0818"
+ },
+ {
+  "id": "5a25bb0bef59cd001a623cb3",
+  "category": "unanswerable",
+  "question": "What do custom designed homes dictate in the area?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0579"
+ },
+ {
+  "id": "5ad562525b96ef001a10ad53",
+  "category": "unanswerable",
+  "question": "What is not strictly contained in PSPACE?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0067"
+ },
+ {
+  "id": "572659535951b619008f703f",
+  "category": "answerable",
+  "question": "When did Honda, Toyota and Nissan open US assembly plants?",
+  "gold": [
+   "p0325"
+  ],
+  "reference": "Accepted answers (any one is correct): A decade after the 1973 | 1981 | A decade after the 1973 oil crisis",
+  "answers": [
+   "A decade after the 1973",
+   "1981",
+   "A decade after the 1973 oil crisis"
+  ],
+  "source_paragraph": "p0325"
+ },
+ {
+  "id": "572656e4dd62a815002e81fa",
+  "category": "answerable",
+  "question": "What type of vote must the Parliament have to either block or suggest changes to the Commission's proposals?",
+  "gold": [
+   "p0339"
+  ],
+  "reference": "Accepted answers (any one is correct): a majority | a Commission proposal",
+  "answers": [
+   "a majority",
+   "a Commission proposal"
+  ],
+  "source_paragraph": "p0339"
+ },
+ {
+  "id": "572667e2f1498d1400e8de92",
+  "category": "answerable",
+  "question": "What is another word for inclusions in sedimentary rocks?",
+  "gold": [
+   "p0502"
+  ],
+  "reference": "Accepted answers (any one is correct): clasts",
+  "answers": [
+   "clasts"
+  ],
+  "source_paragraph": "p0502"
+ },
+ {
+  "id": "572751b4708984140094dc1c",
+  "category": "answerable",
+  "question": "What is the exchange of a set of obligations between two or more parties?",
+  "gold": [
+   "p0587"
+  ],
+  "reference": "Accepted answers (any one is correct): A contract",
+  "answers": [
+   "A contract"
+  ],
+  "source_paragraph": "p0587"
+ },
+ {
+  "id": "5726e5c95951b619008f81cc",
+  "category": "answerable",
+  "question": "What is involved in a review of prescribed medications?",
+  "gold": [
+   "p0532"
+  ],
+  "reference": "Accepted answers (any one is correct): an evaluation of the appropriateness of the drug therapy | evaluation of the appropriateness of the drug therapy",
+  "answers": [
+   "an evaluation of the appropriateness of the drug therapy",
+   "evaluation of the appropriateness of the drug therapy"
+  ],
+  "source_paragraph": "p0532"
+ },
+ {
+  "id": "571cac5d5efbb31900334dd4",
+  "category": "answerable",
+  "question": "Before the formation of which planet, did Sol lose oxygen 16?",
+  "gold": [
+   "p0283"
+  ],
+  "reference": "Accepted answers (any one is correct): Earth | the Earth",
+  "answers": [
+   "Earth",
+   "the Earth"
+  ],
+  "source_paragraph": "p0283"
+ },
+ {
+  "id": "5ad248e0d7d075001a428b86",
+  "category": "unanswerable",
+  "question": "When did economists reach a conclusion without the S&P's rating agency?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0681"
+ },
+ {
+  "id": "572fda6fb2c2fd140056850f",
+  "category": "answerable",
+  "question": "How is the process of allocating seats repeated until all available seats have been determined?",
+  "gold": [
+   "p0982"
+  ],
+  "reference": "Accepted answers (any one is correct): iteratively",
+  "answers": [
+   "iteratively"
+  ],
+  "source_paragraph": "p0982"
+ },
+ {
+  "id": "572a03086aef0514001551a2",
+  "category": "answerable",
+  "question": "What are the most powerful class of anti-inflammatory drugs?",
+  "gold": [
+   "p0833"
+  ],
+  "reference": "Accepted answers (any one is correct): Glucocorticoids",
+  "answers": [
+   "Glucocorticoids"
+  ],
+  "source_paragraph": "p0833"
+ },
+ {
+  "id": "5725f7cd38643c19005acf27",
+  "category": "answerable",
+  "question": "How many people per square mile lived in Fresno in 2010?",
+  "gold": [
+   "p0443"
+  ],
+  "reference": "Accepted answers (any one is correct): 4,404.5 people | 4,404.5",
+  "answers": [
+   "4,404.5 people",
+   "4,404.5"
+  ],
+  "source_paragraph": "p0443"
+ },
+ {
+  "id": "5729eb34af94a219006aa6cb",
+  "category": "answerable",
+  "question": "What was the theorized maximum population density per square kilometre for the Amazon rainforest?",
+  "gold": [
+   "p0375"
+  ],
+  "reference": "Accepted answers (any one is correct): 0.2 inhabitants per square kilometre | 0.2 inhabitants",
+  "answers": [
+   "0.2 inhabitants per square kilometre",
+   "0.2 inhabitants"
+  ],
+  "source_paragraph": "p0375"
+ },
+ {
+  "id": "57097051ed30961900e84132",
+  "category": "answerable",
+  "question": "When was BSkyB's digital service launched?",
+  "gold": [
+   "p0143"
+  ],
+  "reference": "Accepted answers (any one is correct): 1 October 1998",
+  "answers": [
+   "1 October 1998"
+  ],
+  "source_paragraph": "p0143"
+ },
+ {
+  "id": "5729ffda1d046914007796b0",
+  "category": "answerable",
+  "question": "What is the process of vaccination also known as?",
+  "gold": [
+   "p0830"
+  ],
+  "reference": "Accepted answers (any one is correct): immunization",
+  "answers": [
+   "immunization"
+  ],
+  "source_paragraph": "p0830"
+ },
+ {
+  "id": "5730b6592461fd1900a9cfd2",
+  "category": "answerable",
+  "question": "Rudyard Kipling was an influential spokesman for what?",
+  "gold": [
+   "p1059"
+  ],
+  "reference": "Accepted answers (any one is correct): The British spirit of imperialism | imperialism | Social Darwinism",
+  "answers": [
+   "The British spirit of imperialism",
+   "imperialism",
+   "Social Darwinism"
+  ],
+  "source_paragraph": "p1059"
+ },
+ {
+  "id": "57299a6f6aef05140015501a",
+  "category": "answerable",
+  "question": "What is an additional meaning intended when the word prime is used?",
+  "gold": [
+   "p0897"
+  ],
+  "reference": "Accepted answers (any one is correct): any object can be, essentially uniquely, decomposed into its prime components",
+  "answers": [
+   "any object can be, essentially uniquely, decomposed into its prime components"
+  ],
+  "source_paragraph": "p0897"
+ },
+ {
+  "id": "5729a26d6aef05140015505a",
+  "category": "answerable",
+  "question": "What happens to the norm when a number is multiplied by p?",
+  "gold": [
+   "p0902"
+  ],
+  "reference": "Accepted answers (any one is correct): norm gets smaller | gets smaller",
+  "answers": [
+   "norm gets smaller",
+   "gets smaller"
+  ],
+  "source_paragraph": "p0902"
+ },
+ {
+  "id": "573093598ab72b1400f9c5b1",
+  "category": "answerable",
+  "question": "Which historic empire used cultural imperialism to sway local elites?",
+  "gold": [
+   "p1039"
+  ],
+  "reference": "Accepted answers (any one is correct): Roman",
+  "answers": [
+   "Roman"
+  ],
+  "source_paragraph": "p1039"
+ },
+ {
+  "id": "572a064a3f37b31900478661",
+  "category": "answerable",
+  "question": "There is growing interest in what indigenous group in the Amazon?",
+  "gold": [
+   "p0386"
+  ],
+  "reference": "Accepted answers (any one is correct): lowland South American | lowland South American peoples | South American",
+  "answers": [
+   "lowland South American",
+   "lowland South American peoples",
+   "South American"
+  ],
+  "source_paragraph": "p0386"
+ },
+ {
+  "id": "57335fcad058e614000b5970",
+  "category": "answerable",
+  "question": "What does Warsaw's mixture of architectural styles reflect?",
+  "gold": [
+   "p1081"
+  ],
+  "reference": "Accepted answers (any one is correct): turbulent history of the city | turbulent history of the city and country",
+  "answers": [
+   "turbulent history of the city",
+   "turbulent history of the city and country"
+  ],
+  "source_paragraph": "p1081"
+ },
+ {
+  "id": "5728dafe3acd2414000e005d",
+  "category": "answerable",
+  "question": "Who is the final judge of right and wrong?",
+  "gold": [
+   "p0553"
+  ],
+  "reference": "Accepted answers (any one is correct): The individual | individuals | individual",
+  "answers": [
+   "The individual",
+   "individuals",
+   "individual"
+  ],
+  "source_paragraph": "p0553"
+ },
+ {
+  "id": "5acfe6eb77cf76001a6863c8",
+  "category": "unanswerable",
+  "question": "What type of role that Islamism seeks makes it not a controversial concept?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0990"
+ },
+ {
+  "id": "5728f9882ca10214002dab5b",
+  "category": "answerable",
+  "question": "For most organisms, what is the dominant system of defense?",
+  "gold": [
+   "p0805"
+  ],
+  "reference": "Accepted answers (any one is correct): innate immune system | The innate immune",
+  "answers": [
+   "innate immune system",
+   "The innate immune"
+  ],
+  "source_paragraph": "p0805"
+ },
+ {
+  "id": "5a89473c3b2508001a72a599",
+  "category": "unanswerable",
+  "question": "What type of ideals generalize Noetherian arithmetic?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0900"
+ },
+ {
+  "id": "5725fcbe271a42140099d3ad",
+  "category": "answerable",
+  "question": "What route connects Fresno with the California Central Valley?",
+  "gold": [
+   "p0447"
+  ],
+  "reference": "Accepted answers (any one is correct): State Route 99",
+  "answers": [
+   "State Route 99"
+  ],
+  "source_paragraph": "p0447"
+ },
+ {
+  "id": "57111713a58dae1900cd6c01",
+  "category": "answerable",
+  "question": "How were Huguenot settlers assimilated into North American society at large?",
+  "gold": [
+   "p0212"
+  ],
+  "reference": "Accepted answers (any one is correct): married outside their immediate French communities | adapted quickly and often married outside their immediate French communities",
+  "answers": [
+   "married outside their immediate French communities",
+   "adapted quickly and often married outside their immediate French communities"
+  ],
+  "source_paragraph": "p0212"
+ },
+ {
+  "id": "5729f60caf94a219006aa6f3",
+  "category": "answerable",
+  "question": "In U.S. states, what happens to the life expectancy in less economically equal ones?",
+  "gold": [
+   "p0691"
+  ],
+  "reference": "Accepted answers (any one is correct): life expectancy is lower | lower",
+  "answers": [
+   "life expectancy is lower",
+   "lower"
+  ],
+  "source_paragraph": "p0691"
+ },
+ {
+  "id": "5733fc6ed058e614000b670f",
+  "category": "answerable",
+  "question": "Where was there a weakness in British supply chain?",
+  "gold": [
+   "p1146"
+  ],
+  "reference": "Accepted answers (any one is correct): Oneida Carry | forts Shirley had erected at the Oneida Carry",
+  "answers": [
+   "Oneida Carry",
+   "forts Shirley had erected at the Oneida Carry"
+  ],
+  "source_paragraph": "p1146"
+ },
+ {
+  "id": "5711607f2419e314009555ce",
+  "category": "answerable",
+  "question": "Along with internal combustion engines, what machines have superseded steam in some areas?",
+  "gold": [
+   "p0252"
+  ],
+  "reference": "Accepted answers (any one is correct): electric motors | internal combustion engines or electric motors",
+  "answers": [
+   "electric motors",
+   "internal combustion engines or electric motors"
+  ],
+  "source_paragraph": "p0252"
+ },
+ {
+  "id": "571cd703dd7acb1400e4c182",
+  "category": "answerable",
+  "question": "What characteristic of oxygen causes it to form bonds with other elements?",
+  "gold": [
+   "p0298"
+  ],
+  "reference": "Accepted answers (any one is correct): electronegativity",
+  "answers": [
+   "electronegativity"
+  ],
+  "source_paragraph": "p0298"
+ },
+ {
+  "id": "5ad24840d7d075001a428b5f",
+  "category": "unanswerable",
+  "question": "Who has limited productive potential when faced with more access to education?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0680"
+ },
+ {
+  "id": "5726a46cdd62a815002e8bd2",
+  "category": "answerable",
+  "question": "What title was the Social Charter set to be included into the Maastricht treaty under?",
+  "gold": [
+   "p0355"
+  ],
+  "reference": "Accepted answers (any one is correct): the \"Social Chapter\" | \"Social Chapter\"",
+  "answers": [
+   "the \"Social Chapter\"",
+   "\"Social Chapter\""
+  ],
+  "source_paragraph": "p0355"
+ },
+ {
+  "id": "57265d86f1498d1400e8dd50",
+  "category": "answerable",
+  "question": "Beroida are known by what other name?",
+  "gold": [
+   "p0409"
+  ],
+  "reference": "Accepted answers (any one is correct): Nuda",
+  "answers": [
+   "Nuda"
+  ],
+  "source_paragraph": "p0409"
+ },
+ {
+  "id": "5733ea04d058e614000b6596",
+  "category": "answerable",
+  "question": "Where was Marin's second fort constructed?",
+  "gold": [
+   "p1132"
+  ],
+  "reference": "Accepted answers (any one is correct): Fort Le Boeuf (present-day Waterford, Pennsylvania | Fort Le Boeuf | present-day Waterford, Pennsylvania",
+  "answers": [
+   "Fort Le Boeuf (present-day Waterford, Pennsylvania",
+   "Fort Le Boeuf",
+   "present-day Waterford, Pennsylvania"
+  ],
+  "source_paragraph": "p1132"
+ },
+ {
+  "id": "572683075951b619008f7514",
+  "category": "answerable",
+  "question": "How do platyctenids reproduce?",
+  "gold": [
+   "p0412"
+  ],
+  "reference": "Accepted answers (any one is correct): internal fertilization and keep the eggs in brood chambers until they hatch. | internal fertilization",
+  "answers": [
+   "internal fertilization and keep the eggs in brood chambers until they hatch.",
+   "internal fertilization"
+  ],
+  "source_paragraph": "p0412"
+ },
+ {
+  "id": "5725f6e138643c19005acf1d",
+  "category": "answerable",
+  "question": "What is the most rainfall recorded in a 24 hour period in Fresno?",
+  "gold": [
+   "p0442"
+  ],
+  "reference": "Accepted answers (any one is correct): 3.55 inches | 3.55 inches (90.2 mm)",
+  "answers": [
+   "3.55 inches",
+   "3.55 inches (90.2 mm)"
+  ],
+  "source_paragraph": "p0442"
+ },
+ {
+  "id": "57094a79efce8f15003a7dc5",
+  "category": "answerable",
+  "question": "How many of the six total packages available to broadcasters was Setanta awarded?",
+  "gold": [
+   "p0127"
+  ],
+  "reference": "Accepted answers (any one is correct): two",
+  "answers": [
+   "two"
+  ],
+  "source_paragraph": "p0127"
+ },
+ {
+  "id": "57283adcff5b5019007d9f95",
+  "category": "answerable",
+  "question": "How many degrees south did the Amazon rainforest reach from 66-34 Mya?",
+  "gold": [
+   "p0371"
+  ],
+  "reference": "Accepted answers (any one is correct): 45 | 45°",
+  "answers": [
+   "45",
+   "45°"
+  ],
+  "source_paragraph": "p0371"
+ },
+ {
+  "id": "571094b7a58dae1900cd6a69",
+  "category": "answerable",
+  "question": "What were Huguenots who stayed in France eventually known as?",
+  "gold": [
+   "p0192"
+  ],
+  "reference": "Accepted answers (any one is correct): \"new converts\" | new converts",
+  "answers": [
+   "\"new converts\"",
+   "new converts"
+  ],
+  "source_paragraph": "p0192"
+ },
+ {
+  "id": "56ddde6b9a695914005b962c",
+  "category": "answerable",
+  "question": "What century did the Normans first gain their separate identity?",
+  "gold": [
+   "p0000"
+  ],
+  "reference": "Accepted answers (any one is correct): 10th century | the first half of the 10th century | 10th",
+  "answers": [
+   "10th century",
+   "the first half of the 10th century",
+   "10th"
+  ],
+  "source_paragraph": "p0000"
+ },
+ {
+  "id": "5ad41260604f3c001a40023f",
+  "category": "unanswerable",
+  "question": "What is the exhaust's thermodynamic basis?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0240"
+ },
+ {
+  "id": "572681c1dd62a815002e8797",
+  "category": "answerable",
+  "question": "What do platyctenida use their pharynx for?",
+  "gold": [
+   "p0411"
+  ],
+  "reference": "Accepted answers (any one is correct): cling to and creep on surfaces | as a muscular \"foot\"",
+  "answers": [
+   "cling to and creep on surfaces",
+   "as a muscular \"foot\""
+  ],
+  "source_paragraph": "p0411"
+ },
+ {
+  "id": "572fc043a23a5019007fc95d",
+  "category": "answerable",
+  "question": "What day of the week does the Time for Reflection take place?",
+  "gold": [
+   "p0961"
+  ],
+  "reference": "Accepted answers (any one is correct): Wednesdays",
+  "answers": [
+   "Wednesdays"
+  ],
+  "source_paragraph": "p0961"
+ },
+ {
+  "id": "572671a5f1498d1400e8dfe4",
+  "category": "answerable",
+  "question": "This causes the rock unit as a whole to become longer and thinner.",
+  "gold": [
+   "p0507"
+  ],
+  "reference": "Accepted answers (any one is correct): Extension",
+  "answers": [
+   "Extension"
+  ],
+  "source_paragraph": "p0507"
+ },
+ {
+  "id": "57271f125951b619008f8638",
+  "category": "answerable",
+  "question": "What character in the play portrays civil disobedience?",
+  "gold": [
+   "p0548"
+  ],
+  "reference": "Accepted answers (any one is correct): Oedipus | Antigone",
+  "answers": [
+   "Oedipus",
+   "Antigone"
+  ],
+  "source_paragraph": "p0548"
+ },
+ {
+  "id": "5ad54f775b96ef001a10ac8b",
+  "category": "unanswerable",
+  "question": "How would one abbreviate T(n)=8n2 + 16n = 40 in big O notatation?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0061"
+ },
+ {
+  "id": "57111ab8a58dae1900cd6c40",
+  "category": "answerable",
+  "question": "What military impact did Huguenot immigration have on Frederick's army?",
+  "gold": [
+   "p0215"
+  ],
+  "reference": "Accepted answers (any one is correct): Huguenots furnished two new regiments | two new regiments | furnished two new regiments of his army",
+  "answers": [
+   "Huguenots furnished two new regiments",
+   "two new regiments",
+   "furnished two new regiments of his army"
+  ],
+  "source_paragraph": "p0215"
+ },
+ {
+  "id": "5725fb8138643c19005acf42",
+  "category": "answerable",
+  "question": "What is KMJ now referred to?",
+  "gold": [
+   "p0446"
+  ],
+  "reference": "Accepted answers (any one is correct): NBC affiliate KSEE | KSEE",
+  "answers": [
+   "NBC affiliate KSEE",
+   "KSEE"
+  ],
+  "source_paragraph": "p0446"
+ },
+ {
+  "id": "5ad27abcd7d075001a42962c",
+  "category": "unanswerable",
+  "question": "How wide are the Jura Mountains?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0915"
+ },
+ {
+  "id": "5ad4f28c5b96ef001a10a733",
+  "category": "unanswerable",
+  "question": "What percentage of Poland's population was Protestant in 1901?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p1092"
+ },
+ {
+  "id": "57286d7d4b864d19001649e0",
+  "category": "answerable",
+  "question": "What minimalist composer is also a university graduate?",
+  "gold": [
+   "p0746"
+  ],
+  "reference": "Accepted answers (any one is correct): Philip Glass",
+  "answers": [
+   "Philip Glass"
+  ],
+  "source_paragraph": "p0746"
+ },
+ {
+  "id": "5a25d529ef59cd001a623cef",
+  "category": "unanswerable",
+  "question": "What guarantees a solid cash flow is in place before a project to assure its completion?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0584"
+ },
+ {
+  "id": "572ff83ab2c2fd1400568684",
+  "category": "answerable",
+  "question": "What did the Merwede-Oude Maas form with Waal and Lek?",
+  "gold": [
+   "p0925"
+  ],
+  "reference": "Accepted answers (any one is correct): archipelago-like estuary",
+  "answers": [
+   "archipelago-like estuary"
+  ],
+  "source_paragraph": "p0925"
+ },
+ {
+  "id": "5729d51d3f37b31900478593",
+  "category": "answerable",
+  "question": "In a market economy, what is inequality a reflection of?",
+  "gold": [
+   "p0674"
+  ],
+  "reference": "Accepted answers (any one is correct): productivity gap between highly-paid professions and lower-paid professions | productivity gap",
+  "answers": [
+   "productivity gap between highly-paid professions and lower-paid professions",
+   "productivity gap"
+  ],
+  "source_paragraph": "p0674"
+ },
+ {
+  "id": "57264a0ef1498d1400e8db40",
+  "category": "answerable",
+  "question": "Which cidippid is used as a description on ctenophores in most textbooks?",
+  "gold": [
+   "p0399"
+  ],
+  "reference": "Accepted answers (any one is correct): Pleurobrachia",
+  "answers": [
+   "Pleurobrachia"
+  ],
+  "source_paragraph": "p0399"
+ },
+ {
+  "id": "5ad4e61e5b96ef001a10a5ac",
+  "category": "unanswerable",
+  "question": "What keeps the sensitivity of the immune system at the same levels?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0823"
+ },
+ {
+  "id": "572a0a391d046914007796e0",
+  "category": "answerable",
+  "question": "What is almost identical across all nations and jurisdictions?",
+  "gold": [
+   "p0696"
+  ],
+  "reference": "Accepted answers (any one is correct): homicides",
+  "answers": [
+   "homicides"
+  ],
+  "source_paragraph": "p0696"
+ },
+ {
+  "id": "5a75054b97ca42001a521dd1",
+  "category": "unanswerable",
+  "question": "When did OPEC  issue a joint communique?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0308"
+ },
+ {
+  "id": "5725edfe38643c19005acea3",
+  "category": "answerable",
+  "question": "Which neighborhood lies west of the 41 freeway?",
+  "gold": [
+   "p0436"
+  ],
+  "reference": "Accepted answers (any one is correct): \"West Side\" | West Side",
+  "answers": [
+   "\"West Side\"",
+   "West Side"
+  ],
+  "source_paragraph": "p0436"
+ },
+ {
+  "id": "5ad261bad7d075001a429050",
+  "category": "unanswerable",
+  "question": "What does oxygen form bonds with all other types of?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0298"
+ },
+ {
+  "id": "5ad02ab477cf76001a686c68",
+  "category": "unanswerable",
+  "question": "Imperialism is less often associated with which sovereignty?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p1035"
+ },
+ {
+  "id": "5a7b3f0f21c2de001afe9e02",
+  "category": "unanswerable",
+  "question": "What percentage of households had children over the age of 18?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0444"
+ },
+ {
+  "id": "57060a1175f01819005e78d2",
+  "category": "answerable",
+  "question": "Motion pictures, petroleum and aircraft manufacturing have been major industries since which decade?",
+  "gold": [
+   "p0112"
+  ],
+  "reference": "Accepted answers (any one is correct): 1920s",
+  "answers": [
+   "1920s"
+  ],
+  "source_paragraph": "p0112"
+ },
+ {
+  "id": "57284618ff5b5019007da0ac",
+  "category": "answerable",
+  "question": "What did the early entrant program do for potential students?",
+  "gold": [
+   "p0722"
+  ],
+  "reference": "Accepted answers (any one is correct): allowed very young students to attend college",
+  "answers": [
+   "allowed very young students to attend college"
+  ],
+  "source_paragraph": "p0722"
+ },
+ {
+  "id": "57115f0a50c2381900b54aa9",
+  "category": "answerable",
+  "question": "What can the exhaust steam not fully do when the exhaust event is insufficiently long?",
+  "gold": [
+   "p0249"
+  ],
+  "reference": "Accepted answers (any one is correct): evacuate the cylinder",
+  "answers": [
+   "evacuate the cylinder"
+  ],
+  "source_paragraph": "p0249"
+ },
+ {
+  "id": "57268c01dd62a815002e8915",
+  "category": "answerable",
+  "question": "How was the population of mnemiopsis in The black Sea and the Sea of Azov brought under control?",
+  "gold": [
+   "p0417"
+  ],
+  "reference": "Accepted answers (any one is correct): by the accidental introduction of the Mnemiopsis-eating North American ctenophore Beroe ovata, | the accidental introduction of the Mnemiopsis-eating North American ctenophore Beroe ovata | the accidental introduction of the Mnemiopsis-eating North American ctenophore Beroe ovata, and by a cooling of the local climate from 1991 to 1993",
+  "answers": [
+   "by the accidental introduction of the Mnemiopsis-eating North American ctenophore Beroe ovata,",
+   "the accidental introduction of the Mnemiopsis-eating North American ctenophore Beroe ovata",
+   "the accidental introduction of the Mnemiopsis-eating North American ctenophore Beroe ovata, and by a cooling of the local climate from 1991 to 1993"
+  ],
+  "source_paragraph": "p0417"
+ },
+ {
+  "id": "56e1b754cd28a01900c67abe",
+  "category": "answerable",
+  "question": "What is typically used to broadly define complexity measures?",
+  "gold": [
+   "p0057"
+  ],
+  "reference": "Accepted answers (any one is correct): Blum complexity axioms | the Blum complexity axioms",
+  "answers": [
+   "Blum complexity axioms",
+   "the Blum complexity axioms"
+  ],
+  "source_paragraph": "p0057"
+ },
+ {
+  "id": "573766251c45671900574471",
+  "category": "answerable",
+  "question": "What does pushing and pulling perceptions provide for describing forces?",
+  "gold": [
+   "p1170"
+  ],
+  "reference": "Accepted answers (any one is correct): intuitive understanding | an intuitive understanding",
+  "answers": [
+   "intuitive understanding",
+   "an intuitive understanding"
+  ],
+  "source_paragraph": "p1170"
+ },
+ {
+  "id": "57107c24a58dae1900cd69ec",
+  "category": "answerable",
+  "question": "When did France and the Dutch fight in the 17th century?",
+  "gold": [
+   "p0180"
+  ],
+  "reference": "Accepted answers (any one is correct): 1672",
+  "answers": [
+   "1672"
+  ],
+  "source_paragraph": "p0180"
+ },
+ {
+  "id": "572a07fc6aef0514001551de",
+  "category": "answerable",
+  "question": "Primitive jawless vertebrates possess an array of receptors referred to as what?",
+  "gold": [
+   "p0837"
+  ],
+  "reference": "Accepted answers (any one is correct): Variable lymphocyte receptors (VLRs) | Variable lymphocyte receptors",
+  "answers": [
+   "Variable lymphocyte receptors (VLRs)",
+   "Variable lymphocyte receptors"
+  ],
+  "source_paragraph": "p0837"
+ },
+ {
+  "id": "5a839654e60761001a2eb7f4",
+  "category": "unanswerable",
+  "question": "What smaller weaker swimmers do amphipods feed on?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0415"
+ },
+ {
+  "id": "572a12386aef051400155234",
+  "category": "answerable",
+  "question": "Drop in the blood levels of cortisol and epinephrine results in increase levels of what hormones?",
+  "gold": [
+   "p0846"
+  ],
+  "reference": "Accepted answers (any one is correct): leptin, pituitary growth hormone, and prolactin | leptin",
+  "answers": [
+   "leptin, pituitary growth hormone, and prolactin",
+   "leptin"
+  ],
+  "source_paragraph": "p0846"
+ },
+ {
+  "id": "5ad3bd8f604f3c001a3fef30",
+  "category": "unanswerable",
+  "question": "At what pressure is nuclear power heated in the Rankine cycle?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0217"
+ },
+ {
+  "id": "5ad15d77645df0001a2d18c0",
+  "category": "unanswerable",
+  "question": "What year did a toxic waste spill from an American ship prompt the Commission to look into legislation against waste?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0367"
+ },
+ {
+  "id": "572a0a391d046914007796e2",
+  "category": "answerable",
+  "question": "How much of a difference in homicide rates are related to inequality?",
+  "gold": [
+   "p0696"
+  ],
+  "reference": "Accepted answers (any one is correct): tenfold",
+  "answers": [
+   "tenfold"
+  ],
+  "source_paragraph": "p0696"
+ },
+ {
+  "id": "5733266d4776f41900660716",
+  "category": "answerable",
+  "question": "What year did King Sigismund III Vasa move his court to Warsaw?",
+  "gold": [
+   "p1071"
+  ],
+  "reference": "Accepted answers (any one is correct): 1596",
+  "answers": [
+   "1596"
+  ],
+  "source_paragraph": "p1071"
+ },
+ {
+  "id": "5733314e4776f4190066076d",
+  "category": "answerable",
+  "question": "How high is the highest point in Warsaw?",
+  "gold": [
+   "p1078"
+  ],
+  "reference": "Accepted answers (any one is correct): 452.8 ft | 115.7 metres",
+  "answers": [
+   "452.8 ft",
+   "115.7 metres"
+  ],
+  "source_paragraph": "p1078"
+ },
+ {
+  "id": "5acfe78477cf76001a6863ea",
+  "category": "unanswerable",
+  "question": "What did the non-Afghan veterans returning home not have in addition to their prestige?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0992"
+ },
+ {
+  "id": "5a89357c3b2508001a72a523",
+  "category": "unanswerable",
+  "question": "If q=9 and a=3, 6 or 9, how many wraps would be in the progression?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0888"
+ },
+ {
+  "id": "5729d44b1d04691400779611",
+  "category": "answerable",
+  "question": "What do the top 400 richest Americans have more of than half of all Americans combined?",
+  "gold": [
+   "p0673"
+  ],
+  "reference": "Accepted answers (any one is correct): wealth",
+  "answers": [
+   "wealth"
+  ],
+  "source_paragraph": "p0673"
+ },
+ {
+  "id": "572fac17947a6a140053cb57",
+  "category": "answerable",
+  "question": "To what body are certain powers explicitly specified as being reserved for?",
+  "gold": [
+   "p0948"
+  ],
+  "reference": "Accepted answers (any one is correct): Parliament of the United Kingdom | The British Parliament",
+  "answers": [
+   "Parliament of the United Kingdom",
+   "The British Parliament"
+  ],
+  "source_paragraph": "p0948"
+ },
+ {
+  "id": "57336755d058e614000b5a40",
+  "category": "answerable",
+  "question": "What park covers an area of 76 ha.?",
+  "gold": [
+   "p1086"
+  ],
+  "reference": "Accepted answers (any one is correct): Łazienki | Łazienki Park",
+  "answers": [
+   "Łazienki",
+   "Łazienki Park"
+  ],
+  "source_paragraph": "p1086"
+ },
+ {
+  "id": "5705fec152bb89140068977e",
+  "category": "answerable",
+  "question": "How much was the 1994 earthquake estimated to have cost?",
+  "gold": [
+   "p0105"
+  ],
+  "reference": "Accepted answers (any one is correct): $20 billion | over $20 billion",
+  "answers": [
+   "$20 billion",
+   "over $20 billion"
+  ],
+  "source_paragraph": "p0105"
+ },
+ {
+  "id": "572fc41f947a6a140053cc80",
+  "category": "answerable",
+  "question": "Who decides who gets to speak in the chamber debates?",
+  "gold": [
+   "p0962"
+  ],
+  "reference": "Accepted answers (any one is correct): The Presiding Officer | Presiding Officer",
+  "answers": [
+   "The Presiding Officer",
+   "Presiding Officer"
+  ],
+  "source_paragraph": "p0962"
+ },
+ {
+  "id": "57296f293f37b319004783a6",
+  "category": "answerable",
+  "question": "What is the name of another algorithm useful for conveniently testing the primality of large numbers?",
+  "gold": [
+   "p0874"
+  ],
+  "reference": "Accepted answers (any one is correct): the AKS primality test | AKS primality test",
+  "answers": [
+   "the AKS primality test",
+   "AKS primality test"
+  ],
+  "source_paragraph": "p0874"
+ },
+ {
+  "id": "5726eb4b5951b619008f826d",
+  "category": "answerable",
+  "question": "What are internet pharmacies also called?",
+  "gold": [
+   "p0535"
+  ],
+  "reference": "Accepted answers (any one is correct): online pharmacies",
+  "answers": [
+   "online pharmacies"
+  ],
+  "source_paragraph": "p0535"
+ },
+ {
+  "id": "573005b9947a6a140053cf6a",
+  "category": "answerable",
+  "question": "What was the defeat of the Arab troops at the hand of the Israeli troops during the Six-Day War?",
+  "gold": [
+   "p1003"
+  ],
+  "reference": "Accepted answers (any one is correct): quick and decisive | quick and decisive defeat",
+  "answers": [
+   "quick and decisive",
+   "quick and decisive defeat"
+  ],
+  "source_paragraph": "p1003"
+ },
+ {
+  "id": "56de4a474396321400ee2786",
+  "category": "answerable",
+  "question": "Where are Jersey and Guernsey",
+  "gold": [
+   "p0030"
+  ],
+  "reference": "Accepted answers (any one is correct): Channel Islands | the Channel Islands",
+  "answers": [
+   "Channel Islands",
+   "the Channel Islands"
+  ],
+  "source_paragraph": "p0030"
+ },
+ {
+  "id": "57096c95200fba1400367fbc",
+  "category": "answerable",
+  "question": "What do some encrypted broadcasts require to view?",
+  "gold": [
+   "p0140"
+  ],
+  "reference": "Accepted answers (any one is correct): monthly subscription | a monthly subscription",
+  "answers": [
+   "monthly subscription",
+   "a monthly subscription"
+  ],
+  "source_paragraph": "p0140"
+ },
+ {
+  "id": "572f6c85947a6a140053c941",
+  "category": "answerable",
+  "question": "Where are a bulk of factories concentrated along the Rhine?",
+  "gold": [
+   "p0917"
+  ],
+  "reference": "Accepted answers (any one is correct): Switzerland | Lower Rhine",
+  "answers": [
+   "Switzerland",
+   "Lower Rhine"
+  ],
+  "source_paragraph": "p0917"
+ },
+ {
+  "id": "5727de862ca10214002d9862",
+  "category": "answerable",
+  "question": "Who is the Costa Rican President that went to Harvard?",
+  "gold": [
+   "p0648"
+  ],
+  "reference": "Accepted answers (any one is correct): José María Figueres",
+  "answers": [
+   "José María Figueres"
+  ],
+  "source_paragraph": "p0648"
+ },
+ {
+  "id": "571ccc00dd7acb1400e4c15b",
+  "category": "answerable",
+  "question": "What type of process is the oxygen cycle?",
+  "gold": [
+   "p0292"
+  ],
+  "reference": "Accepted answers (any one is correct): biogeochemical | biogeochemical cycle",
+  "answers": [
+   "biogeochemical",
+   "biogeochemical cycle"
+  ],
+  "source_paragraph": "p0292"
+ },
+ {
+  "id": "5a0c93b9f5590b0018dab475",
+  "category": "unanswerable",
+  "question": "Hunting and population are the main threats facing what?",
+  "gold": [],
+  "reference": "The knowledge base does not contain this information. The correct response is to say it does not know.",
+  "answers": [],
+  "source_paragraph": "p0385"
+ },
+ {
+  "id": "570d2d68fed7b91900d45cbc",
+  "category": "answerable",
+  "question": "What percentage of farmland grows wheat?",
+  "gold": [
+   "p0155"
+  ],
+  "reference": "Accepted answers (any one is correct): 50%",
+  "answers": [
+   "50%"
+  ],
+  "source_paragraph": "p0155"
+ },
+ {
+  "id": "572756265951b619008f886e",
+  "category": "answerable",
+  "question": "What schools do preparatory schools prepare British children to attend?",
+  "gold": [
+   "p0616"
+  ],
+  "reference": "Accepted answers (any one is correct): public",
+  "answers": [
+   "public"
+  ],
+  "source_paragraph": "p0616"
+ }
+]

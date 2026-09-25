@@ -1,0 +1,2266 @@
+{
+  "meta": {
+    "date": "2026-09-24 16:31",
+    "data": "data.jsonl",
+    "questions": "eval_questions.json",
+    "n_docs": 20,
+    "judge_model": "anthropic/claude-sonnet-5",
+    "llm_model": "openai/gpt-4.1-mini",
+    "embed_model": "openai/text-embedding-3-small",
+    "neighbors": 5,
+    "min_relevance": 0.3,
+    "min_sufficiency": 0.5,
+    "gate_early_stop": 3,
+    "gate_near_zero": 0.1,
+    "sim": {
+      "tau_fast": 0.7186110615730286,
+      "tau_fast_accuracy": 0.9375,
+      "tau_keep": 0.6092798709869385,
+      "tau_keep_f1": 0.7804878048780488
+    },
+    "k_eq": 2
+  },
+  "results": [
+    {
+      "id": "q01",
+      "category": "simples",
+      "question": "Quando o Cristo Redentor foi inaugurado?",
+      "gold": [
+        "cristo-1"
+      ],
+      "reference": "Em 12 de outubro de 1931.",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "O Cristo Redentor foi inaugurado em 12 de outubro de 1931 [cristo-1].",
+          "latency_s": 2.51,
+          "context_ids": [
+            "cristo-1"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente a data de inauguração conforme a referência e o contexto fornecido, sem inventar informações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "cristo-1",
+              "relevance": 0.99,
+              "sufficiency": 0.94
+            }
+          ],
+          "answer": "O Cristo Redentor foi inaugurado em 12 de outubro de 1931 [cristo-1].",
+          "latency_s": 2.67,
+          "context_ids": [
+            "cristo-1"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente a data de inauguração, coincidindo com a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "O Cristo Redentor foi inaugurado em 12 de outubro de 1931 [cristo-1].",
+          "latency_s": 2.3,
+          "context_ids": [
+            "cristo-1"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta informa corretamente a data de inauguração, coincidindo com a referência e apoiada pelo contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 2,
+          "answer": "O Cristo Redentor foi inaugurado em 12 de outubro de 1931 [cristo-1].",
+          "latency_s": 2.85,
+          "context_ids": [
+            "cristo-1",
+            "cristo-4"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente a data de inauguração, coincidindo com a referência e citando a fonte adequada."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 1,
+            "context_size": 2
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "O Cristo Redentor foi inaugurado em 12 de outubro de 1931 [cristo-1].",
+          "latency_s": 1.7,
+          "context_ids": [
+            "cristo-1"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente a data de inauguração, coincidindo com a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q02",
+      "category": "simples",
+      "question": "Quem projetou os prédios de Brasília?",
+      "gold": [
+        "brasilia-2"
+      ],
+      "reference": "Oscar Niemeyer (Congresso Nacional, Palácio da Alvorada, Catedral Metropolitana).",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "O contexto informa que o projeto urbanístico de Brasília foi feito por Lúcio Costa, mas não menciona quem projetou os prédios especificamente, então não sei essa parte. [brasilia-1]",
+          "latency_s": 2.51,
+          "context_ids": [
+            "brasilia-1"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "A resposta de referência indica que a base contém a informação de que Oscar Niemeyer projetou os prédios de Brasília, mas o sistema afirmou não saber essa informação, o que é considerado incorreto segundo as regras."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 2,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "brasilia-1",
+              "relevance": 0.67,
+              "sufficiency": 0.14
+            },
+            {
+              "id": "brasilia-2",
+              "relevance": 0.97,
+              "sufficiency": 0.83
+            }
+          ],
+          "answer": "Oscar Niemeyer projetou os principais edifícios de Brasília, como o Congresso Nacional, o Palácio da Alvorada e a Catedral Metropolitana [brasilia-2].",
+          "latency_s": 3.08,
+          "context_ids": [
+            "brasilia-1",
+            "brasilia-2"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corresponde exatamente à referência, citando Oscar Niemeyer e os três exemplos de edifícios, sem inventar informações adicionais."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 1,
+            "context_size": 2
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "Oscar Niemeyer projetou os principais edifícios de Brasília, como o Congresso Nacional, o Palácio da Alvorada e a Catedral Metropolitana [brasilia-2].",
+          "latency_s": 2.63,
+          "context_ids": [
+            "brasilia-1",
+            "brasilia-2"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corresponde exatamente à referência, citando Oscar Niemeyer e os edifícios mencionados, sem inventar informações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 1,
+            "context_size": 2
+          }
+        },
+        "topk_eq": {
+          "examined": 2,
+          "answer": "Oscar Niemeyer projetou os principais edifícios de Brasília, como o Congresso Nacional, o Palácio da Alvorada e a Catedral Metropolitana [brasilia-2].",
+          "latency_s": 2.76,
+          "context_ids": [
+            "brasilia-1",
+            "brasilia-2"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corresponde exatamente à referência, citando Oscar Niemeyer e os edifícios mencionados, sem inventar informações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 1,
+            "context_size": 2
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "Oscar Niemeyer projetou os principais edifícios de Brasília, como o Congresso Nacional, o Palácio da Alvorada e a Catedral Metropolitana [brasilia-2].",
+          "latency_s": 1.6,
+          "context_ids": [
+            "brasilia-2"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corresponde exatamente à referência, citando Oscar Niemeyer e os mesmos exemplos de edifícios, sem inventar informações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q03",
+      "category": "simples",
+      "question": "Qual a altura do morro do Pão de Açúcar?",
+      "gold": [
+        "pao-2"
+      ],
+      "reference": "396 metros.",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "A altura do morro do Pão de Açúcar é 396 metros [pao-2].",
+          "latency_s": 2.05,
+          "context_ids": [
+            "pao-2"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta informa corretamente os 396 metros, conforme a referência e o contexto fornecido, sem alucinações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "pao-2",
+              "relevance": 0.99,
+              "sufficiency": 0.95
+            }
+          ],
+          "answer": "A altura do morro do Pão de Açúcar é 396 metros [pao-2].",
+          "latency_s": 2.57,
+          "context_ids": [
+            "pao-2"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente os 396 metros, conforme a referência e o contexto fornecido, sem inventar informações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "A altura do morro do Pão de Açúcar é 396 metros [pao-2].",
+          "latency_s": 2.2,
+          "context_ids": [
+            "pao-2"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta informa corretamente a altura de 396 metros, conforme a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 2,
+          "answer": "A altura do morro do Pão de Açúcar é de 396 metros [pao-2].",
+          "latency_s": 2.02,
+          "context_ids": [
+            "pao-2",
+            "cristo-1"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente 396 metros, conforme a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 1,
+            "context_size": 2
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "A altura do morro do Pão de Açúcar é 396 metros [pao-2].",
+          "latency_s": 1.61,
+          "context_ids": [
+            "pao-2"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta informa corretamente a altura de 396 metros, conforme a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q04",
+      "category": "simples",
+      "question": "Qual estado brasileiro mais produz café?",
+      "gold": [
+        "cafe-2"
+      ],
+      "reference": "Minas Gerais.",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "O estado brasileiro que mais produz café é Minas Gerais [cafe-2].",
+          "latency_s": 2.01,
+          "context_ids": [
+            "cafe-2"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta corresponde exatamente à referência, indicando Minas Gerais e citando corretamente a fonte."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "cafe-2",
+              "relevance": 0.98,
+              "sufficiency": 0.92
+            }
+          ],
+          "answer": "O estado brasileiro que mais produz café é Minas Gerais [cafe-2].",
+          "latency_s": 3.24,
+          "context_ids": [
+            "cafe-2"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta está correta, completa e alinhada com a referência e o contexto fornecido, citando corretamente Minas Gerais."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "O estado brasileiro que mais produz café é Minas Gerais [cafe-2].",
+          "latency_s": 2.37,
+          "context_ids": [
+            "cafe-2"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente Minas Gerais como o estado que mais produz café, alinhada com a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 2,
+          "answer": "O estado brasileiro que mais produz café é Minas Gerais [cafe-2].",
+          "latency_s": 3.26,
+          "context_ids": [
+            "cafe-2",
+            "cafe-1"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente Minas Gerais como o estado que mais produz café, alinhada com a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 1,
+            "context_size": 2
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "Minas Gerais é o estado brasileiro que mais produz café [cafe-2].",
+          "latency_s": 1.09,
+          "context_ids": [
+            "cafe-2"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente Minas Gerais como o estado que mais produz café, conforme a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q05",
+      "category": "simples",
+      "question": "Quem esculpiu o rosto do Cristo Redentor?",
+      "gold": [
+        "cristo-3"
+      ],
+      "reference": "O escultor romeno Gheorghe Leonida.",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "O rosto do Cristo Redentor foi esculpido pelo romeno Gheorghe Leonida [cristo-3].",
+          "latency_s": 3.16,
+          "context_ids": [
+            "cristo-3"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente Gheorghe Leonida como o escultor do rosto, coincidindo com a resposta de referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "cristo-3",
+              "relevance": 0.98,
+              "sufficiency": 0.92
+            }
+          ],
+          "answer": "O rosto do Cristo Redentor foi esculpido pelo romeno Gheorghe Leonida [cristo-3].",
+          "latency_s": 3.6,
+          "context_ids": [
+            "cristo-3"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente Gheorghe Leonida como o escultor do rosto do Cristo Redentor, coincidindo com a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "O rosto do Cristo Redentor foi esculpido pelo romeno Gheorghe Leonida [cristo-3].",
+          "latency_s": 3.48,
+          "context_ids": [
+            "cristo-3"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente Gheorghe Leonida como o escultor do rosto do Cristo Redentor, coincidindo com a referência e o contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 2,
+          "answer": "O rosto do Cristo Redentor foi esculpido pelo romeno Gheorghe Leonida [cristo-3].",
+          "latency_s": 2.91,
+          "context_ids": [
+            "cristo-3",
+            "cristo-5"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente o escultor Gheorghe Leonida, coincidindo com a referência e fundamentada no contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 1,
+            "context_size": 2
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "O rosto do Cristo Redentor foi esculpido pelo romeno Gheorghe Leonida [cristo-3].",
+          "latency_s": 2.0,
+          "context_ids": [
+            "cristo-3"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente Gheorghe Leonida como o escultor do rosto do Cristo Redentor, condizendo com a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q06",
+      "category": "simples",
+      "question": "Quais sistemas o INPE usa para monitorar o desmatamento da Amazônia?",
+      "gold": [
+        "amazonia-3"
+      ],
+      "reference": "PRODES e DETER, por satélite.",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "O INPE usa os sistemas PRODES e DETER para monitorar o desmatamento na Amazônia brasileira [amazonia-3].",
+          "latency_s": 2.43,
+          "context_ids": [
+            "amazonia-3"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente os sistemas PRODES e DETER, alinhando-se totalmente com a resposta de referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "steps": [
+            {
+              "id": "amazonia-3",
+              "relevance": 0.98,
+              "sufficiency": 0.86
+            }
+          ],
+          "answer": "O INPE usa os sistemas PRODES e DETER para monitorar o desmatamento da Amazônia brasileira [amazonia-3].",
+          "latency_s": 2.56,
+          "context_ids": [
+            "amazonia-3"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente os sistemas PRODES e DETER, coincidindo com a referência e o contexto fornecido, sem inventar informações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "O INPE usa os sistemas PRODES e DETER para monitorar o desmatamento na Amazônia brasileira [amazonia-3].",
+          "latency_s": 4.38,
+          "context_ids": [
+            "amazonia-3"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente os sistemas PRODES e DETER, com menção ao monitoramento por satélite, alinhando-se totalmente com a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 2,
+          "answer": "O INPE usa os sistemas PRODES e DETER para monitorar o desmatamento da Amazônia brasileira pelo satélite [amazonia-3].",
+          "latency_s": 3.12,
+          "context_ids": [
+            "amazonia-3",
+            "amazonia-1"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente os sistemas PRODES e DETER, condizendo totalmente com a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 1,
+            "context_size": 2
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "O INPE usa os sistemas PRODES e DETER para monitorar o desmatamento da Amazônia brasileira [amazonia-3].",
+          "latency_s": 1.57,
+          "context_ids": [
+            "amazonia-3"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente PRODES e DETER como os sistemas usados pelo INPE, condizente com a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q07",
+      "category": "composta",
+      "question": "Quando o Cristo Redentor foi inaugurado e qual a sua altura?",
+      "gold": [
+        "cristo-1",
+        "cristo-2"
+      ],
+      "reference": "Inaugurado em 12 de outubro de 1931; tem 30 metros de altura (sem o pedestal de 8 metros).",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "O Cristo Redentor foi inaugurado em 12 de outubro de 1931 [cristo-1]. O contexto não informa a altura do monumento.",
+          "latency_s": 2.44,
+          "context_ids": [
+            "cristo-1"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 3,
+            "justification": "A data de inauguração está correta, mas a resposta não informa a altura, que segundo a referência estava disponível na base, constituindo falha de recuperação."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.5,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 2,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "cristo-1",
+              "relevance": 0.86,
+              "sufficiency": 0.05
+            },
+            {
+              "id": "cristo-2",
+              "relevance": 0.97,
+              "sufficiency": 0.89
+            }
+          ],
+          "answer": "O Cristo Redentor foi inaugurado em 12 de outubro de 1931. A estátua tem 30 metros de altura, sem contar o pedestal de 8 metros [cristo-1][cristo-2].",
+          "latency_s": 3.81,
+          "context_ids": [
+            "cristo-1",
+            "cristo-2"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta contém a data correta de inauguração e a altura correta com o detalhe do pedestal, coincidindo integralmente com a referência e o contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 2
+          }
+        },
+        "sim_gate": {
+          "examined": 1,
+          "fast_path": true,
+          "says_top1_enough": true,
+          "answer": "O Cristo Redentor foi inaugurado em 12 de outubro de 1931 [cristo-1]. O contexto não informa qual é a sua altura.",
+          "latency_s": 3.1,
+          "context_ids": [
+            "cristo-1"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 3,
+            "justification": "A resposta acerta a data de inauguração, mas erra ao dizer que não sabe a altura, já que a referência indica que essa informação está disponível na base."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.5,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 2,
+          "answer": "O Cristo Redentor foi inaugurado em 12 de outubro de 1931. A estátua tem 30 metros de altura, sem contar o pedestal de 8 metros [cristo-1] [cristo-2].",
+          "latency_s": 2.32,
+          "context_ids": [
+            "cristo-1",
+            "cristo-2"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta informa corretamente a data de inauguração e a altura da estátua, ambas coincidindo com a referência e suportadas pelo contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 2
+          }
+        },
+        "oracle": {
+          "examined": 2,
+          "answer": "O Cristo Redentor foi inaugurado em 12 de outubro de 1931. A estátua tem 30 metros de altura, sem contar o pedestal de 8 metros, totalizando 38 metros de altura incluindo o pedestal [cristo-1], [cristo-2].",
+          "latency_s": 1.57,
+          "context_ids": [
+            "cristo-1",
+            "cristo-2"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": true,
+            "abstained": false,
+            "score": 4,
+            "justification": "Data e altura da estátua estão corretas conforme a referência, mas a resposta adiciona um cálculo (38 metros com pedestal) que não está explicitamente no contexto, sendo uma extrapolação não solicitada."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q08",
+      "category": "composta",
+      "question": "Quando foi inaugurado o bondinho do Pão de Açúcar e qual a altura do morro?",
+      "gold": [
+        "pao-1",
+        "pao-2"
+      ],
+      "reference": "O bondinho foi inaugurado em 1912; o morro tem 396 metros.",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "O bondinho do Pão de Açúcar foi inaugurado em 1912. O contexto não informa a altura do morro [pao-1].",
+          "latency_s": 2.36,
+          "context_ids": [
+            "pao-1"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 3,
+            "justification": "A resposta acertou a data de inauguração (1912), mas errou ao dizer que não sabe a altura do morro, já que a referência indica que essa informação está na base (396 metros)."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.5,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 2,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "pao-1",
+              "relevance": 0.87,
+              "sufficiency": 0.04
+            },
+            {
+              "id": "pao-2",
+              "relevance": 0.97,
+              "sufficiency": 0.96
+            }
+          ],
+          "answer": "O bondinho do Pão de Açúcar foi inaugurado em 1912 e o morro do Pão de Açúcar tem 396 metros de altura [pao-1][pao-2].",
+          "latency_s": 4.37,
+          "context_ids": [
+            "pao-1",
+            "pao-2"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta informa corretamente ambos os dados (ano de inauguração 1912 e altura de 396 metros), condizentes com a referência e apoiados pelo contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 2
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "O bondinho do Pão de Açúcar foi inaugurado em 1912 e o morro tem 396 metros de altura [pao-1][pao-2].",
+          "latency_s": 2.14,
+          "context_ids": [
+            "pao-1",
+            "pao-2"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta contém corretamente a data de inauguração (1912) e a altura do morro (396 metros), ambas alinhadas com a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 2
+          }
+        },
+        "topk_eq": {
+          "examined": 2,
+          "answer": "O bondinho do Pão de Açúcar foi inaugurado em 1912 e o morro do Pão de Açúcar tem 396 metros de altura [pao-1] [pao-2].",
+          "latency_s": 2.23,
+          "context_ids": [
+            "pao-1",
+            "pao-2"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta contém corretamente ambas as informações (ano de inauguração e altura do morro), condizentes com a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 2
+          }
+        },
+        "oracle": {
+          "examined": 2,
+          "answer": "O bondinho do Pão de Açúcar foi inaugurado em 1912 e o morro do Pão de Açúcar tem 396 metros de altura [pao-1] [pao-2].",
+          "latency_s": 2.74,
+          "context_ids": [
+            "pao-1",
+            "pao-2"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta traz corretamente a data de inauguração (1912) e a altura do morro (396 metros), ambos consistentes com o contexto e a referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q09",
+      "category": "multi-tema",
+      "question": "Qual a altura do Cristo Redentor, quem trouxe o café ao Brasil e qual a vazão do rio Amazonas?",
+      "gold": [
+        "cristo-2",
+        "cafe-3",
+        "amazonia-2"
+      ],
+      "reference": "O Cristo tem 30 metros (sem o pedestal de 8 m); o café foi trazido por Francisco de Melo Palheta, em 1727, da Guiana Francesa; o Amazonas despeja cerca de 209 mil metros cúbicos por segundo no Atlântico.",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "A altura do Cristo Redentor é de 30 metros, sem contar o pedestal de 8 metros, e seus braços se estendem por 28 metros [cristo-2]. Não sei quem trouxe o café ao Brasil e qual a vazão do rio Amazonas.",
+          "latency_s": 2.93,
+          "context_ids": [
+            "cristo-2"
+          ],
+          "judge": {
+            "total_parts": 3,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 2,
+            "justification": "A resposta acerta a altura do Cristo, mas erra ao dizer 'não sei' sobre café e Amazonas, pois a referência indica que essas informações estão disponíveis na base."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.3333333333333333,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "cristo-2",
+              "relevance": 0.94,
+              "sufficiency": 0.02
+            },
+            {
+              "id": "cristo-1",
+              "relevance": 0.21,
+              "sufficiency": 0.02
+            },
+            {
+              "id": "cristo-3",
+              "relevance": 0.13,
+              "sufficiency": 0.02
+            },
+            {
+              "id": "cristo-5",
+              "relevance": 0.09,
+              "sufficiency": 0.02
+            },
+            {
+              "id": "cafe-3",
+              "relevance": 0.97,
+              "sufficiency": 0.04
+            }
+          ],
+          "answer": "A altura do Cristo Redentor é de 30 metros, sem contar o pedestal de 8 metros, e seus braços se estendem por 28 metros [cristo-2]. O café chegou ao Brasil em 1727, trazido da Guiana Francesa por Francisco de Melo Palheta [cafe-3]. Não sei a vazão do rio Amazonas, pois essa informação não está no contexto fornecido.",
+          "latency_s": 5.47,
+          "context_ids": [
+            "cristo-2",
+            "cafe-3"
+          ],
+          "judge": {
+            "total_parts": 3,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": true,
+            "score": 3,
+            "justification": "As partes sobre o Cristo Redentor e o café estão corretas e completas, mas a resposta erroneamente diz não saber a vazão do Amazonas, quando a referência indica que essa informação está disponível na base (209 mil m³/s)."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.6666666666666666,
+            "noise_chunks": 0,
+            "context_size": 2
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "Nenhum trecho relevante encontrado para responder a pergunta.",
+          "latency_s": 0.82,
+          "context_ids": [],
+          "judge": {
+            "total_parts": 3,
+            "correct_parts": 0,
+            "hallucination": false,
+            "abstained": true,
+            "score": 1,
+            "justification": "A resposta de referência mostra que a base contém todas as informações solicitadas, mas o sistema não recuperou nenhuma delas, respondendo apenas que não encontrou trechos relevantes, o que é incorreto para todas as partes."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.0,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        },
+        "topk_eq": {
+          "examined": 2,
+          "answer": "A altura do Cristo Redentor é de 30 metros, sem contar o pedestal de 8 metros, totalizando 38 metros de altura incluindo o pedestal [cristo-2]. \n\nO contexto fornecido não informa quem trouxe o café ao Brasil, nem a vazão do rio Amazonas. Portanto, não sei responder essas partes da pergunta.",
+          "latency_s": 2.55,
+          "context_ids": [
+            "cristo-2",
+            "cristo-1"
+          ],
+          "judge": {
+            "total_parts": 3,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 2,
+            "justification": "A altura do Cristo foi respondida corretamente, mas o sistema disse 'não sei' para café e vazão do Amazonas, que a referência indica estarem disponíveis na base, configurando falha de recuperação."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.3333333333333333,
+            "noise_chunks": 1,
+            "context_size": 2
+          }
+        },
+        "oracle": {
+          "examined": 3,
+          "answer": "A altura do Cristo Redentor é de 30 metros, sem contar o pedestal de 8 metros, e seus braços se estendem por 28 metros [cristo-2]. O café foi trazido ao Brasil por Francisco de Melo Palheta, vindo da Guiana Francesa, em 1727 [cafe-3]. A vazão do rio Amazonas é de cerca de 209 mil metros cúbicos por segundo [amazonia-2].",
+          "latency_s": 1.82,
+          "context_ids": [
+            "cristo-2",
+            "amazonia-2",
+            "cafe-3"
+          ],
+          "judge": {
+            "total_parts": 3,
+            "correct_parts": 3,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "As três partes foram respondidas corretamente e de forma completa, alinhadas com a resposta de referência e sem alucinações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 3
+          }
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "category": "multi-tema",
+      "question": "Em que ano o Maracanã foi inaugurado e em que ano Brasília foi inaugurada?",
+      "gold": [
+        "maracana-1",
+        "brasilia-1"
+      ],
+      "reference": "O Maracanã em 1950; Brasília em 1960 (21 de abril).",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "O Maracanã foi inaugurado em 1950 [maracana-1]. O contexto não informa o ano de inauguração de Brasília, portanto não sei essa parte.",
+          "latency_s": 2.25,
+          "context_ids": [
+            "maracana-1"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 2,
+            "justification": "A resposta acerta o ano do Maracanã, mas afirma incorretamente que não sabe sobre Brasília, quando a referência indica que essa informação deveria estar disponível na base (falha de recuperação)."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.5,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 2,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "maracana-1",
+              "relevance": 0.92,
+              "sufficiency": 0.03
+            },
+            {
+              "id": "brasilia-1",
+              "relevance": 0.98,
+              "sufficiency": 0.96
+            }
+          ],
+          "answer": "O Maracanã foi inaugurado em 1950 e Brasília foi inaugurada em 1960 [maracana-1] [brasilia-1].",
+          "latency_s": 10.19,
+          "context_ids": [
+            "maracana-1",
+            "brasilia-1"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente os anos de inauguração do Maracanã (1950) e de Brasília (1960), condizendo com a referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 2
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "O Maracanã foi inaugurado em 1950 [maracana-1]. O contexto não informa o ano de inauguração de Brasília.",
+          "latency_s": 2.51,
+          "context_ids": [
+            "maracana-1"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 3,
+            "justification": "A parte sobre o Maracanã está correta, mas a resposta erra ao dizer que não sabe sobre Brasília, já que a referência indica que essa informação deveria estar disponível (falha de recuperação)."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.5,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 2,
+          "answer": "O Maracanã foi inaugurado em 1950 e Brasília foi inaugurada em 1960 [maracana-1] [brasilia-1].",
+          "latency_s": 2.1,
+          "context_ids": [
+            "maracana-1",
+            "brasilia-1"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta informa corretamente os anos de inauguração do Maracanã (1950) e de Brasília (1960), conforme a referência, sem inventar dados adicionais."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 2
+          }
+        },
+        "oracle": {
+          "examined": 2,
+          "answer": "O Maracanã foi inaugurado em 1950 [maracana-1] e Brasília foi inaugurada em 1960 [brasilia-1].",
+          "latency_s": 2.16,
+          "context_ids": [
+            "maracana-1",
+            "brasilia-1"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta indica corretamente 1950 para o Maracanã e 1960 para Brasília, alinhando-se totalmente com a referência, embora não especifique o dia 21 de abril."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q11",
+      "category": "multi-tema",
+      "question": "Que outra estrutura famosa Gustave Eiffel projetou e qual a altura da Torre Eiffel?",
+      "gold": [
+        "eiffel-2",
+        "eiffel-1"
+      ],
+      "reference": "A estrutura interna da Estátua da Liberdade; a Torre Eiffel tem cerca de 330 metros.",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "Gustave Eiffel projetou a estrutura interna da Estátua da Liberdade, em Nova York [eiffel-2]. O contexto não informa a altura da Torre Eiffel.",
+          "latency_s": 2.27,
+          "context_ids": [
+            "eiffel-2"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 3,
+            "justification": "A resposta identifica corretamente a Estátua da Liberdade, mas afirma incorretamente que não sabe a altura da Torre Eiffel, quando a referência indica que essa informação está na base (cerca de 330 metros)."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.5,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 2,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "eiffel-2",
+              "relevance": 0.88,
+              "sufficiency": 0.04
+            },
+            {
+              "id": "eiffel-1",
+              "relevance": 0.96,
+              "sufficiency": 0.92
+            }
+          ],
+          "answer": "Gustave Eiffel projetou a estrutura interna da Estátua da Liberdade, em Nova York, e a Torre Eiffel tem cerca de 330 metros de altura [eiffel-2][eiffel-1].",
+          "latency_s": 3.28,
+          "context_ids": [
+            "eiffel-2",
+            "eiffel-1"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente a Estátua da Liberdade e a altura de 330 metros, ambas alinhadas com a referência e suportadas pelo contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 2
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "Gustave Eiffel projetou a estrutura interna da Estátua da Liberdade, em Nova York. A Torre Eiffel tem cerca de 330 metros de altura [eiffel-2] [eiffel-1].",
+          "latency_s": 2.24,
+          "context_ids": [
+            "eiffel-2",
+            "eiffel-1"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta menciona corretamente a Estátua da Liberdade e a altura de 330 metros, ambas presentes na referência e sem contradições ou invenções."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 2
+          }
+        },
+        "topk_eq": {
+          "examined": 2,
+          "answer": "Gustave Eiffel projetou a estrutura interna da Estátua da Liberdade, em Nova York, e a Torre Eiffel tem cerca de 330 metros de altura [eiffel-2][eiffel-1].",
+          "latency_s": 2.31,
+          "context_ids": [
+            "eiffel-2",
+            "eiffel-1"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente a Estátua da Liberdade e a altura de 330 metros, correspondendo integralmente à referência e ao contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 2
+          }
+        },
+        "oracle": {
+          "examined": 2,
+          "answer": "Gustave Eiffel projetou a estrutura interna da Estátua da Liberdade, em Nova York, e a Torre Eiffel tem cerca de 330 metros de altura [eiffel-1][eiffel-2].",
+          "latency_s": 1.52,
+          "context_ids": [
+            "eiffel-1",
+            "eiffel-2"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta identifica corretamente a Estátua da Liberdade como outra obra de Eiffel e informa a altura correta da Torre Eiffel, ambas alinhadas com o contexto e a referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q12",
+      "category": "multi-tema",
+      "question": "Qual a participação do Brasil na produção mundial de café e em quantos países está distribuída a Floresta Amazônica?",
+      "gold": [
+        "cafe-1",
+        "amazonia-1"
+      ],
+      "reference": "Cerca de um terço da produção global de café; a Floresta Amazônica está distribuída entre nove países.",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "O Brasil é responsável por cerca de um terço da produção global de café [cafe-1]. Sobre a distribuição da Floresta Amazônica em países, o contexto não fornece essa informação.",
+          "latency_s": 2.45,
+          "context_ids": [
+            "cafe-1"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 3,
+            "justification": "A resposta acertou a participação do Brasil na produção de café, mas falhou em informar que a Amazônia está distribuída em nove países, informação que a referência indica estar disponível na base."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.5,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 2,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "cafe-1",
+              "relevance": 0.93,
+              "sufficiency": 0.03
+            },
+            {
+              "id": "amazonia-1",
+              "relevance": 0.97,
+              "sufficiency": 0.94
+            }
+          ],
+          "answer": "O Brasil é responsável por cerca de um terço da produção mundial de café. A Floresta Amazônica está distribuída entre nove países [cafe-1][amazonia-1].",
+          "latency_s": 3.09,
+          "context_ids": [
+            "cafe-1",
+            "amazonia-1"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta contém corretamente ambas as informações: um terço da produção mundial de café e nove países da Amazônia, alinhadas com a referência e o contexto fornecido."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 2
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "O Brasil é responsável por cerca de um terço da produção global de café [cafe-1]. Não sei em quantos países está distribuída a Floresta Amazônica, pois essa informação não está presente no contexto fornecido.",
+          "latency_s": 2.67,
+          "context_ids": [
+            "cafe-1"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 3,
+            "justification": "A parte sobre o café foi respondida corretamente, mas a parte sobre os nove países da Amazônia foi respondida com 'não sei', quando a referência indica que essa informação deveria estar disponível na base."
+          },
+          "correct": false,
+          "retrieval": {
+            "gold_recall": 0.5,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 2,
+          "answer": "O Brasil é responsável por cerca de um terço da produção global de café e a Floresta Amazônica está distribuída entre nove países [cafe-1] [amazonia-1].",
+          "latency_s": 2.16,
+          "context_ids": [
+            "cafe-1",
+            "amazonia-1"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta cobre corretamente ambas as partes: participação de um terço na produção mundial de café e distribuição da Amazônia em nove países, conforme a referência e o contexto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 2
+          }
+        },
+        "oracle": {
+          "examined": 2,
+          "answer": "O Brasil é responsável por cerca de um terço da produção mundial de café [cafe-1]. A Floresta Amazônica está distribuída entre nove países [amazonia-1].",
+          "latency_s": 1.37,
+          "context_ids": [
+            "amazonia-1",
+            "cafe-1"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": false,
+            "score": 5,
+            "justification": "A resposta cobre corretamente ambas as partes: participação de um terço na produção mundial de café e distribuição da Amazônia entre nove países, conforme a referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q13",
+      "category": "sem resposta",
+      "question": "Qual a população de Manaus?",
+      "gold": [],
+      "reference": "A base não contém essa informação. A resposta correta é dizer que não sabe.",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "O contexto fornecido não informa a população de Manaus, portanto, não sei essa parte.",
+          "latency_s": 2.03,
+          "context_ids": [
+            "amazonia-2"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente afirma não saber a população de Manaus, condizendo com a referência de que essa informação não está na base."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 3,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "amazonia-2",
+              "relevance": 0.02,
+              "sufficiency": 0.01
+            },
+            {
+              "id": "amazonia-4",
+              "relevance": 0.03,
+              "sufficiency": 0.01
+            },
+            {
+              "id": "amazonia-1",
+              "relevance": 0.02,
+              "sufficiency": 0.01
+            }
+          ],
+          "answer": "Nenhum trecho relevante encontrado para responder a pergunta.",
+          "latency_s": 2.2,
+          "context_ids": [],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que não há informação disponível, alinhando-se com a referência de que a base não contém esse dado."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "Nenhum trecho relevante encontrado para responder a pergunta.",
+          "latency_s": 0.78,
+          "context_ids": [],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que não encontrou a informação, alinhando-se com a referência que afirma que a base não contém esse dado."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        },
+        "topk_eq": {
+          "examined": 2,
+          "answer": "O contexto fornecido não informa a população de Manaus, portanto não sei essa parte. [amazonia-2] [amazonia-4]",
+          "latency_s": 64.63,
+          "context_ids": [
+            "amazonia-2",
+            "amazonia-4"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A base não contém a informação sobre a população de Manaus, e o sistema corretamente indicou que não sabe, sem inventar dados."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 2,
+            "context_size": 2
+          }
+        },
+        "oracle": {
+          "examined": 0,
+          "answer": "Nenhum trecho relevante encontrado para responder a pergunta.",
+          "latency_s": 0.0,
+          "context_ids": [],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que não encontrou informação, alinhando-se com a referência de que a base não contém esse dado."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q14",
+      "category": "sem resposta",
+      "question": "Quanto custa o ingresso para visitar o Cristo Redentor?",
+      "gold": [],
+      "reference": "A base não contém essa informação. A resposta correta é dizer que não sabe.",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "O contexto fornecido não informa o preço do ingresso para visitar o Cristo Redentor [cristo-1]. Portanto, não sei essa parte.",
+          "latency_s": 2.33,
+          "context_ids": [
+            "cristo-1"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que não sabe o preço do ingresso, alinhando-se com a resposta de referência que afirma que a base não contém essa informação."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 3,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "cristo-1",
+              "relevance": 0.03,
+              "sufficiency": 0.01
+            },
+            {
+              "id": "cristo-2",
+              "relevance": 0.02,
+              "sufficiency": 0.01
+            },
+            {
+              "id": "cristo-5",
+              "relevance": 0.02,
+              "sufficiency": 0.01
+            }
+          ],
+          "answer": "Nenhum trecho relevante encontrado para responder a pergunta.",
+          "latency_s": 2.19,
+          "context_ids": [],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que não há informação disponível na base, alinhando-se à referência sem inventar dados."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "O contexto fornecido não informa o valor do ingresso para visitar o Cristo Redentor [cristo-1]. Portanto, não sei essa parte.",
+          "latency_s": 2.55,
+          "context_ids": [
+            "cristo-1"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que não sabe o valor do ingresso, alinhando-se à referência de que a base não contém essa informação, sem inventar dados."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 2,
+          "answer": "Não sei o custo do ingresso para visitar o Cristo Redentor com base no contexto fornecido.",
+          "latency_s": 2.63,
+          "context_ids": [
+            "cristo-1",
+            "cristo-2"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que não sabe o custo do ingresso, condizente com a referência de que a base não contém essa informação."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 2,
+            "context_size": 2
+          }
+        },
+        "oracle": {
+          "examined": 0,
+          "answer": "Nenhum trecho relevante encontrado para responder a pergunta.",
+          "latency_s": 0.0,
+          "context_ids": [],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que não há informação disponível, alinhando-se com a referência que afirma que a base não contém essa informação."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q15",
+      "category": "sem resposta",
+      "question": "Quem foi o arquiteto do Teatro Amazonas?",
+      "gold": [],
+      "reference": "A base não contém essa informação (ela só diz que o teatro foi inaugurado em 1896, no ciclo da borracha). A resposta correta é dizer que não sabe.",
+      "truth_top1_enough": false,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "O contexto fornecido não informa quem foi o arquiteto do Teatro Amazonas.",
+          "latency_s": 2.02,
+          "context_ids": [
+            "amazonia-4"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente afirma não saber quem foi o arquiteto, alinhando-se com a referência de que a base não contém essa informação."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 3,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "amazonia-4",
+              "relevance": 0.08,
+              "sufficiency": 0.03
+            },
+            {
+              "id": "cristo-3",
+              "relevance": 0.02,
+              "sufficiency": 0.02
+            },
+            {
+              "id": "brasilia-2",
+              "relevance": 0.02,
+              "sufficiency": 0.02
+            }
+          ],
+          "answer": "Nenhum trecho relevante encontrado para responder a pergunta.",
+          "latency_s": 2.28,
+          "context_ids": [],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que não encontrou a informação, alinhando-se à referência que afirma que a base não contém o nome do arquiteto."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "O contexto fornecido não informa quem foi o arquiteto do Teatro Amazonas [amazonia-4]. Portanto, não sei essa parte.",
+          "latency_s": 2.09,
+          "context_ids": [
+            "amazonia-4"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente afirma não saber quem foi o arquiteto, alinhando-se com a referência de que essa informação não está na base."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 1,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 2,
+          "answer": "O contexto não informa quem foi o arquiteto do Teatro Amazonas, apenas menciona que foi inaugurado em 1896, durante o ciclo da borracha, com materiais importados da Europa [amazonia-4]. Portanto, não sei quem foi o arquiteto do Teatro Amazonas.",
+          "latency_s": 2.32,
+          "context_ids": [
+            "amazonia-4",
+            "cristo-3"
+          ],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta corretamente indica que a base não informa o arquiteto do Teatro Amazonas, alinhando-se com a resposta de referência, sem inventar informações."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 2,
+            "context_size": 2
+          }
+        },
+        "oracle": {
+          "examined": 0,
+          "answer": "Nenhum trecho relevante encontrado para responder a pergunta.",
+          "latency_s": 0.0,
+          "context_ids": [],
+          "judge": {
+            "total_parts": 1,
+            "correct_parts": 1,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A referência confirma que a base não contém a informação sobre o arquiteto, e o sistema corretamente indicou não ter encontrado dados relevantes, sem inventar nada."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": null,
+            "noise_chunks": 0,
+            "context_size": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q16",
+      "category": "parcial",
+      "question": "Quando o Teatro Amazonas foi inaugurado e quantos lugares ele tem?",
+      "gold": [
+        "amazonia-4"
+      ],
+      "reference": "Foi inaugurado em 1896. A base não informa a capacidade; a resposta correta diz que não sabe essa parte.",
+      "truth_top1_enough": true,
+      "runs": {
+        "top1": {
+          "examined": 1,
+          "answer": "O Teatro Amazonas foi inaugurado em 1896. O contexto não informa quantos lugares ele tem [amazonia-4].",
+          "latency_s": 2.95,
+          "context_ids": [
+            "amazonia-4"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta indica corretamente o ano de inauguração e, conforme a referência, não sabe a capacidade, pois essa informação realmente não está na base."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "jev_gate": {
+          "examined": 4,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "steps": [
+            {
+              "id": "amazonia-4",
+              "relevance": 0.86,
+              "sufficiency": 0.04
+            },
+            {
+              "id": "maracana-1",
+              "relevance": 0.02,
+              "sufficiency": 0.04
+            },
+            {
+              "id": "cristo-1",
+              "relevance": 0.01,
+              "sufficiency": 0.03
+            },
+            {
+              "id": "brasilia-1",
+              "relevance": 0.02,
+              "sufficiency": 0.02
+            }
+          ],
+          "answer": "O Teatro Amazonas foi inaugurado em 1896 [amazonia-4]. Não há informação no contexto fornecido sobre a quantidade de lugares que ele tem.",
+          "latency_s": 4.72,
+          "context_ids": [
+            "amazonia-4"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta indica corretamente a data de inauguração (1896) e abstém-se corretamente sobre a capacidade, que não está na base conforme a referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "sim_gate": {
+          "examined": 5,
+          "fast_path": false,
+          "says_top1_enough": false,
+          "answer": "O Teatro Amazonas foi inaugurado em 1896 durante o ciclo da borracha [amazonia-4]. O contexto não informa o número de lugares que ele tem.",
+          "latency_s": 2.3,
+          "context_ids": [
+            "amazonia-4"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta informa corretamente o ano de inauguração (1896) e admite corretamente que não sabe a capacidade, alinhando-se totalmente com a referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        },
+        "topk_eq": {
+          "examined": 2,
+          "answer": "O Teatro Amazonas foi inaugurado em 1896 durante o ciclo da borracha [amazonia-4]. O contexto fornecido não informa quantos lugares ele tem.",
+          "latency_s": 2.16,
+          "context_ids": [
+            "amazonia-4",
+            "maracana-1"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta acerta a data de inauguração e corretamente afirma não saber a capacidade, que também não consta na referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 1,
+            "context_size": 2
+          }
+        },
+        "oracle": {
+          "examined": 1,
+          "answer": "O Teatro Amazonas foi inaugurado em 1896 [amazonia-4]. O contexto não informa quantos lugares ele tem.",
+          "latency_s": 1.44,
+          "context_ids": [
+            "amazonia-4"
+          ],
+          "judge": {
+            "total_parts": 2,
+            "correct_parts": 2,
+            "hallucination": false,
+            "abstained": true,
+            "score": 5,
+            "justification": "A resposta informa corretamente a data de inauguração e corretamente admite não saber a capacidade de lugares, alinhando-se totalmente com a referência."
+          },
+          "correct": true,
+          "retrieval": {
+            "gold_recall": 1.0,
+            "noise_chunks": 0,
+            "context_size": 1
+          }
+        }
+      }
+    }
+  ]
+}
